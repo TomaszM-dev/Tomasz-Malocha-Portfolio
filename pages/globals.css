@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  padding: 0;
+
+  margin: 0;
+}
+
+.svg {
+  animation: fill 2s ease forwards 2.5s;
+}
+
+.path7 {
+  stroke-dasharray: 564;
+  stroke-dashoffset: 564;
+  animation: line-anim 2s ease forwards 1.2s;
+}
+.path6 {
+  stroke-dasharray: 798;
+  stroke-dashoffset: 798;
+  animation: line-anim 2s ease forwards 1s;
+}
+.path5 {
+  stroke-dasharray: 507;
+  stroke-dashoffset: 507;
+  animation: line-anim 2s ease forwards 0.8s;
+}
+.path4 {
+  stroke-dasharray: 485;
+  stroke-dashoffset: 485;
+  animation: line-anim 2s ease forwards 0.6s;
+}
+.path3 {
+  stroke-dasharray: 412;
+  stroke-dashoffset: 412;
+  animation: line-anim 2s ease forwards 0.4s;
+}
+.path2 {
+  stroke-dasharray: 564;
+  stroke-dashoffset: 564;
+  animation: line-anim 2s ease forwards 0.2s;
+}
+.path1 {
+  stroke-dasharray: 746;
+  stroke-dashoffset: 746;
+  animation: line-anim 2s ease forwards;
+}
+
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: white;
+  }
+}
