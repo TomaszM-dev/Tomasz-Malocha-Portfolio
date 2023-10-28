@@ -1,10 +1,12 @@
 "use client";
 import { AnimatePresence } from "framer-motion";
-import React, { useEffect, useState } from "react";
-import Navbar from "./nav";
-import Preloader from "./preloader";
+import React, { ReactNode, useEffect, useState } from "react";
+import Nav from "./navbar/nav";
+import Navbar from "./navbar/navbar";
 
-const Page = ({ children }) => {
+import Preloader from "./preloader/preloader";
+
+const Page = ({ children }: { children: ReactNode }) => {
   return (
     <>
       <div>

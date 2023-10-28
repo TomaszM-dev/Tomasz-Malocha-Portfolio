@@ -19,16 +19,17 @@ const navItems = [
   },
 ];
 
-const Navbar = () => {
+const Nav = () => {
   const active = useNavLink();
   console.log(active.activeLink);
 
   return (
-    <div className="w-full text-[1.4rem] bg-slate-200 h-10 items-center py-10 px-10 flex justify-between">
+    <div className="w-full   fixed z-30 top-0 left-0 text-[1.4rem] bg-slate-200 h-20  items-center py-10  px-10 flex justify-between">
       <div className="flex gap-10">
         {navItems.map((link) => (
           <>
             <Link
+              suppressHydrationWarning
               onClick={() => active.setActiveLink(link.title)}
               href={link.href}
             >
@@ -41,4 +42,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Nav;

@@ -20,7 +20,7 @@ const Preloader = () => {
       variants={slideUp}
       initial="initial"
       exit="exit"
-      className="h-screen w-screen fixed z-[100] flex items-center justify-center text-white bg-black top-0"
+      className="h-screen w-screen fixed z-[100] flex items-center justify-center text-white bg-black top-0 left-0"
     >
       <motion.svg
         ref={svg}

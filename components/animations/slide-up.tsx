@@ -1,23 +1,24 @@
+"use client";
 import React from "react";
 import { motion } from "framer-motion";
 import { useNavLink } from "@/nav-store";
 
-const SlideDown = ({ pathname }) => {
+const SlideUp = ({ pathname }) => {
   const active = useNavLink();
   console.log(active.activeLink);
   return (
     <motion.div
-      className="absolute text-white bottom-0 left-0 w-full h-screen bg-black origin-top"
-      initial={{ scaleY: 1 }}
+      className="fixed bottom-0 left-0 w-full h-full bg-black origin-bottom text-white  "
+      initial={{ scaleY: 0 }}
       animate={{ scaleY: 0 }}
       exit={{
-        scaleY: 0,
+        scaleY: 1,
       }}
       transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1], delay: 0.2 }}
     >
-      {active.activeLink}
+      <h1 suppressHydrationWarning>{active.activeLink}</h1>
     </motion.div>
   );
 };
 
-export default SlideDown;
+export default SlideUp;
