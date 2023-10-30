@@ -74,7 +74,11 @@ const HamburgerNav = () => {
         >
           {navItems.map((link, index) => (
             <motion.div variants={menuLinkVars} key={index}>
-              <p suppressHydrationWarning onClick={() => handleClick(link)}>
+              <p
+                className="text-[2rem] cursor-pointer"
+                suppressHydrationWarning
+                onClick={() => handleClick(link)}
+              >
                 {link.title}
               </p>
             </motion.div>

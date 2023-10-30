@@ -81,7 +81,7 @@ const Hero = () => {
         whileInView="animate"
         exit="exit"
         viewport={{ once: true }}
-        className="z-10  whitespace-nowrap mt-[17rem] text-white h-full  w-[740px] flex justify-between mx-auto"
+        className="z-1  whitespace-nowrap mt-[17rem] text-white h-full  w-[740px] flex justify-between mx-auto"
       >
         <div data-scroll data-scroll-speed="0.2" className="flex flex-col">
           <BsArrowDownLeft className="text-[1.7rem]  self-end mb-7" />

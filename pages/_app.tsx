@@ -14,33 +14,35 @@ const App = ({ Component, pageProps }) => {
 
   const pathname = usePathname();
 
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     setTimeout(() => {
-      setIsLoading(true);
+      setIsLoading(false);
     }, 2500);
   }, []);
 
   return (
     <>
       <AnimatePresence mode="wait">
-        {!isLoading && <Preloader />}
+        {isLoading && <Preloader />}
       </AnimatePresence>
-      <AnimatePresence
-        mode="wait"
-        onExitComplete={() => {
-          if (typeof window !== "undefined") {
-            window.scrollTo({ top: 0 });
-          }
-        }}
-      >
-        <motion.div key={router.pathname} className="">
-          <Component {...pageProps} />
-          <SlideUp pathname={pathname} />
-          <SlideDown pathname={pathname} />
-        </motion.div>
-      </AnimatePresence>
+      {!isLoading && (
+        <AnimatePresence
+          mode="wait"
+          onExitComplete={() => {
+            if (typeof window !== "undefined") {
+              window.scrollTo({ top: 0 });
+            }
+          }}
+        >
+          <motion.div key={router.pathname} className="">
+            <Component {...pageProps} />
+            <SlideUp pathname={pathname} />
+            <SlideDown pathname={pathname} />
+          </motion.div>
+        </AnimatePresence>
+      )}
     </>
   );
 };

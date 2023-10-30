@@ -131,7 +131,7 @@ const Navbar = () => {
           <div
             className={`w-[40%] bg-white h-[2px]  relative z-40 after:content-[""]  after:block after:h-[2px] after:w-[100%] after:m-auto after:bg-white after:relative after:top-[-10px]  before:content-[""] before:block before:h-[2px] before:w-[100%] before:m-auto before:bg-white before:relative before:top-[9px]  after:transition-all before:transition-all duration-300${
               isActive
-                ? "after:transform after:rotate-45 after:top-[-1px]  before:transform before:rotate-[-45deg] before:top-[0px] h-0"
+                ? "after:transform after:rotate-45 after:top-[-1px]  before:transform before:rotate-[-45deg] before:top-[2px] h-[0px]"
                 : ""
             }`}
           ></div>
