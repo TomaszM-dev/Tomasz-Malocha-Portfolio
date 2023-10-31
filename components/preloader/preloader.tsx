@@ -1,6 +1,7 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
+import Curve from "../curve";
 
 export const slideUp = {
   initial: {
@@ -20,11 +21,12 @@ const Preloader = () => {
       variants={slideUp}
       initial="initial"
       exit="exit"
-      className="h-screen w-screen absolute z-[100] flex items-center justify-center text-white bg-black top-0 "
+      className="h-screen w-screen fixed z-[110] flex items-center justify-center text-white bg-black "
     >
+      <Curve />
       <motion.svg
         ref={svg}
-        className="svg "
+        className="svg relative"
         width="600"
         height="94"
         viewBox="0 0 676 94"

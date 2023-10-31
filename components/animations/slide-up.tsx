@@ -2,13 +2,16 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useNavLink } from "@/nav-store";
+import Curve from "../curve";
+
+import CurveUp from "../curve-up";
 
 const SlideUp = ({ pathname }) => {
   const active = useNavLink();
   console.log(active.activeLink);
   return (
     <motion.div
-      className="fixed bottom-0 left-0 w-full h-full bg-black origin-bottom text-white  "
+      className="fixed top-0 z-[100] flex justify-center items-center left-0 w-full h-full bg-black origin-bottom text-white  "
       initial={{ scaleY: 0 }}
       animate={{ scaleY: 0 }}
       exit={{
@@ -16,7 +19,10 @@ const SlideUp = ({ pathname }) => {
       }}
       transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1], delay: 0.2 }}
     >
-      <h1 suppressHydrationWarning>{active.activeLink}</h1>
+      <CurveUp />
+      <h1 className="text-[3rem] relative" suppressHydrationWarning>
+        {active.activeLink}
+      </h1>
     </motion.div>
   );
 };

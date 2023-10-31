@@ -13,6 +13,8 @@ import Headline from "@/components/home-page-ui/headline";
 import Work from "@/components/home-page-ui/work";
 import Footer from "@/components/home-page-ui/footer";
 import Example from "@/components/home-page-ui/gallery";
+import Curve from "@/components/curve";
+import CurveUp from "@/components/curve-up";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
