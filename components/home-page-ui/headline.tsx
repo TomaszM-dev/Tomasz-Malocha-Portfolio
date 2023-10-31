@@ -42,11 +42,11 @@ const Headline = ({ title, info }: { title: string; info: string }) => {
     <div className="h-[16rem] mt-20 overflow-x-hidden relative ">
       <h2
         ref={textSlide}
-        className="absolute  whitespace-nowrap z-10  top-0 left-[-15%]  font-bold text-[13rem] uppercase text-[#EDEDED] "
+        className="absolute  whitespace-nowrap z-4  top-0 left-[-15%]  font-bold text-[13rem] uppercase text-[#EDEDED] "
       >
         {title}
       </h2>
-      <motion.p className="absolute z-10 top-24 text-[2rem] left-[30%] whitespace-nowrap">
+      <motion.p className="absolute z-4 top-24 text-[2rem] left-[30%] whitespace-nowrap">
         {sentence1} <br /> {sentence2}
       </motion.p>
     </div>

@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
-import Curve from "../curve";
+import Curve from "../curves/curve";
 
 export const slideUp = {
   initial: {

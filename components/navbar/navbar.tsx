@@ -38,6 +38,8 @@ const Navbar = () => {
   const button = useRef(null);
 
   useEffect(() => {
+    let cur = "/";
+
     if (isActive) setIsActive(false);
   }, [pathname]);
 
@@ -72,15 +74,24 @@ const Navbar = () => {
         ref={header}
         className={`${
           pathname === "/" ? "bg-[#C8C6C9] text-white" : "text-black"
-        } flex w-full items-center justify-between  px-10 pt-9 text-[1.3rem] `}
+        } flex w-full items-center justify-between  px-10 pt-9 text-[1.3rem]  transition-all delay-1000`}
       >
         <>
           <Link
             suppressHydrationWarning
-            onClick={() => active.setActiveLink(navItems[0].title)}
+            onClick={() => {
+              active.setActiveLink(navItems[0].title);
+            }}
             href={navItems[0].href}
           >
-            {navItems[0].title}
+            <Image
+              alt="me"
+              width={500}
+              height={500}
+              quality={100}
+              src={me}
+              className="w-14 h-14"
+            />
           </Link>
         </>
 
@@ -97,7 +108,7 @@ const Navbar = () => {
           data-scroll-speed="0.05"
           className="flex  gap-7  ml-10 max-md:hidden"
         >
-          {navItems.map((link) => (
+          {navItems.slice(1).map((link) => (
             <>
               <Link
                 suppressHydrationWarning
@@ -138,7 +149,13 @@ const Navbar = () => {
         </div>
       </div>
       <AnimatePresence mode="wait">
-        {isActive && <HamburgerNav navItems={navItems} />}
+        {isActive && (
+          <HamburgerNav
+            isActive={isActive}
+            setIsActive={setIsActive}
+            navItems={navItems}
+          />
+        )}
       </AnimatePresence>
     </>
   );

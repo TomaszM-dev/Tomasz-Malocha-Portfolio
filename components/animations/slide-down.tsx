@@ -1,8 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useNavLink } from "@/nav-store";
-import Curve from "../curve";
-import CurveDown from "../curve-up";
+import Curve from "../curves/curve";
+import CurveDown from "../curves/curve-up";
 
 const SlideDown = ({ pathname }) => {
   const active = useNavLink();
