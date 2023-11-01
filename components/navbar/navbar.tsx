@@ -106,7 +106,7 @@ const Navbar = () => {
         <div
           data-scroll
           data-scroll-speed="0.05"
-          className="flex  gap-7  ml-10 max-md:hidden"
+          className="flex text-[1.4rem] font-[300] gap-7  ml-10 max-md:hidden"
         >
           {navItems.slice(1).map((link) => (
             <>
@@ -142,7 +142,7 @@ const Navbar = () => {
           <div
             className={`w-[40%] bg-white h-[2px]  relative z-40 after:content-[""]  after:block after:h-[2px] after:w-[100%] after:m-auto after:bg-white after:relative after:top-[-10px]  before:content-[""] before:block before:h-[2px] before:w-[100%] before:m-auto before:bg-white before:relative before:top-[9px]  after:transition-all before:transition-all duration-300${
               isActive
-                ? "after:transform after:rotate-45 after:top-[-1px]  before:transform before:rotate-[-45deg] before:top-[2px] h-[0px]"
+                ? "after:transform after:rotate-45 after:top-[-1px]  before:transform before:rotate-[-45deg] before:top-[3px] h-0"
                 : ""
             }`}
           ></div>

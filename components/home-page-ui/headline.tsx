@@ -21,7 +21,7 @@ const Headline = ({ title, info }: { title: string; info: string }) => {
         trigger: container.current,
 
         scrub: 0.1,
-        start: `-50% 80%`,
+        start: `-40% 40%`,
         end: `bottom 83%`,
       },
 
@@ -29,7 +29,7 @@ const Headline = ({ title, info }: { title: string; info: string }) => {
       stagger: 0.01,
     });
     tl.from(textSlide.current, {
-      x: "-200",
+      x: "-700",
     });
     tl.to(textSlide.current, {
       x: "1200",
@@ -39,15 +39,15 @@ const Headline = ({ title, info }: { title: string; info: string }) => {
   const sentence2 = info.split(" ").splice(7).join(" ");
 
   return (
-    <div className="h-[16rem] mt-20 overflow-x-hidden relative ">
+    <div className="h-[16rem] mx-auto mt-20 overflow-x-hidden relative  ">
       <h2
         ref={textSlide}
-        className="absolute  whitespace-nowrap z-4  top-0 left-[-15%]  font-bold text-[13rem] uppercase text-[#EDEDED] "
+        className="absolute  whitespace-nowrap z-4 xl:left-[-5%]  top-0 left-[-15%]  font-bold text-[13rem] uppercase text-[#EDEDED] max-sm:top-0 max-sm:text-[15rem] max-sm:left-[-80%] "
       >
         {title}
       </h2>
-      <motion.p className="absolute z-4 top-24 text-[2rem] left-[30%] whitespace-nowrap">
-        {sentence1} <br /> {sentence2}
+      <motion.p className="text-center max-sm:text-start relative z-7 mt-24   text-[2.1rem]   xl:text-[2.5rem] max-sm:px-10">
+        {sentence1} <br className="max-sm:hidden" /> {sentence2}
       </motion.p>
     </div>
   );

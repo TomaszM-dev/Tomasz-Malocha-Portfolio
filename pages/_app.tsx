@@ -8,7 +8,12 @@ import Preloader from "@/components/preloader/preloader";
 import SlideUp from "@/components/animations/slide-up";
 import SlideDown from "@/components/animations/slide-down";
 import { usePathname } from "next/navigation";
+import { Abhaya_Libre } from "next/font/google";
 
+const abhaya = Abhaya_Libre({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
 const App = ({ Component, pageProps }) => {
   const router = useRouter();
 
@@ -19,11 +24,11 @@ const App = ({ Component, pageProps }) => {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-    }, 2500);
+    }, 500);
   }, []);
 
   return (
-    <>
+    <main className={abhaya.className}>
       <AnimatePresence mode="wait">
         {isLoading && <Preloader />}
       </AnimatePresence>
@@ -43,7 +48,7 @@ const App = ({ Component, pageProps }) => {
           </motion.div>
         </AnimatePresence>
       )}
-    </>
+    </main>
   );
 };
 

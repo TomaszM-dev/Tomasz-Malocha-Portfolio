@@ -12,12 +12,12 @@ export const upDesc = {
   initial: {
     opacity: 0,
 
-    y: 100,
+    y: 200,
   },
   animate: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.5, ease: [0.76, 0, 0.24, 1], delay: 0.6 },
+    transition: { duration: 0.5, ease: [0.76, 0, 0.24, 1], delay: 0.4 },
   },
 };
 export const upProjects = {
@@ -29,19 +29,19 @@ export const upProjects = {
   animate: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.5, ease: [0.76, 0, 0.24, 1] },
+    transition: { duration: 0.5, ease: [0.25, 0.25, 0.25, 0.55] },
   },
 };
 export const upText = {
   initial: {
     opacity: 0,
 
-    bottom: -100,
+    bottom: -150,
   },
   animate: {
     opacity: 1,
-    bottom: 20,
-    transition: { duration: 0.3, ease: [0.76, 0, 0.24, 1], delay: 0.6 },
+    bottom: 40,
+    transition: { duration: 0.5, ease: [0.76, 0, 0.24, 1], delay: 0.45 },
   },
 };
 

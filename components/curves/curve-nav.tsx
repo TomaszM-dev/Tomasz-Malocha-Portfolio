@@ -5,7 +5,7 @@ import styles from "./styles.module.scss";
 export default function CurveNav() {
   const initialPath = `M100 0 L200 0 L200 ${window.innerHeight} L100 ${
     window.innerHeight
-  } Q-60 ${window.innerHeight / 2} 100 0`;
+  } Q-100 ${window.innerHeight / 2} 100 0`;
   const targetPath = `M100 0 L200 0 L200 ${window.innerHeight} L100 ${
     window.innerHeight
   } Q100 ${window.innerHeight / 2} 100 0`;
@@ -20,7 +20,7 @@ export default function CurveNav() {
     },
     exit: {
       d: initialPath,
-      transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1], delay: 0.2 },
+      transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1], delay: 0.25 },
     },
   };
 

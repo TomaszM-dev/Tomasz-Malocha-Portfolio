@@ -54,7 +54,7 @@ const HamburgerNav = ({ setIsActive, isActive }) => {
         initial="initial"
         exit="exit"
         animate="animate"
-        className="h-screen origin-top-right max-md:w-full w-[25rem] fixed right-0 top-0 text-white z-20  bg-[#101010] "
+        className="h-screen origin-top-right max-md:w-full w-[28rem] fixed right-0 top-0 text-white z-20  bg-[#101010] "
       >
         <div className="w-full  mt-48 px-20  h-full box-border flex flex-col   ">
           <motion.p
@@ -81,7 +81,7 @@ const HamburgerNav = ({ setIsActive, isActive }) => {
             {navItems.map((link, index) => (
               <motion.div variants={menuLinkVars} key={index}>
                 <p
-                  className="text-[2.5rem] cursor-pointer"
+                  className="text-[3rem] leading-[3.4rem] cursor-pointer"
                   suppressHydrationWarning
                   onClick={() => handleClick(link)}
                 >
@@ -99,7 +99,7 @@ const HamburgerNav = ({ setIsActive, isActive }) => {
             variants={fadeIn("down", 0)}
             initial="hidden"
             whileInView={"show"}
-            className="flex gap-10 text-[1rem]"
+            className="flex gap-6  max-sm:gap-10 text-[1rem]"
           >
             <p>LinkedIn</p>
             <p>Instagram</p>
