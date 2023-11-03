@@ -27,7 +27,8 @@ const Filter = ({
       initial="initial"
       whileInView="animate"
       exit="exit"
-      className={`flex gap-2 items-center text-[1.4rem] mt-20 font-[200]  `}
+      viewport={{ once: true }}
+      className={`flex gap-2 items-center max-sm:flex-wrap max-sm:gap-y-5 text-[1.4rem] mt-20 font-[200] max-sm:mt-14 max-sm:justify-start`}
     >
       <button
         onClick={() => setActiveGenre("all")}

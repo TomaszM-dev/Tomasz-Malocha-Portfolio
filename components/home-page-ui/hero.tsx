@@ -30,7 +30,7 @@ const Hero = () => {
         end: window.innerHeight,
         onUpdate: (e) => (direction = e.direction * -1),
       },
-      x: "-400px",
+      x: "-500px",
     });
     requestAnimationFrame(animation);
   }, []);
@@ -48,14 +48,14 @@ const Hero = () => {
   };
 
   return (
-    <div className="w-full h-[92vh] bg-[#C8C6C9] relative flex overflow-hidden ">
+    <div className="w-full h-[92vh] bg-[#C8C6C9] relative flex overflow-hidden">
       <Image
         src={hero}
         fill
         quality={100}
         priority={true}
         alt=""
-        className="object-cover max-w-[1400px] mx-auto "
+        className="object-cover max-w-[1700px] mx-auto "
       />
       <motion.div
         variants={upText}
@@ -63,14 +63,16 @@ const Hero = () => {
         whileInView="animate"
         exit="exit"
         viewport={{ once: true }}
-        className="absolute bottom-16  max-md:mb-60  whitespace-nowrap  max"
+        className="absolute bottom-16    max-md:mb-60    "
       >
         <div
           ref={slider}
-          className="m-0 flex xl:text-[13rem]   text-white text-[11rem] font-[600] relative"
+          className="m-0 flex xl:text-[12rem] whitespace-nowrap    text-white text-[11rem] font-[600] relative"
         >
-          <p ref={firstText}>Tomasz Malocha -</p>
-          <p ref={secondText} className="absolute left-[100%]">
+          <p className="relative m-0" ref={firstText}>
+            Tomasz Malocha -
+          </p>
+          <p ref={secondText} className="absolute  left-[100%] ">
             Tomasz Malocha
           </p>
         </div>
@@ -81,18 +83,18 @@ const Hero = () => {
         whileInView="animate"
         exit="exit"
         viewport={{ once: true }}
-        className="z-1  whitespace-nowrap mt-[17rem] xl:mt-[14rem] text-white h-full xl:w-[900px]  w-[740px] flex justify-between mx-auto max-md:items-end max-md:mt-0 max-md:px-10  "
+        className="z-1  whitespace-nowrap mt-[17rem] xl:mt-[17rem] text-white h-full xl:w-[800px]  w-[740px] flex justify-between mx-auto max-md:items-end max-md:mt-0 max-md:px-10  "
       >
         <div data-scroll data-scroll-speed="0.2" className="flex flex-col">
           <BsArrowDownLeft className="text-[1.7rem]  self-end mb-7" />
-          <h1 className="text-[1.5rem] max-md:text-[2rem] xl:text-[2rem] max-md:mb-10 ">
+          <h1 className="text-[1.5rem] max-md:text-[2rem] xl:text-[1.8rem] max-md:mb-10 ">
             Next.js Full Stack <br /> Developer
           </h1>
         </div>
         <div
           data-scroll
           data-scroll-speed="0.2"
-          className="mt-5 xl:text-[1.4rem] bg-black/90 flex items-center justify-center rounded-full w-fit h-fit px-8 py-9 max-md:hidden "
+          className="mt-5 xl:text-[1.4rem] bg-black/90 flex items-center justify-center rounded-full w-fit h-fit px-8 py-9 xl:px-6 xl:py-7 max-md:hidden "
         >
           <h2 className="">
             Based In <br /> Poland

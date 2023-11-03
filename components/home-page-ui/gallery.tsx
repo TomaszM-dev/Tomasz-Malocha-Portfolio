@@ -3,7 +3,7 @@ import { useRef } from "react";
 
 const Example = () => {
   return (
-    <div className="bg-black">
+    <div className="">
       <HorizontalScrollCarousel />
     </div>
   );
@@ -21,7 +21,7 @@ const HorizontalScrollCarousel = () => {
   return (
     <section
       ref={targetRef}
-      className="relative h-[60vh] xl:h-[70vh] mt-[0rem] xl:mt-20  bg-[#ffffff]"
+      className="relative h-[50vh] mx-auto max-w-[1900px] xl:h-[55vh] mt-[-3rem]   xl:mt-[0rem]bg-[#ffffff]"
     >
       <div className="relative top-0 flex h-[50vh]  items-center overflow-hidden">
         <motion.div style={{ x }} className="flex gap-4">
@@ -38,7 +38,7 @@ const Card = ({ card }) => {
   return (
     <div
       key={card.id}
-      className="group relative xl:h-[400px] xl:w-[400px] h-[300px] w-[300px] overflow-hidden bg-[#dfdfdf]"
+      className="group relative xl:h-[300px] xl:w-[330px] h-[265px] w-[290px] overflow-hidden bg-[#dfdfdf] "
     >
       <div
         style={{
@@ -48,11 +48,6 @@ const Card = ({ card }) => {
         }}
         className=" absolute inset-0 rounded-lg z-0 transition-transform duration-300 group-hover:scale-110"
       ></div>
-      <div className="absolute inset-0 z-10 grid place-content-center">
-        <p className="bg-gradient-to-br from-white/20 to-white/0 p-5 text-2xl rounded-xl font-black uppercase text-white backdrop-blur-lg xl:text-3xl">
-          {card.title}
-        </p>
-      </div>
     </div>
   );
 };

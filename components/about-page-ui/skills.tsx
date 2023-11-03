@@ -14,18 +14,18 @@ const Skills = () => {
 
   return (
     <div className="bg-[#f3f3f3] rounded-3xl">
-      <div className="flex flex-col gap-10 px-10 pt-40 pb-28  w-full">
+      <div className="flex flex-col gap-30 px-10 pt-40 pb-28  w-full max-w-[1800px] mx-auto">
         <motion.h2
           viewport={{ once: true }}
           variants={upDesc}
           initial="initial"
-          whileInView="animate"
+          animate="animate"
           exit="exit"
           className="text-[3.3rem] font-bold"
         >
           I can fluently work with ...
         </motion.h2>
-        <div className="flex gap-14 mt-10">
+        <div className="flex gap-28 mt-10">
           <motion.div
             variants={fadeIn("up", 0.2)}
             initial="hidden"

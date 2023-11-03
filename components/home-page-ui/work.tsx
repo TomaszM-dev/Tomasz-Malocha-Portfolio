@@ -18,11 +18,10 @@ const Work = () => {
   return (
     <div
       ref={gallery}
-      className="flex flex-col gap-[7rem] max-w-[1900px] max-sm:gap-[3rem]  mx-auto mt-[7rem]"
+      className="flex flex-col gap-[7rem] max-w-[1700px] max-sm:gap-[3rem] xl:mt-[10rem] mx-auto mt-[6rem]"
     >
-      {projects.map((project, i) => {
+      {projects.slice(0, 2).map((project, i) => {
         const tech = project.tech;
-        console.log(tech);
 
         return (
           <div
@@ -44,14 +43,14 @@ const Work = () => {
                 key={project.number}
                 className="  flex flex-col justify-center"
               >
-                <h1 className="ml-[-2rem] max-sm:ml-[0] mb-10 xl:text-[3rem] text-[2rem] font-bold ">
+                <h1 className="ml-[-2rem] max-sm:ml-[0] mb-10 xl:text-[2.3rem] text-[2rem] font-bold ">
                   {project.number}
                 </h1>
                 <div className="flex gap-3">
-                  <p className="text-[3.4rem] xl:text-[5rem]">
+                  <p className="text-[3.4rem] xl:text-[3.5rem]">
                     {project.title}
                   </p>
-                  <div className="flex gap-2 text-[1.6rem] xl:text-[2.3rem] xl:gap-4">
+                  <div className="flex gap-2 text-[1.6rem] xl:text-[1.9rem] xl:gap-4">
                     <Link target={"_blank"} href={project.githubSite}>
                       <BsGithub />
                     </Link>

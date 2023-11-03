@@ -7,7 +7,7 @@ const Page = ({ children }: { children: ReactNode }) => {
     <>
       <div>
         <Navbar />
-        <main>{children}</main>
+        <main className="">{children}</main>
       </div>
     </>
   );

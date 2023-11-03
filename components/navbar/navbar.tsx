@@ -102,7 +102,6 @@ const Navbar = () => {
           Menu
         </div>
 
-        {/* mobile nav */}
         <div
           data-scroll
           data-scroll-speed="0.05"

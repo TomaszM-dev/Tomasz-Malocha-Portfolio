@@ -12,7 +12,7 @@ const Landing = () => {
     <div
       data-scroll
       data-scroll-speed="0.2"
-      className="h-[60vh] w-[75%] px-24  flex flex-col justify-center"
+      className="w-[100%]  mt-[11rem] my-[10rem]  mx-auto px-28 max-md:px-10  flex flex-col justify-center"
     >
       <motion.h1
         variants={upDesc}
@@ -20,7 +20,7 @@ const Landing = () => {
         initial="initial"
         whileInView="animate"
         exit="exit"
-        className="text-[5rem] leading-[4.8rem] font-[600]"
+        className="text-[4.5rem] w-[45rem] xl:text-[5.5rem] xl:w-[60rem] leading-[4.6rem] font-[600] max-md:text-[4rem] max-sm:w-fit max-sm:leading-[3.8rem] max-sm:text-[4.1rem]"
       >
         I want to give you a glimpse into my world
       </motion.h1>

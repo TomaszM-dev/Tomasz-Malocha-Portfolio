@@ -27,14 +27,16 @@ const AboutPage = () => {
 
   return (
     <Page>
-      <Landing />
-      <Skills />
-      <Experience />
-      <AboutMe />
-      <Footer
-        title="Contact Me"
-        info="I am open for hiring, lets create something awesome together !"
-      />
+      <main className="max-w-[1700px] mx-auto">
+        <Landing />
+        <Skills />
+        <Experience />
+        <AboutMe />
+        <Footer
+          title="Contact Me"
+          info="I am open for hiring, lets create something awesome together !"
+        />
+      </main>
     </Page>
   );
 };

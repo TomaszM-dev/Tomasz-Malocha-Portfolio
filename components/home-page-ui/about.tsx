@@ -50,16 +50,16 @@ const About = () => {
   return (
     <div
       ref={description}
-      className="max-w-[1600px] mx-auto flex max-lg:p-10 p-20 mt-10 gap-40 max-lg:gap-14 relative max-lg:flex-col"
+      className="max-w-[1600px] mx-auto flex max-lg:p-10 p-20 mt-10 gap-40 max-lg:gap-14 relative max-lg:flex-col overflow-hidden"
     >
-      <div className="flex-[45%] relative">
+      <div className="flex-[45%] relative flex flex-col gap-1">
         <p className="uppercase text-[#AAA5A5]">About me</p>
         <p>
           {phrase.split(" ").map((word, index) => {
             return (
               <motion.span
                 key={index}
-                className="text-[1.9rem] xl:text-[2.2rem] relative overflow-hidden inline-flex ml-1"
+                className="leading-[2.8rem] text-[1.9rem] xl:text-[2.1rem] relative overflow-hidden inline-flex ml-1"
               >
                 <motion.span
                   variants={descText}
@@ -75,7 +75,7 @@ const About = () => {
           })}
         </p>
 
-        <BsArrowDownLeft className="max-lg:hidden text-[1.7rem] mt-[5rem] w-full mb-7" />
+        <BsArrowDownLeft className="max-lg:hidden self-center  text-[1.7rem] mt-[7rem]  w-fit mb-7" />
       </div>
       <div className="flex-[70%] flex flex-col gap-5 ">
         <motion.div
@@ -143,7 +143,7 @@ const About = () => {
           });
         }}
         ref={seeMore}
-        className=" cursor-pointer max-lg:hidden absolute left-0 xl:left-46 top-[70%] bg-black text-[1.2rem] text-white    px-7  xl:px-20 py-5 rounded-br-full xl:text-[1.4rem] rounded-tr-full w-fit xl:rounded-xl "
+        className=" cursor-pointer max-lg:hidden absolute left-0 xl:left-46 top-[70%] bg-black text-[1.2rem] text-white    px-7  xl:px-20 py-5 rounded-br-full xl:text-[1.4rem] rounded-tr-full w-fit  "
       >
         See More about me
       </div>

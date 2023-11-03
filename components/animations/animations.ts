@@ -17,7 +17,7 @@ export const upDesc = {
   animate: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.5, ease: [0.76, 0, 0.24, 1], delay: 0.4 },
+    transition: { duration: 0.6, ease: [0.33, 1, 0.68, 1], delay: 0.5 },
   },
 };
 export const upProjects = {
@@ -29,7 +29,7 @@ export const upProjects = {
   animate: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.5, ease: [0.25, 0.25, 0.25, 0.55] },
+    transition: { duration: 0.6, ease: [0.33, 1, 0.68, 1], delay: 0.5 },
   },
 };
 export const upText = {
@@ -41,7 +41,7 @@ export const upText = {
   animate: {
     opacity: 1,
     bottom: 40,
-    transition: { duration: 0.5, ease: [0.76, 0, 0.24, 1], delay: 0.45 },
+    transition: { duration: 0.6, ease: [0.33, 1, 0.68, 1], delay: 0.6 },
   },
 };
 
@@ -64,7 +64,12 @@ export const fadeIn = (direction: string, delay: number) => {
     hidden: {
       y: direction === "up" ? 80 : direction === "down" ? -80 : 0,
       opacity: 0,
-
+      transition: {
+        type: "tween",
+        duration: 0.8,
+        delay: delay,
+        ease: [0.25, 0.25, 0.25, 0.75],
+      },
       x: direction === "left" ? 80 : direction === "right" ? -80 : 0,
     },
     show: {

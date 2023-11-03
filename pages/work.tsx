@@ -1,36 +1,29 @@
 "use client";
 import { BsArrowDownLeft } from "react-icons/bs";
 import React, { useEffect, useRef, useState } from "react";
-import { TbBrandNextjs, TbBrandMongodb } from "react-icons/tb";
-import {
-  SiTypescript,
-  SiPrisma,
-  SiPostgresql,
-  SiTailwindcss,
-  SiFigma,
-  SiStripe,
-  SiStyledcomponents,
-} from "react-icons/si";
 import { BsFiletypeSql, BsGithub, BsLinkedin } from "react-icons/bs";
 import { HiOutlineExternalLink } from "react-icons/hi";
-import { BiLogoReact, BiLineChart, BiLogoJavascript } from "react-icons/bi";
-import gsap from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
-import { Righteous } from "next/font/google";
 import Image from "next/image";
-import speedRent from "public/images/projects/speedRent.png";
-import degusto from "public/images/projects/degusto.png";
-import admin from "public/images/projects/admin.png";
-import bdesign from "public/images/projects/bdesign.png";
-import buma from "public/images/projects/buma.png";
-import vikbro from "public/images/projects/vikbro.png";
-import crypto from "public/images/projects/crypto.png";
 import { AnimatePresence, motion } from "framer-motion";
-
 import Page from "@/components/page";
 import { fadeIn, upDesc } from "@/components/animations/animations";
 import Filter from "@/components/filter";
 import Footer from "@/components/home-page-ui/footer";
+import WorkData from "@/components/work-data/workData";
+import Link from "next/link";
+
+export const up = {
+  initial: {
+    opacity: 0,
+
+    height: "12rem",
+  },
+  animate: {
+    opacity: 1,
+    height: "0rem",
+    transition: { duration: 0.6, ease: [0.33, 1, 0.68, 1], delay: 0.5 },
+  },
+};
 
 const WorkPage = () => {
   const [loading, setIsLoading] = useState(true);
@@ -49,7 +42,7 @@ const WorkPage = () => {
     })();
   }, []);
 
-  const projects = data();
+  const projects = WorkData();
 
   const [filtered, setFiltered] = useState(projects);
   const [activeGenre, setActiveGenre] = useState("all");
@@ -58,15 +51,16 @@ const WorkPage = () => {
     <Page>
       <div
         data-scroll
-        data-scroll-speed="0.2"
-        className="h-[70vh] w-[70%] px-24  flex flex-col justify-center"
+        data-scroll-speed="0.1"
+        className="w-[100%] max-w-[1700px] mt-[11rem]  mx-auto px-28 max-md:px-10  flex flex-col justify-center "
       >
         <motion.h1
           variants={upDesc}
           initial="initial"
           whileInView="animate"
           exit="exit"
-          className="text-[5rem] leading-[4rem] font-[600]"
+          viewport={{ once: true, amount: 0.2 }}
+          className="text-[4.5rem] w-[40rem] xl:text-[5.5rem] xl:w-[50rem] leading-[4.6rem] font-[600] max-md:text-[4rem] max-sm:w-fit max-sm:leading-[3.8rem] max-sm:text-[4.1rem]"
         >
           Some of the things I have built
         </motion.h1>
@@ -75,9 +69,10 @@ const WorkPage = () => {
           initial="initial"
           whileInView="animate"
           exit="exit"
-          className="self-end "
+          viewport={{ once: true, amount: 0.2 }}
+          className="xl:self-center self-end "
         >
-          <BsArrowDownLeft className="self-end text-[1.8rem] stroke-black stroke-1 " />
+          <BsArrowDownLeft className=" text-[1.8rem] stroke-black stroke-1 " />
         </motion.div>
         <Filter
           setFiltered={setFiltered}
@@ -87,71 +82,80 @@ const WorkPage = () => {
         />
       </div>
       <motion.div
-        variants={upDesc}
+        variants={up}
         initial="initial"
         whileInView="animate"
         exit="exit"
-        className="flex  flex-col gap-[6rem] mb-40  "
-      >
+        viewport={{ once: true, amount: 0.2 }}
+        className=" w-full"
+      ></motion.div>
+      <motion.div className="flex flex-col gap-[7rem] max-w-[1700px]  mx-auto mt-[10rem] ">
         <AnimatePresence>
-          {filtered.map((project, i) => (
-            <div
-              data-scroll
-              data-scroll-speed="0.2"
-              className={`flex  items-center px-20 gap-20 mx-auto ${
-                i % 2 === 1 ? "flex-row-reverse" : ""
-              }`}
-              key={project.info}
-            >
-              <motion.div
-                className=" w-[50%]"
-                variants={fadeIn("right", 0.1)}
-                initial="hidden"
-                whileInView={"show"}
-                exit="hidden"
+          {filtered.map((project, i) => {
+            const tech = project.tech;
+
+            return (
+              <div
+                data-scroll
+                data-scroll-speed="0.1"
+                className={`flex max-lg:flex-col  items-center max-sm:px-10 max-md:px-4 px-20 gap-20 justify-center mx-auto ${
+                  i % 2 === 1 ? "flex-row-reverse" : ""
+                }`}
+                key={project.info}
               >
-                <div
-                  key={project.number}
-                  className="  flex flex-col justify-center"
+                <motion.div
+                  className=" w-[50%] max-lg:w-[80%] max-sm:w-[100%]"
+                  variants={fadeIn("right", 0.1)}
+                  initial="hidden"
+                  whileInView={"show"}
+                  exit="hidden"
                 >
-                  <h1 className="ml-[-2rem] mb-10 text-[2rem] font-bold ">
-                    0{i + 1}
-                  </h1>
-                  <div className="flex gap-3">
-                    <p className="text-[3.4rem]">{project.title}</p>
-                    <div className="flex gap-2 text-[1.6rem]">
-                      <BsGithub />
-                      <HiOutlineExternalLink />
+                  <div
+                    key={project.number}
+                    className="  flex flex-col justify-center"
+                  >
+                    <h1 className="ml-[-2rem] max-sm:ml-[0] mb-10 xl:text-[2.3rem] text-[2rem] font-bold ">
+                      0{i + 1}
+                    </h1>
+                    <div className="flex gap-3">
+                      <p className="text-[3.4rem] xl:text-[3.5rem] leading-[3.4rem]">
+                        {project.title}
+                      </p>
+                      <div className="flex gap-2 text-[1.6rem] xl:text-[1.9rem] xl:gap-4">
+                        <Link target={"_blank"} href={project.githubSite}>
+                          <BsGithub />
+                        </Link>
+                        <Link target={"_blank"} href={project.liveSite}>
+                          <HiOutlineExternalLink />
+                        </Link>
+                      </div>
+                    </div>
+                    <div className="text-[1.4rem] flex gap-2 mt-4 font-bold ">
+                      <p className="uppercase ">{project.type} &#x2022;</p>
+                      <Link target={"_blank"} href={project.liveSite}>
+                        See Live
+                      </Link>
+                    </div>
+                    <p className="text-[1.2rem] xl:text-[1.6rem] mt-3 text-[#7E7E7E] font-[400]">
+                      {project.info}
+                    </p>
+                    <div className="flex mt-6 gap-3 text-[1.7rem]">
+                      {tech.map((tech) => tech)}
                     </div>
                   </div>
-                  <div className="text-[1.4rem] flex gap-2 mt-4 font-bold ">
-                    <p className="uppercase ">{project.type} &#x2022;</p>
-                    <p>See Live</p>
-                  </div>
-                  <p className="text-[1.2rem] mt-3 text-[#7E7E7E] font-[400]">
-                    {" "}
-                    {project.info}
-                  </p>
-                  <div className="flex mt-6 gap-2 text-[1.7rem]">
-                    <SiFigma />
-                    <SiTailwindcss />
-                    <SiTypescript />
-                    <SiStripe />
-                    <TbBrandNextjs />
-                  </div>
-                </div>
-              </motion.div>
-              <motion.div
-                variants={fadeIn("left", 0.2)}
-                initial="hidden"
-                whileInView={"show"}
-                exit="hidden"
-                className="w-[50%] "
-              >
-                <Image className="" alt="" src={project.picture}></Image>
-              </motion.div>
-            </div>
-          ))}
+                </motion.div>
+                <motion.div
+                  variants={fadeIn("left", 0.2)}
+                  initial="hidden"
+                  whileInView={"show"}
+                  exit="hidden"
+                  className="w-[50%] max-lg:w-[80%] max-sm:w-[100%]   xl:w-[40%] xxl:w-[48%] flex xl:justify-center  "
+                >
+                  <Image className=" " alt="" src={project.picture}></Image>
+                </motion.div>
+              </div>
+            );
+          })}
         </AnimatePresence>
       </motion.div>
       <Footer
@@ -163,68 +167,3 @@ const WorkPage = () => {
 };
 
 export default WorkPage;
-const data = () => [
-  {
-    number: "01",
-    title: "SpeedRent",
-    filter: "application",
-    type: "Web App store",
-    info: "Introducing SpeedRent – Your Ultimate Vehicle Rental Solution! Rent a vehicle on your terms, whether its for a day or a month, and experience the convenience of secure payments via Stripe",
-    tech: ["figma", "typescript", "Next.js"],
-    picture: speedRent,
-  },
-  {
-    number: "02",
-    filter: "application",
-    title: "DegustoVR",
-    type: "Web App store",
-    info: "Introducing SpeedRent – Your Ultimate Vehicle Rental Solution! Rent a vehicle on your terms, whether its for a day or a month, and experience the convenience of secure payments via Stripe",
-    tech: ["figma", "typescript", "Next.js"],
-    picture: degusto,
-  },
-  {
-    number: "03",
-    filter: "application",
-    title: "Admin Panel",
-    type: "Web App store",
-    info: "Introducing SpeedRent – Your Ultimate Vehicle Rental Solution! Rent a vehicle on your terms, whether its for a day or a month, and experience the convenience of secure payments via Stripe",
-    tech: ["figma", "typescript", "Next.js"],
-    picture: admin,
-  },
-  {
-    number: "04",
-    filter: "application",
-    title: "B-designed",
-    type: "Web App store",
-    info: "Introducing SpeedRent – Your Ultimate Vehicle Rental Solution! Rent a vehicle on your terms, whether its for a day or a month, and experience the convenience of secure payments via Stripe",
-    tech: ["figma", "typescript", "Next.js"],
-    picture: bdesign,
-  },
-  {
-    number: "05",
-    filter: "landing",
-    title: "Buma",
-    type: "Landing Page",
-    info: "Introducing SpeedRent – Your Ultimate Vehicle Rental Solution! Rent a vehicle on your terms, whether its for a day or a month, and experience the convenience of secure payments via Stripe",
-    tech: ["figma", "typescript", "Next.js"],
-    picture: buma,
-  },
-  {
-    number: "06",
-    filter: "landing",
-    title: "Vikbro",
-    type: "Landing Page",
-    info: "Introducing SpeedRent – Your Ultimate Vehicle Rental Solution! Rent a vehicle on your terms, whether its for a day or a month, and experience the convenience of secure payments via Stripe",
-    tech: ["figma", "typescript", "Next.js"],
-    picture: vikbro,
-  },
-  {
-    number: "07",
-    filter: "application",
-    title: "Cryptobanking",
-    type: "Application",
-    info: "Introducing SpeedRent – Your Ultimate Vehicle Rental Solution! Rent a vehicle on your terms, whether its for a day or a month, and experience the convenience of secure payments via Stripe",
-    tech: ["figma", "typescript", "Next.js"],
-    picture: crypto,
-  },
-];
