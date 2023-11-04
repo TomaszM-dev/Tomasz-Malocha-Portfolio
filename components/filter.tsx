@@ -28,11 +28,11 @@ const Filter = ({
       whileInView="animate"
       exit="exit"
       viewport={{ once: true }}
-      className={`flex gap-2 items-center max-sm:flex-wrap max-sm:gap-y-5 text-[1.4rem] mt-20 font-[200] max-sm:mt-14 max-sm:justify-start`}
+      className={`flex gap-2 items-center max-sm:flex-wrap max-sm:gap-y-5 text-[1.4rem] mt-20 font-[200] max-sm:mt-10 max-sm:justify-start`}
     >
       <button
         onClick={() => setActiveGenre("all")}
-        className={`px-10 py-5 border-[1px] border-[#dddddd] rounded-[4rem] ${
+        className={`max-sm:px-8 max-sm:text-[1.3rem] max-sm:py-3 px-10 py-5 border-[1px] border-[#dddddd] rounded-[4rem] ${
           activeGenre === "all" ? "bg-black border-none text-white " : ""
         }`}
       >
@@ -40,7 +40,7 @@ const Filter = ({
       </button>
       <button
         onClick={() => setActiveGenre("landing")}
-        className={`px-10 py-5 border-[1px] border-[#dddddd] rounded-[4rem] ${
+        className={`max-sm:px-8 max-sm:text-[1.3rem] max-sm:py-3 px-10 py-5 border-[1px] border-[#dddddd] rounded-[4rem] ${
           activeGenre === "landing" ? "bg-black border-none text-white " : ""
         }`}
       >
@@ -48,7 +48,7 @@ const Filter = ({
       </button>
       <button
         onClick={() => setActiveGenre("application")}
-        className={`px-10 py-5 border-[1px] border-[#dddddd] rounded-[4rem] ${
+        className={`max-sm:px-8 max-sm:text-[1.3rem] max-sm:py-3 px-10 py-5 border-[1px] border-[#dddddd] rounded-[4rem] ${
           activeGenre === "application"
             ? "bg-black border-none text-white "
             : ""
@@ -58,20 +58,6 @@ const Filter = ({
       </button>
     </motion.div>
   );
-};
-
-const showAnimationVariant = {
-  offscreen: {
-    opacity: 0,
-  },
-  onscreen: {
-    opacity: 1,
-
-    transition: {
-      duration: 0.8,
-      ease: easeInOut,
-    },
-  },
 };
 
 export default Filter;

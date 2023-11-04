@@ -85,8 +85,7 @@ const Work = () => {
           </div>
         );
       })}
-      <div className="flex flex-col mt-10">
-        <BsArrowDownLeft className="w-[30%] text-[1.7rem]  ml-48  mb-7" />
+      <div className="flex flex-col mt-4 self-center">
         <p
           onClick={() => {
             active.setActiveLink("Work");
@@ -94,7 +93,7 @@ const Work = () => {
               scroll: false,
             });
           }}
-          className="cursor-pointer  pl-10  text-[2rem] border-b-2 w-[80%] mx-auto border-b-slate-100"
+          className="cursor-pointer w-full px-7 py-4 rounded-3xl  text-[1.4rem] border-[1px] mb-24  mx-auto "
         >
           See More work
         </p>

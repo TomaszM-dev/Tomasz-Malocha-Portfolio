@@ -27,7 +27,7 @@ const AboutPage = () => {
 
   return (
     <Page>
-      <main className="max-w-[1700px] mx-auto">
+      <main className=" ">
         <Landing />
         <Skills />
         <Experience />

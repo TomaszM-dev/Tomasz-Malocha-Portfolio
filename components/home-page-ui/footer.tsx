@@ -16,21 +16,21 @@ const Footer = ({ info, title }: { info: string; title: string }) => {
   return (
     <div
       ref={container}
-      className="bg-black pt-10 rounded-t-3xl flex flex-col text-white relative whitespace-nowrap items-center overflow-hidden  "
+      className="bg-black pt-10 rounded-t-3xl flex flex-col text-white relative  items-center overflow-hidden  "
     >
-      <div className="mx-auto flex justify-center items-center h-[20rem] max-sm:h-[12rem] mt-10 xl:mt-28 overflow-x-hidden relative  w-full">
+      <div className="mx-auto flex justify-center items-center h-[20rem] max-sm:h-[12rem] mt-10 xl:mt-28 overflow-x-hidden relative w-full ">
         <h2
           ref={textSlide}
-          className="text-[#383737] opacity-40 whitespace-nowrap z-4  mx-auto top-0 left-[0%]  font-bold text-[14rem] uppercase absolute z-4 xl:left-[-5%]  lg:top-[1]  xl:text-[15rem]  max-sm:top-[-4] max-sm:text-[18rem] max-sm:left-[-80%]  "
+          className="text-[#646464] max-sm:text-[16rem] opacity-40 text-[12rem] xl:text-[15rem] uppercase absolute font-[500] whitespace-nowrap"
         >
           {title}
         </h2>
-        <motion.p className=" text-center mx-auto max-sm:text-start  z-7     max-sm:w-[100%] text-[2.1rem] leading-[3rem] max-sm:px-10 w-[50%] xl:w-[60%] ">
+        <motion.p className=" text-center mx-auto max-sm:text-center  z-7     max-sm:w-[100%] text-[2.1rem] leading-[3rem] max-sm:px-10 w-[50%] xl:w-[60%]">
           {info.split(" ").map((word, index) => {
             return (
               <motion.span
                 key={index}
-                className="leading-[2.8rem]  text-[2.1rem] xl:text-[2.5rem] relative overflow-hidden inline-flex ml-1"
+                className="leading-[2.8rem] ml-3 text-[2.1rem] xl:text-[2.5rem]  overflow-hidden inline-flex"
               >
                 <motion.span
                   variants={descText}
@@ -46,7 +46,7 @@ const Footer = ({ info, title }: { info: string; title: string }) => {
           })}
         </motion.p>
       </div>
-      <p className="text-[1.4rem] border-[1px] border-[#afafaf4e] px-6 py-5 rounded-xl ">
+      <p className="text-[1.4rem] max-sm:mt-10 border-[1px] border-[#afafaf4e] px-6 py-5 rounded-xl ">
         tomekmalocha@gmail.com
       </p>
       <motion.div

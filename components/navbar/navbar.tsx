@@ -36,6 +36,7 @@ const Navbar = () => {
   const header = useRef(null);
   const [isActive, setIsActive] = useState(false);
   const button = useRef(null);
+  const button2 = useRef(null);
 
   useEffect(() => {
     let cur = "/";
@@ -74,7 +75,7 @@ const Navbar = () => {
         ref={header}
         className={`${
           pathname === "/" ? "bg-[#C8C6C9] text-white" : "text-black"
-        } flex w-full items-center justify-between  px-10 pt-9 text-[1.3rem]  transition-all delay-1000`}
+        } flex w-full items-center justify-between  px-4 pt-9 text-[1.3rem]  transition-all delay-1000`}
       >
         <>
           <Link
@@ -141,12 +142,13 @@ const Navbar = () => {
           <div
             className={`w-[40%] bg-white h-[2px]  relative z-40 after:content-[""]  after:block after:h-[2px] after:w-[100%] after:m-auto after:bg-white after:relative after:top-[-10px]  before:content-[""] before:block before:h-[2px] before:w-[100%] before:m-auto before:bg-white before:relative before:top-[9px]  after:transition-all before:transition-all duration-300${
               isActive
-                ? "after:transform after:rotate-45 after:top-[-1px]  before:transform before:rotate-[-45deg] before:top-[3px] h-0"
+                ? "after:transform after:rotate-45 after:top-[1px]  before:transform before:rotate-[-45deg] before:top-[2px] h-[0px]"
                 : ""
             }`}
           ></div>
         </div>
       </div>
+
       <AnimatePresence mode="wait">
         {isActive && (
           <HamburgerNav

@@ -85,9 +85,9 @@ const Hero = () => {
         viewport={{ once: true }}
         className="z-1  whitespace-nowrap mt-[17rem] xl:mt-[17rem] text-white h-full xl:w-[800px]  w-[740px] flex justify-between mx-auto max-md:items-end max-md:mt-0 max-md:px-10  "
       >
-        <div data-scroll data-scroll-speed="0.2" className="flex flex-col">
-          <BsArrowDownLeft className="text-[1.7rem]  self-end mb-7" />
-          <h1 className="text-[1.5rem] max-md:text-[2rem] xl:text-[1.8rem] max-md:mb-10 ">
+        <div className=" flex flex-col">
+          <BsArrowDownLeft className="text-[1.7rem]  self-end mb-7 relative" />
+          <h1 className="text-[1.5rem] max-md:text-[2rem] xl:text-[1.8rem] max-md:mb-10 z-4 relative ">
             Next.js Full Stack <br /> Developer
           </h1>
         </div>

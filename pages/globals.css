@@ -7,6 +7,10 @@ body {
   margin: 0;
 }
 
+h1 {
+  font-size: calc(clamp(3.25em, 7vw, 8em) * 0.875);
+}
+
 .svg {
   animation: fill 2s ease forwards 2.5s;
 }

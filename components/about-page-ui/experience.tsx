@@ -12,13 +12,16 @@ const Experience = () => {
     "The will to win, the desire to succeed, the urge to reach your full potential… these are the keys that will unlock the door to personal excellence.” - Confucius";
 
   return (
-    <div ref={container} className=" w-full mt-28 flex flex-col px-10">
-      <h3 className="text-end text-[2rem]  w-[80%]  font-bold  self-end">
+    <div
+      ref={container}
+      className="max-w-[1700px] mx-auto w-full mt-28 flex flex-col px-10"
+    >
+      <h3 className="text-end text-[2rem] max-sm:self-start max-sm:text-start max-sm:w-[100%]  w-[80%]  font-bold  self-end">
         {phrase.split(" ").map((word, index) => {
           return (
             <motion.span
               key={index}
-              className="text-[1.9rem]  relative overflow-hidden inline-flex ml-1"
+              className="text-[1.8rem]  max-sm:font-[300] max-sm:leading-[1.6rem] relative overflow-hidden inline-flex ml-1"
             >
               <motion.span
                 variants={descText}
@@ -33,16 +36,16 @@ const Experience = () => {
           );
         })}
       </h3>
-      <div className="flex gap-10  mt-28 text-[2rem]">
+      <div className="flex gap-10  max-sm:mt-20 mt-28 text-[2rem] max-sm:border-b-[1px]">
         <p> My experience</p>
-        <BsArrowDownRight className="mt-4" />
+        <BsArrowDownRight className="mt-4 max-sm:hidden" />
       </div>
-      <div className="flex gap-10 mx-auto">
+      <div className="flex gap-10 mx-auto max-lg:flex-col">
         <motion.div
           variants={fadeIn("right", 0.2)}
           initial="hidden"
           whileInView={"show"}
-          className="relative w-[30rem] h-[16rem]  mt-20 overflow-hidden flex items-center justify-center px-8 "
+          className="relative w-[30rem] h-[16rem]  mt-20 overflow-hidden flex items-center justify-center px-8 max-lg:w-[80%] max-lg:mx-auto max-sm:w-[100%] max-sm:mt-18 "
         >
           <div className="flex flex-col  text-[1.6rem]  ">
             <h4 className=" ">
@@ -60,7 +63,7 @@ const Experience = () => {
           variants={fadeIn("left", 0.2)}
           initial="hidden"
           whileInView={"show"}
-          className="relative w-[60%]   mt-20 overflow-hidden flex items-center justify-center px-8 "
+          className="relative w-[60%]   mt-20 overflow-hidden flex items-center justify-center px-8 max-lg:w-[80%] max-lg:mx-auto max-lg:py-8 max-lg:mt-4 max-sm:w-[100%]  "
         >
           <div className=" flex flex-col  text-[1.6rem]  ">
             <h4 className=" ">

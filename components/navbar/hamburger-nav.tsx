@@ -12,6 +12,7 @@ import {
 import Link from "next/link";
 import { useNavLink } from "@/nav-store";
 import CurveNav from "../curves/curve-nav";
+import { BsGithub, BsInstagram, BsLinkedin } from "react-icons/bs";
 
 const navItems = [
   {
@@ -54,9 +55,9 @@ const HamburgerNav = ({ setIsActive, isActive }) => {
         initial="initial"
         exit="exit"
         animate="animate"
-        className="h-screen origin-top-right max-md:w-full w-[28rem] fixed right-0 top-0 text-white z-20  bg-[#101010] "
+        className="h-screen origin-top-right max-md:w-full w-[28rem] xl:w-[35rem] fixed right-0 top-0 text-white z-20  bg-[#101010] "
       >
-        <div className="w-full  mt-48 px-20  h-full box-border flex flex-col   ">
+        <div className="w-full  mt-48 px-20  h-full box-border flex flex-col    ">
           <motion.p
             variants={fadeIn("up", 0)}
             initial="hidden"
@@ -81,7 +82,7 @@ const HamburgerNav = ({ setIsActive, isActive }) => {
             {navItems.map((link, index) => (
               <motion.div variants={menuLinkVars} key={index}>
                 <p
-                  className="text-[3rem] leading-[3.4rem] cursor-pointer"
+                  className="text-[3.6rem] max-sm:text-[3.3rem] leading-[3.8rem] cursor-pointer"
                   suppressHydrationWarning
                   onClick={() => handleClick(link)}
                 >
@@ -99,12 +100,22 @@ const HamburgerNav = ({ setIsActive, isActive }) => {
             variants={fadeIn("down", 0)}
             initial="hidden"
             whileInView={"show"}
-            className="flex gap-6  max-sm:gap-10 text-[1rem]"
+            className="flex gap-6  max-sm:gap-10 text-[1.1rem] max-sm:hidden"
           >
             <p>LinkedIn</p>
             <p>Instagram</p>
             <p>Github</p>
             <p>Resume</p>
+          </motion.div>
+          <motion.div
+            variants={fadeIn("down", 0)}
+            initial="hidden"
+            whileInView={"show"}
+            className="flex gap-6 md:hidden max-sm:gap-6 text-[1.6rem]"
+          >
+            <BsGithub />
+            <BsLinkedin />
+            <BsInstagram />
           </motion.div>
         </div>
         <CurveNav />

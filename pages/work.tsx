@@ -15,12 +15,11 @@ import Link from "next/link";
 export const up = {
   initial: {
     opacity: 0,
-
     height: "12rem",
   },
   animate: {
     opacity: 1,
-    height: "0rem",
+    height: "1rem",
     transition: { duration: 0.6, ease: [0.33, 1, 0.68, 1], delay: 0.5 },
   },
 };
@@ -52,7 +51,7 @@ const WorkPage = () => {
       <div
         data-scroll
         data-scroll-speed="0.1"
-        className="w-[100%] max-w-[1700px] mt-[11rem]  mx-auto px-28 max-md:px-10  flex flex-col justify-center "
+        className="w-[100%] max-w-[1700px] mt-[11rem]  mx-auto px-28 max-md:px-10  flex flex-col justify-center max-sm:mt-[8rem]  "
       >
         <motion.h1
           variants={upDesc}
@@ -60,7 +59,7 @@ const WorkPage = () => {
           whileInView="animate"
           exit="exit"
           viewport={{ once: true, amount: 0.2 }}
-          className="text-[4.5rem] w-[40rem] xl:text-[5.5rem] xl:w-[50rem] leading-[4.6rem] font-[600] max-md:text-[4rem] max-sm:w-fit max-sm:leading-[3.8rem] max-sm:text-[4.1rem]"
+          className="text-[4.6rem] w-[44rem] xl:text-[5.5rem] xl:w-[55rem] leading-[4.6rem] font-[500] max-md:text-[4rem] max-sm:w-fit max-sm:leading-[3rem] max-sm:text-[3rem] "
         >
           Some of the things I have built
         </motion.h1>
@@ -72,7 +71,7 @@ const WorkPage = () => {
           viewport={{ once: true, amount: 0.2 }}
           className="xl:self-center self-end "
         >
-          <BsArrowDownLeft className=" text-[1.8rem] stroke-black stroke-1 " />
+          <BsArrowDownLeft className=" text-[1.8rem]  " />
         </motion.div>
         <Filter
           setFiltered={setFiltered}
@@ -86,10 +85,10 @@ const WorkPage = () => {
         initial="initial"
         whileInView="animate"
         exit="exit"
-        viewport={{ once: true, amount: 0.2 }}
-        className=" w-full"
+        viewport={{ once: true }}
+        className=" w-full h-[10rem]"
       ></motion.div>
-      <motion.div className="flex flex-col gap-[7rem] max-w-[1700px]  mx-auto mt-[10rem] ">
+      <motion.div className="flex flex-col gap-[7rem] max-sm:gap-[4rem] mb-40 max-w-[1700px]  mx-auto mt-[10rem] max-sm:mt-[5rem] ">
         <AnimatePresence>
           {filtered.map((project, i) => {
             const tech = project.tech;
@@ -98,7 +97,8 @@ const WorkPage = () => {
               <div
                 data-scroll
                 data-scroll-speed="0.1"
-                className={`flex max-lg:flex-col  items-center max-sm:px-10 max-md:px-4 px-20 gap-20 justify-center mx-auto ${
+                className={`flex max-lg:flex-col
+                max-sm:flex-col-reverse  items-center max-sm:px-10 max-md:px-4 px-20 gap-20 justify-center mx-auto ${
                   i % 2 === 1 ? "flex-row-reverse" : ""
                 }`}
                 key={project.info}
@@ -114,11 +114,11 @@ const WorkPage = () => {
                     key={project.number}
                     className="  flex flex-col justify-center"
                   >
-                    <h1 className="ml-[-2rem] max-sm:ml-[0] mb-10 xl:text-[2.3rem] text-[2rem] font-bold ">
+                    <h1 className="ml-[-2rem] max-sm:ml-[0] mb-10 xl:text-[2.3rem] text-[2rem] font-bold  max-sm:mb-4">
                       0{i + 1}
                     </h1>
                     <div className="flex gap-3">
-                      <p className="text-[3.4rem] xl:text-[3.5rem] leading-[3.4rem]">
+                      <p className="text-[3.4rem] max-sm:text-[3rem] xl:text-[3.5rem] leading-[3.4rem]">
                         {project.title}
                       </p>
                       <div className="flex gap-2 text-[1.6rem] xl:text-[1.9rem] xl:gap-4">

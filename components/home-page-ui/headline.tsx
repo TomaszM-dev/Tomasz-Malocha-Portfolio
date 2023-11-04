@@ -41,10 +41,10 @@ const Headline = ({ title, info }: { title: string; info: string }) => {
   const sentence2 = info.split(" ").splice(7).join(" ");
 
   return (
-    <div className=" mx-auto flex justify-center items-center h-[20rem] max-sm:h-[12rem] mt-10 xl:mt-28 overflow-x-hidden relative  ">
+    <div className=" mx-auto flex justify-center items-center h-[20rem] max-sm:h-[12rem] mt-10 xl:mt-28 overflow-x-hidden relative  max-sm:mt-[8rem]">
       <h2
         ref={textSlide}
-        className="absolute  whitespace-nowrap z-4 xl:left-[-5%] top-[-1] lg:top-[1]  left-[-15%]  font-bold xl:text-[15rem] text-[12rem] uppercase text-[#EDEDED] max-sm:top-[-4] max-sm:text-[18rem] max-sm:left-[-80%]  "
+        className="absolute  whitespace-nowrap z-4 xl:left-[-5%] top-[-1] lg:top-[1]  left-[-15%]  font-bold xl:text-[15rem] text-[12rem] uppercase text-[#EDEDED] max-sm:top-[-3] max-sm:text-[18rem] max-sm:left-[-80%]  "
       >
         {title}
       </h2>
