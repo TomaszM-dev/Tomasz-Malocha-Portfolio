@@ -38,7 +38,7 @@ const App = ({ Component, pageProps }) => {
   return (
     <main className={`${abhaya.className} overflow-hidden`}>
       <Head>
-        <title>TomaszMalocha</title>
+        <title>Tomasz Malocha ∘ Portfolio</title>
         <link rel="shortcut icon" href="/images/favicon.ico" />
         <link
           rel="apple-touch-icon"
