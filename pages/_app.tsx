@@ -9,6 +9,14 @@ import SlideUp from "@/components/animations/slide-up";
 import SlideDown from "@/components/animations/slide-down";
 import { usePathname } from "next/navigation";
 import { Abhaya_Libre } from "next/font/google";
+import { Metadata } from "next";
+import favicon from "public/images/favicon.ico";
+import Head from "next/head";
+
+export const metadata: Metadata = {
+  title: "TomaszMalocha",
+  description: "Portfolio website",
+};
 
 const abhaya = Abhaya_Libre({
   subsets: ["latin"],
@@ -28,7 +36,28 @@ const App = ({ Component, pageProps }) => {
   }, []);
 
   return (
-    <main className={abhaya.className}>
+    <main className={`${abhaya.className} overflow-hidden`}>
+      <Head>
+        <title>TomaszMalocha</title>
+        <link rel="shortcut icon" href="/images/favicon.ico" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/images/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/images/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/images/favicon-16x16.png"
+        />
+      </Head>
       <AnimatePresence mode="wait">
         {isLoading && <Preloader />}
       </AnimatePresence>

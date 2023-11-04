@@ -1,11 +1,5 @@
 "use client";
-
-import Preloader from "@/components/preloader/preloader";
-import { AnimatePresence } from "framer-motion";
-
-import Image from "next/image";
 import { useEffect, useState } from "react";
-
 import Page from "@/components/page";
 import Hero from "@/components/home-page-ui/hero";
 import About from "@/components/home-page-ui/about";
@@ -13,8 +7,6 @@ import Headline from "@/components/home-page-ui/headline";
 import Work from "@/components/home-page-ui/work";
 import Footer from "@/components/home-page-ui/footer";
 import Example from "@/components/home-page-ui/gallery";
-import Curve from "@/components/curves/curve";
-import CurveUp from "@/components/curves/curve-up";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);

@@ -63,7 +63,7 @@ const Hero = () => {
         whileInView="animate"
         exit="exit"
         viewport={{ once: true }}
-        className="absolute bottom-16    max-md:mb-60    "
+        className="absolute bottom-16  overflow-hidden  max-md:mb-60    "
       >
         <div
           ref={slider}
@@ -83,7 +83,7 @@ const Hero = () => {
         whileInView="animate"
         exit="exit"
         viewport={{ once: true }}
-        className="z-1  whitespace-nowrap mt-[17rem] xl:mt-[17rem] text-white h-full xl:w-[800px]  w-[740px] flex justify-between mx-auto max-md:items-end max-md:mt-0 max-md:px-10  "
+        className="z-1  whitespace-nowrap mt-[17rem] xl:mt-[17rem] text-white h-full xl:w-[800px]  w-[740px] flex justify-between mx-auto max-md:items-end max-md:mt-0 max-md:px-10   "
       >
         <div data-scroll data-scroll-speed="0.2" className=" flex flex-col">
           <BsArrowDownLeft className="text-[1.7rem]  self-end mb-7 relative" />
