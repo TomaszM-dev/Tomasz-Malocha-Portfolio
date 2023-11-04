@@ -10,7 +10,7 @@ import {
 import { motion } from "framer-motion";
 
 import Page from "@/components/page";
-import { fadeIn } from "@/components/animations/animations";
+import { fadeIn, upDesc } from "@/components/animations/animations";
 
 const ContactPage = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -34,9 +34,10 @@ const ContactPage = () => {
       <main className="w-[100%] max-w-[1500px] mt-[11rem]  mx-auto px-28 max-md:px-10  flex flex-col justify-center max-sm:mt-[8rem] ">
         <BsArrowDownLeft className="self-end text-[1.7rem] max-sm:mb-6" />
         <motion.h1
-          variants={fadeIn("up", 0.4)}
-          initial="hidden"
-          whileInView={"show"}
+          variants={upDesc}
+          initial="initial"
+          whileInView="animate"
+          exit="exit"
           viewport={{ once: true }}
           className="text-[4.6rem] w-[44rem] xl:text-[5.5rem] xl:w-[55rem] leading-[4.6rem] font-[500] max-md:text-[4rem] max-sm:w-fit max-sm:leading-[3rem] max-sm:text-[3rem] lg:mb-20"
         >
@@ -44,9 +45,10 @@ const ContactPage = () => {
         </motion.h1>
 
         <motion.div
-          variants={fadeIn("up", 0.2)}
-          initial="hidden"
-          whileInView={"show"}
+          variants={upDesc}
+          initial="initial"
+          whileInView="animate"
+          exit="exit"
           viewport={{ once: true }}
           className="px-0 flex mt-16 justify-center max-md:flex-col-reverse max-md:px-4  gap-20"
         >

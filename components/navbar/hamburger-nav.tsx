@@ -55,9 +55,9 @@ const HamburgerNav = ({ setIsActive, isActive }) => {
         initial="initial"
         exit="exit"
         animate="animate"
-        className="h-screen origin-top-right max-md:w-full w-[28rem] xl:w-[35rem] fixed right-0 top-0 text-white z-20  bg-[#101010] "
+        className="h-screen origin-top-right max-md:w-full w-[28rem] xl:w-[32rem] fixed right-0 top-0 text-white z-20  bg-[#101010] "
       >
-        <div className="w-full  mt-48 px-20  h-full box-border flex flex-col    ">
+        <div className="w-full  mt-48 px-20 h-full box-border flex flex-col    ">
           <motion.p
             variants={fadeIn("up", 0)}
             initial="hidden"

@@ -56,8 +56,8 @@ const Skills = () => {
           >
             <p className="text-[#7C7B7B] text-[1.4rem] mb-1">01</p>
             <div className="bg-[#dedcdc] w-full h-[1px] mb-7"></div>
-            <h2 className="text-[2rem] mb-7">Front-end tools</h2>
-            <p className="text-[1.2rem] text-[#686868]"> {phrase}</p>
+            <h2 className="text-[2.2rem] mb-7">Front-end tools</h2>
+            <p className="text-[1.3rem] text-[#686868]"> {phrase}</p>
           </motion.div>
           <motion.div
             variants={fadeIn("up", 0.4)}
@@ -68,8 +68,8 @@ const Skills = () => {
           >
             <p className="text-[#7C7B7B] text-[1.4rem] mb-1">02</p>
             <div className="bg-[#dedcdc] w-full h-[1px] mb-7"></div>
-            <h2 className="text-[2rem] mb-7">Frameworks</h2>
-            <p className="text-[1.2rem] text-[#686868]"> {phrase3}</p>
+            <h2 className="text-[2.2rem] mb-7">Frameworks</h2>
+            <p className="text-[1.3rem] text-[#686868]"> {phrase3}</p>
           </motion.div>
           <motion.div
             variants={fadeIn("up", 0.6)}
@@ -80,8 +80,8 @@ const Skills = () => {
           >
             <p className="text-[#7C7B7B] text-[1.4rem] mb-1">03</p>
             <div className="bg-[#dedcdc] w-full h-[1px] mb-7"></div>
-            <h2 className="text-[2rem] mb-7">Libraries</h2>
-            <p className="text-[1.2rem] text-[#686868]"> {phrase2}</p>
+            <h2 className="text-[2.2rem] mb-7">Libraries</h2>
+            <p className="text-[1.3rem] text-[#686868]"> {phrase2}</p>
           </motion.div>
         </div>
       </div>

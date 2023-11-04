@@ -21,7 +21,7 @@ const Experience = () => {
           return (
             <motion.span
               key={index}
-              className="text-[1.8rem]  max-sm:font-[300] max-sm:leading-[1.6rem] relative overflow-hidden inline-flex ml-1"
+              className="text-[2rem]  max-sm:font-[300] max-sm:leading-[1.6rem] relative overflow-hidden inline-flex ml-1"
             >
               <motion.span
                 variants={descText}
@@ -51,7 +51,7 @@ const Experience = () => {
             <h4 className=" ">
               01 <span className="ml-4 "></span>Tech Internship from School 2019
             </h4>
-            <p className="text-[#7e7e7e] px-10 text-[1.2rem] mt-5">
+            <p className="text-[#7e7e7e] px-10 text-[1.3rem] mt-5">
               My school provided us an internship as a students we completed 4
               months of working for tech company
             </p>
@@ -70,11 +70,11 @@ const Experience = () => {
               02 <span className="ml-4 "></span>Project Leader in Buma AS
               2020-2022
             </h4>
-            <p className="text-[#7e7e7e] px-10 text-[1.2rem] mt-5 ">
+            <p className="text-[#7e7e7e] px-10 text-[1.3rem] mt-5 ">
               Though not coding related as a PR I have menaged to develop skills
               that are essential for working in a group of people.
             </p>
-            <p className="text-[#7e7e7e] px-10 text-[1.2rem] mt-5 ">
+            <p className="text-[#7e7e7e] px-10 text-[1.3rem] mt-5 ">
               Skills like: Solving problems, Conflict resolution, Time
               management Stakeholder management, Adaptability
             </p>

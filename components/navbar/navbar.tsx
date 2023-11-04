@@ -75,7 +75,7 @@ const Navbar = () => {
         ref={header}
         className={`${
           pathname === "/" ? "bg-[#C8C6C9] text-white" : "text-black"
-        } flex w-full items-center justify-between  px-4 pt-9 text-[1.3rem]  transition-all delay-1000`}
+        } flex w-full items-center justify-between  px-10 pt-9 max-sm:px-4 text-[1.3rem]  transition-all delay-1000`}
       >
         <>
           <Link

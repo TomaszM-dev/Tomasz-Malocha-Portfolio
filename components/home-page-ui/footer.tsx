@@ -21,7 +21,7 @@ const Footer = ({ info, title }: { info: string; title: string }) => {
       <div className="mx-auto flex justify-center items-center h-[20rem] max-sm:h-[12rem] mt-10 xl:mt-28 overflow-x-hidden relative w-full ">
         <h2
           ref={textSlide}
-          className="text-[#646464] max-sm:text-[16rem] opacity-40 text-[12rem] xl:text-[15rem] uppercase absolute font-[500] whitespace-nowrap"
+          className="text-[#252525] max-sm:text-[16rem] opacity-40 text-[12rem] xl:text-[15rem] uppercase absolute font-[500] whitespace-nowrap"
         >
           {title}
         </h2>

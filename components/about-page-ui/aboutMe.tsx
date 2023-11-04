@@ -17,7 +17,7 @@ const AboutMe = () => {
         />
       </div>
       <div className="w-[50%] flex flex-col   gap-4   h-full max-sm:w-[100%] ">
-        <p className="text-[1.4rem] max-sm:mt-20 max-sm:mb-4 max-sm:leading-[2.rem]">
+        <p className="text-[1.5rem] max-sm:mt-20 max-sm:mb-4 max-sm:leading-[2.rem]">
           Coding serves as my creative canvas, a medium to unravel challenges,
           and a conduit to contribute to the world s betterment through
           technological progress . Beyond coding, I m passionate about
