@@ -82,7 +82,7 @@ const HamburgerNav = ({ setIsActive, isActive }) => {
             {navItems.map((link, index) => (
               <motion.div variants={menuLinkVars} key={index}>
                 <p
-                  className="text-[3.6rem] max-sm:text-[3.3rem] leading-[3.8rem] cursor-pointer"
+                  className="text-[3.4rem] max-sm:text-[3.1rem] leading-[3.8rem] cursor-pointer"
                   suppressHydrationWarning
                   onClick={() => handleClick(link)}
                 >

@@ -63,7 +63,7 @@ const Hero = () => {
         whileInView="animate"
         exit="exit"
         viewport={{ once: true }}
-        className="absolute bottom-16  overflow-hidden  max-md:mb-60    "
+        className="absolute bottom-16    max-md:mb-60    "
       >
         <div
           ref={slider}
