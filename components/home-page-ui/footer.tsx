@@ -2,104 +2,77 @@
 
 import React, { useEffect, useLayoutEffect, useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { BsGithub, BsLinkedin, BsInstagram } from "react-icons/bs";
+import {
+  BsGithub,
+  BsLinkedin,
+  BsInstagram,
+  BsArrowDownLeft,
+} from "react-icons/bs";
 import { descText, fadeIn } from "../animations/animations";
 import Link from "next/link";
+import Image from "next/image";
+import me from "public/images/nav/me-photo.png";
+import { usePathname } from "next/navigation";
 
 const Footer = ({ info, title }: { info: string; title: string }) => {
+  const pathname = usePathname();
   const textSlide = useRef(null);
   const container = useRef(null);
   const isInView = useInView(textSlide);
 
-  const sentence1 = info.split(" ").splice(0, 7).join(" ");
-  const sentence2 = info.split(" ").splice(7).join(" ");
   return (
     <div
-      ref={container}
-      className="bg-black pt-10 rounded-t-3xl flex flex-col text-white relative  items-center overflow-hidden  "
+      className={` w-full  text-white bg-[#030303] flex flex-col relative ${
+        pathname === "/"
+          ? "mt-[-24rem]   max-md:mt-[-27rem] pt-60 max-sm:pt-40"
+          : " pt-36"
+      }`}
     >
-      <div className="mx-auto flex justify-center items-center h-[20rem] max-sm:h-[12rem] mt-10 xl:mt-28 overflow-x-hidden relative w-full ">
-        <h2
-          ref={textSlide}
-          className="text-[#252525] max-sm:text-[16rem] opacity-40 text-[12rem] xl:text-[15rem] uppercase absolute font-[500] whitespace-nowrap"
+      <div className="w-full flex flex-col max-w-[1000px] mx-auto px-4  ">
+        <div className="flex gap-10   max-md:gap-4">
+          <Image
+            alt="me"
+            width={500}
+            height={500}
+            src={me}
+            className="w-[8rem] h-[8rem] max-md:w-[5rem] max-md:h-[5rem]"
+          />
+          <h2 className="text-[3rem] max-md:text-[2.1rem] max-md:leading-[2.5rem] leading-[3.6rem]  w-[60%] max-sm:w-[100%] max-sm:text-[1.9rem]">
+            I am open for hiring, lets work together !
+          </h2>
+          <BsArrowDownLeft className="text-[1.8rem] ml-24 mt-10 max-md:hidden" />
+        </div>
+        <div className="w-full h-[1px] mt-28 max-sm:mx-auto  max-sm:w-[95%] bg-[#313131] max-sm:mt-36"></div>
+        <div
+          // onClick={() => {
+          //   active.setActiveLink("About");
+          //   router.push("/about", {
+          //     scroll: false,
+          //   });
+          // }}
+          data-scroll
+          data-scroll-speed="0.1"
+          className="  cursor-pointer bg-[#0a0a0a] w-fit h-fit text-white font-[200] text-[1.2rem] px-[3rem] py-[5rem] max-sm:py-[3.5rem] max-sm:px-[1.5rem] rounded-[50%] mt-[-6rem] max-sm:mt-[-4rem]   self-end mx-10  "
         >
-          {title}
-        </h2>
-        <motion.p className=" text-center mx-auto max-sm:text-center  z-7     max-sm:w-[100%] text-[2.1rem] leading-[3rem] max-sm:px-10 w-[50%] xl:w-[60%]">
-          {info.split(" ").map((word, index) => {
-            return (
-              <motion.span
-                key={index}
-                className="leading-[2.8rem] ml-3 text-[2.1rem] xl:text-[2.5rem]  overflow-hidden inline-flex"
-              >
-                <motion.span
-                  variants={descText}
-                  custom={index}
-                  animate={isInView ? "open" : "closed"}
-                  key={index}
-                  className=""
-                >
-                  {word}
-                </motion.span>
-              </motion.span>
-            );
-          })}
-        </motion.p>
+          Get in touch
+        </div>
+        <div className="items-center flex w-full  max-sm:flex-col max-sm:gap-4 mt-10 gap-10 ">
+          <p className="text-[1.1rem] w-fit  border-[1px] border-[#afafaf4e] px-8 py-7 rounded-full max-sm:w-full text-center ">
+            tomekmalocha@gmail.com
+          </p>
+          <p className="text-[1.1rem] w-fit  border-[1px] border-[#afafaf4e] px-8 py-7 rounded-full  max-sm:w-full text-center">
+            +48 512 740 494
+          </p>
+        </div>
       </div>
-      <p className="text-[1.4rem] max-sm:mt-10 border-[1px] border-[#afafaf4e] px-6 py-5 rounded-xl ">
-        tomekmalocha@gmail.com
-      </p>
-      <motion.div
-        variants={fadeIn("up", 0)}
-        initial="hidden"
-        whileInView={"show"}
-        exit="exit"
-        className="max-sm:hidden flex gap-20 text-[1.5rem] mt-20 "
-      >
-        <Link target={"_blank"} href="https://www.instagram.com/tommek.23/">
-          Instagram
-        </Link>
-        <Link target={"_blank"} href="https://github.com/TomaszM-dev">
-          Github
-        </Link>
-        <Link
-          target={"_blank"}
-          href="https://www.linkedin.com/in/tomaszmalocha/"
-        >
-          LinkedIn
-        </Link>
-        <p>+48 512 740 494</p>
-      </motion.div>
-      <motion.div
-        variants={fadeIn("up", 0)}
-        initial="hidden"
-        whileInView={"show"}
-        exit="exit"
-        className="sm:hidden flex gap-20 max-sm:gap-8 text-[1.5rem] mt-20 "
-      >
-        {" "}
-        <Link target={"_blank"} href="https://www.instagram.com/tommek.23/">
-          <BsInstagram />
-        </Link>
-        <Link target={"_blank"} href="https://github.com/TomaszM-dev">
-          <BsGithub />
-        </Link>
-        <Link
-          target={"_blank"}
-          href="https://www.linkedin.com/in/tomaszmalocha/"
-        >
-          <BsLinkedin />
-        </Link>
-      </motion.div>
-      <div className="mt-16 w-[93%] h-[1px]  mx-auto  bg-[#afafaf4e]"></div>
-      <div className="flex max-sm:flex-col-reverse max-sm:justify-center max-sm:items-center max-sm:gap-8 justify-between text-[#7b7b7b] w-[93%] mx-auto text-[1.2rem] my-10">
+      <div className=" text-[#7d7d7d] text-[1rem] px-10 py-8 items-center mt-28 flex justify-between">
         <p className="">
-          Code By TomaszM-dev Inspiration: dennissnellenberg.com
+          Code by TomaszM-dev ● Inspiration: dennissnellenberg.com{" "}
         </p>
-        <div className="max-sm:hidden flex gap-4 text-[1.3rem]">
+        <div className="flex gap-4 text-[1.4rem]">
           <BsGithub />
-          <BsInstagram />
           <BsLinkedin />
+          <BsInstagram />
         </div>
       </div>
     </div>

@@ -29,9 +29,9 @@ const AboutPage = () => {
     <Page>
       <main className=" ">
         <Landing />
+        <AboutMe />
         <Skills />
         <Experience />
-        <AboutMe />
         <Footer
           title="Contact Me"
           info="I am open for hiring, lets create something awesome together !"

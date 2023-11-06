@@ -1,17 +1,30 @@
 "use client";
+
+// next react
 import Image from "next/image";
 import Link from "next/link";
-import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
-import me from "public/images/nav/me-photo.png";
 import { usePathname } from "next/navigation";
+import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 
+// anim  photos
 import gsap from "gsap";
 import { AnimatePresence } from "framer-motion";
-import HamburgerNav from "./hamburger-nav";
-import { useNavLink } from "@/nav-store";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
+import me from "public/images/nav/me-photo.png";
 
-const navItems = [
+// comp
+import HamburgerNav from "./hamburger-nav";
+
+// zustand state
+import { useNavLink } from "@/nav-store";
+
+// nav links data
+type navProps = {
+  href: string;
+  title: string;
+};
+
+const navItems: navProps[] = [
   {
     title: "Home",
     href: "/",
@@ -33,17 +46,19 @@ const navItems = [
 const Navbar = () => {
   const active = useNavLink();
   const pathname = usePathname();
+  const [isActive, setIsActive] = useState<boolean>(false);
   const header = useRef(null);
-  const [isActive, setIsActive] = useState(false);
   const button = useRef(null);
   const button2 = useRef(null);
 
+  // closing on path change
   useEffect(() => {
     let cur = "/";
 
     if (isActive) setIsActive(false);
   }, [pathname]);
 
+  // anim
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     gsap.to(button.current, {
@@ -61,6 +76,7 @@ const Navbar = () => {
         onEnterBack: () => {
           gsap.to(
             button.current,
+            // @ts-ignore
             { scale: 0, duration: 0.25, ease: "power1.out" },
             setIsActive(false)
           );
@@ -75,7 +91,7 @@ const Navbar = () => {
         ref={header}
         className={`${
           pathname === "/" ? "bg-[#C8C6C9] text-white" : "text-black"
-        } flex w-full items-center justify-between  px-10 pt-9 max-sm:px-4 text-[1.3rem]  transition-all delay-1000`}
+        } flex w-full items-center justify-between max-sm:pt-6  px-10 pt-9 max-sm:px-4  transition-all delay-1000`}
       >
         <>
           <Link
@@ -98,15 +114,15 @@ const Navbar = () => {
 
         <div
           onClick={() => setIsActive(!isActive)}
-          className="md:hidden pr-5 text-[1.5rem]"
+          className="md:hidden textsm font-[100]"
         >
-          Menu
+          <span className="text-[1rem] font-[200] mr-1">●</span> Menu
         </div>
 
         <div
           data-scroll
           data-scroll-speed="0.05"
-          className="flex text-[1.4rem] font-[300] gap-7  ml-10 max-md:hidden"
+          className="flex text-[1.2rem] xl:text-[1.25rem] gap-7 font-[200]  ml-10 max-md:hidden"
         >
           {navItems.slice(1).map((link) => (
             <>
@@ -120,13 +136,15 @@ const Navbar = () => {
             </>
           ))}
         </div>
-        <div
+        <Link
           data-scroll
           data-scroll-speed="0.05"
-          className={`text-[1.1rem]  max-md:hidden text-white bg-black flex justify-center items-center px-7 rounded-lg py-3 `}
+          href="/TMalochaCV.pdf"
+          target="_blank"
+          className={`xl:text-[1.1rem] px-6 py-3   max-md:hidden text-white bg-black flex justify-center items-center xl:px-7 rounded-lg xl:py-3 `}
         >
           Resume
-        </div>
+        </Link>
       </div>
       {/* header button container */}
       <div ref={button} className={` scale-0 fixed right-2 top-2 z-[50]`}>
@@ -135,14 +153,14 @@ const Navbar = () => {
           onClick={() => {
             setIsActive(!isActive);
           }}
-          className="relative m-[2rem] w-[5.5rem] h-[5.5rem] rounded-full bg-[#1C1D20]
+          className="relative m-[2rem] max-sm:m-[1rem]  w-[5rem] h-[5rem] rounded-full bg-[#000]
           flex cursor-pointer items-center justify-center "
         >
           {/* burger */}
           <div
-            className={`w-[40%] bg-white h-[2px]  relative z-40 after:content-[""]  after:block after:h-[2px] after:w-[100%] after:m-auto after:bg-white after:relative after:top-[-10px]  before:content-[""] before:block before:h-[2px] before:w-[100%] before:m-auto before:bg-white before:relative before:top-[9px]  after:transition-all before:transition-all duration-300${
+            className={`w-[45%] bg-white h-[2px]  relative z-40 after:content-[""]  after:block after:h-[2px] after:w-[100%] after:mx-auto after:bg-white after:relative after:top-[-10px]  before:content-[""] before:block before:h-[2px] before:w-[100%] before:m-auto before:bg-white before:relative before:top-[9px]  after:transition-all before:transition-all duration-300${
               isActive &&
-              "after:transform after:rotate-45 after:top-[-1px]  before:transform before:rotate-[-45deg] before:top-[2px] h-[0px]"
+              "after:transform after:rotate-45 after:top-[-1px]  before:transform before:rotate-[-45deg] before:top-[1px] h-0"
             }`}
           ></div>
         </div>
@@ -153,6 +171,7 @@ const Navbar = () => {
           <HamburgerNav
             isActive={isActive}
             setIsActive={setIsActive}
+            // @ts-ignore
             navItems={navItems}
           />
         )}

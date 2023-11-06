@@ -50,16 +50,19 @@ const About = () => {
   return (
     <div
       ref={description}
-      className="max-w-[1600px] mx-auto flex max-lg:p-10 p-20 mt-10 gap-40 max-lg:gap-14 relative max-lg:flex-col overflow-hidden"
+      className="max-w-[1700px] mx-auto flex max-lg:p-10 p-20 mt-10 max-sm:mt-20 gap-40 max-lg:gap-14 relative max-lg:flex-col overflow-hidden max-sm:p-2"
     >
       <div className="flex-[45%] relative flex flex-col gap-1">
-        <p className="uppercase text-[#AAA5A5]">About me</p>
+        <p className="uppercase text-[#AAA5A5] text-sm mb-2 max-sm:ml-2 ">
+          About me
+        </p>
+
         <p>
           {phrase.split(" ").map((word, index) => {
             return (
               <motion.span
                 key={index}
-                className="leading-[2.8rem] text-[1.9rem] xl:text-[2.1rem] relative overflow-hidden inline-flex ml-1"
+                className="inline-flex ml-2 text-[1.8rem] xl:text-[2rem] font-[300] overflow-hidden"
               >
                 <motion.span
                   variants={descText}
@@ -75,7 +78,19 @@ const About = () => {
           })}
         </p>
 
-        <BsArrowDownLeft className="max-lg:hidden self-center  text-[1.7rem] mt-[7rem]  w-fit mb-7" />
+        <div
+          onClick={() => {
+            active.setActiveLink("About");
+            router.push("/about", {
+              scroll: false,
+            });
+          }}
+          data-scroll
+          data-scroll-speed="0.1"
+          className=" max-sm:hidden cursor-pointer bg-black w-fit h-fit text-white font-[200] text-[1.2rem] px-10 py-16 rounded-[50%] mt-14  ml-0"
+        >
+          About me
+        </div>
       </div>
       <div className="flex-[70%] flex flex-col gap-5 ">
         <motion.div
@@ -83,14 +98,12 @@ const About = () => {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.3 }}
-          className="border-[1px] flex gap-5 p-5 rounded-lg"
+          className="border-[1px] flex gap-5 max-sm:gap-4 p-5 rounded-lg max-sm:px-4"
         >
-          <p className="text-[1.6rem] ">01</p>
+          <p className="text-[1rem] text-[#7e7e7e] max-sm:hidden">01</p>
           <div className="flex flex-col gap-2 ">
-            <h4 className="text-[1.3rem] xl:text-[1.5rem] uppercase">
-              Skill set
-            </h4>
-            <p className="text-[#7E7E7E] text-[1.1rem] xl:text-[1.3rem]">
+            <h4 className="text-[1.4rem] uppercase">Skill set</h4>
+            <p className="text-[#7E7E7E] font-[200]  text-[1.1rem] xl:text-[1.3rem]">
               My favorite technologies to use are: Next.js, React.js as web
               applications, Tailwind for ui design, Prisma (ORM) for access and
               data menagment, TypeScript for type safety and PlanetScale for
@@ -105,12 +118,10 @@ const About = () => {
           viewport={{ once: false, amount: 0.3 }}
           className="border-[1px] flex gap-5 p-5 rounded-lg"
         >
-          <p className="text-[1.6rem]">02</p>
+          <p className="text-[1rem] text-[#7e7e7e] max-sm:hidden">02</p>
           <div className="flex flex-col gap-2 ">
-            <h4 className="text-[1.3rem] uppercase xl:text-[1.5rem] ">
-              Background
-            </h4>
-            <p className="text-[#7E7E7E] text-[1.1rem] xl:text-[1.3rem]">
+            <h4 className="text-[1.4rem] uppercase  ">Background</h4>
+            <p className="text-[#7E7E7E] font-[200]  text-[1.1rem] xl:text-[1.3rem]">
               I have finished IT tech school in 2019, Menage to get a few
               certificates and get a qualifications e12,e13,e14
             </p>
@@ -123,29 +134,17 @@ const About = () => {
           viewport={{ once: false, amount: 0.3 }}
           className="border-[1px] flex gap-5 p-5 rounded-lg"
         >
-          <p className="text-[1.6rem]">03</p>
+          <p className="text-[1rem] text-[#7e7e7e] max-sm:hidden">03</p>
           <div className="flex flex-col gap-2 ">
-            <h4 className="text-[1.3rem] uppercase xl:text-[1.5rem] ">
+            <h4 className="text-[1.3rem] uppercase xl:text-[1.4rem] ">
               Portfolio
             </h4>
-            <p className="text-[#7E7E7E] text-[1.1rem] xl:text-[1.3rem]">
+            <p className="text-[#7E7E7E] text-[1.1rem] font-[200] xl:text-[1.3rem]">
               In my portfolio there are 8 unique projects, 4 of them are full
               stack web applications
             </p>
           </div>
         </motion.div>
-      </div>
-      <div
-        onClick={() => {
-          active.setActiveLink("About");
-          router.push("/about", {
-            scroll: false,
-          });
-        }}
-        ref={seeMore}
-        className=" cursor-pointer max-lg:hidden absolute left-0 xl:left-46 top-[70%] bg-black text-[1.2rem] text-white    px-7  xl:px-20 py-5 rounded-br-full xl:text-[1.4rem] rounded-tr-full w-fit  "
-      >
-        See More about me
       </div>
     </div>
   );

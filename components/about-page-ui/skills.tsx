@@ -16,8 +16,8 @@ const Skills = () => {
     "Next-Auth, micro, next, figma, GitHub, Vercel, Netlify, WordPress-CLI, SEO optimization, Railway, Clerk, Email.js, ZOD, clsx, ";
 
   return (
-    <div className="bg-[#f3f3f3] rounded-3xl ">
-      <div className="max-w-[1700px] flex flex-col gap-10 px-10 pt-28 pb-20  w-full  mx-auto max-sm:pt-10 max-sm:gap-1">
+    <div className="bg-[#f3f3f3] max-sm:mt-10 ">
+      <div className="max-w-[1700px] flex flex-col max-sm:px-4 gap-10 px-10 pt-28 pb-20  w-full  mx-auto max-sm:pt-10 max-sm:gap-1">
         <motion.h2
           ref={textSlide}
           viewport={{ once: true }}
@@ -25,7 +25,7 @@ const Skills = () => {
           initial="initial"
           animate="animate"
           exit="exit"
-          className="text-[3.3rem] max-sm:text-[2.4rem] font-bold"
+          className="tracking-tighter text-[3.3rem] max-sm:text-[2.4rem] font-[500]"
         >
           {headline.split(" ").map((word, index) => {
             return (
@@ -54,10 +54,10 @@ const Skills = () => {
             viewport={{ once: false, amount: 0.3 }}
             className="w-[33%] h-96  flex flex-col max-lg:w-[90%] max-lg:mx-auto max-lg:h-fit"
           >
-            <p className="text-[#7C7B7B] text-[1.4rem] mb-1">01</p>
+            <p className="text-[#7C7B7B] text-[1.1rem] mb-1">01</p>
             <div className="bg-[#dedcdc] w-full h-[1px] mb-7"></div>
-            <h2 className="text-[2.2rem] mb-7">Front-end tools</h2>
-            <p className="text-[1.3rem] text-[#686868]"> {phrase}</p>
+            <h2 className="text-[1.7rem] mb-7">Front-end tools</h2>
+            <p className="text-[1.1rem] font-[200] text-[#686868]"> {phrase}</p>
           </motion.div>
           <motion.div
             variants={fadeIn("up", 0.4)}
@@ -66,10 +66,13 @@ const Skills = () => {
             viewport={{ once: false, amount: 0.3 }}
             className="w-[33%] h-96  flex flex-col  max-lg:w-[90%] max-lg:mx-auto max-lg:h-fit"
           >
-            <p className="text-[#7C7B7B] text-[1.4rem] mb-1">02</p>
+            <p className="text-[#7C7B7B] text-[1.1rem] mb-1">02</p>
             <div className="bg-[#dedcdc] w-full h-[1px] mb-7"></div>
-            <h2 className="text-[2.2rem] mb-7">Frameworks</h2>
-            <p className="text-[1.3rem] text-[#686868]"> {phrase3}</p>
+            <h2 className="text-[1.7rem] mb-7">Frameworks</h2>
+            <p className="text-[1.1rem] font-[200] text-[#686868]">
+              {" "}
+              {phrase3}
+            </p>
           </motion.div>
           <motion.div
             variants={fadeIn("up", 0.6)}
@@ -78,10 +81,13 @@ const Skills = () => {
             viewport={{ once: false, amount: 0.3 }}
             className="w-[33%] h-96  flex flex-col  max-lg:w-[90%] max-lg:mx-auto max-lg:h-fit"
           >
-            <p className="text-[#7C7B7B] text-[1.4rem] mb-1">03</p>
+            <p className="text-[#7C7B7B] text-[1.1rem] mb-1">03</p>
             <div className="bg-[#dedcdc] w-full h-[1px] mb-7"></div>
-            <h2 className="text-[2.2rem] mb-7">Libraries</h2>
-            <p className="text-[1.3rem] text-[#686868]"> {phrase2}</p>
+            <h2 className="text-[1.7rem] mb-7">Libraries</h2>
+            <p className="text-[1.1rem] font-[200] text-[#686868]">
+              {" "}
+              {phrase2}
+            </p>
           </motion.div>
         </div>
       </div>

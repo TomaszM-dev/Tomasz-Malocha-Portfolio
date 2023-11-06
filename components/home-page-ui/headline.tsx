@@ -41,19 +41,19 @@ const Headline = ({ title, info }: { title: string; info: string }) => {
   const sentence2 = info.split(" ").splice(7).join(" ");
 
   return (
-    <div className=" mx-auto flex justify-center items-center h-[20rem] max-sm:h-[12rem] mt-10 xl:mt-28 overflow-hidden relative  max-sm:mt-[8rem]">
+    <div className=" mx-auto flex justify-center items-center h-[20rem]   mt-10 xl:mt-28 overflow-hidden relative  max-sm:mt-[8rem]">
       <h2
         ref={textSlide}
-        className="absolute  whitespace-nowrap z-4 xl:left-[-5%] top-[-1] lg:top-[1]  left-[-15%]  font-bold xl:text-[15rem] text-[12rem] uppercase text-[#EDEDED] max-sm:top-[-3] max-sm:text-[18rem] max-sm:left-[-80%]  "
+        className="absolute  whitespace-nowrap z-4 xl:left-[-5%] top-[-1] lg:top-[1]  left-[-15%]   font-[600] xl:text-[15rem] text-[12rem] uppercase text-[#EDEDED] max-sm:top-[-3] max-sm:text-[18rem] max-sm:left-[-80%]  "
       >
         {title}
       </h2>
-      <motion.p className="text-center mx-auto max-sm:text-start  z-7     max-sm:w-[100%] text-[2.1rem] leading-[3rem] max-sm:px-10 w-[50%] xl:w-[60%] ">
+      <motion.p className="text-center mx-auto max-sm:text-start  z-7     max-sm:w-[100%] text-[2.1rem] leading-[3rem] max-sm:px-2 w-[65%] xl:w-[60%] max-sm:mt-10  ">
         {info.split(" ").map((word, index) => {
           return (
             <motion.span
               key={index}
-              className="leading-[2.8rem]  text-[2.1rem] xl:text-[2.5rem] relative overflow-hidden inline-flex ml-1"
+              className="leading-[2.8rem] max-sm:leading-[2rem]  text-[2.1rem]  xl:text-[2.2rem] relative overflow-hidden inline-flex ml-2 max-lg:text-[1.9rem] max-sm:text-[1.7rem]"
             >
               <motion.span
                 variants={descText}

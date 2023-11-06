@@ -13,23 +13,30 @@ const HorizontalScrollCarousel = () => {
   const targetRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: targetRef,
-    offset: ["start end", "4000px"],
+    offset: ["start end", "end start"],
   });
 
-  const x = useTransform(scrollYProgress, [0, 0.4], ["10%", "-60%"]);
+  const x = useTransform(scrollYProgress, [0, 0.8], ["-50%", "0%"]);
+  const height = useTransform(scrollYProgress, [0, 0.8], [50, 0]);
 
   return (
     <section
       ref={targetRef}
-      className="relative h-[50vh] mx-auto max-w-[1900px] xl:h-[55vh] mt-[-3rem]   xl:mt-[0rem]bg-[#ffffff] overflow-hidden"
+      className="relative h-[60rem]   z-10 mx-auto max-w-[1900px] mt-10 pt-[3rem]   xl:mt-[0rem]bg-[#ffffff] overflow-hidden"
     >
-      <div className="relative top-0 flex h-[50vh]  items-center overflow-hidden">
+      <div className="relative top-0 left-0 flex  items-center overflow-hidden">
         <motion.div style={{ x }} className="flex gap-4">
           {cards.map((card) => {
             return <Card card={card} key={card.id} />;
           })}
         </motion.div>
       </div>
+      <motion.div
+        style={{ height }}
+        className="bg-red relative mt-[10rem] h-96 "
+      >
+        <div className="h-[1550%] max-lg:h-[1200%] max-sm:h-[680%] w-[120%] absolute left-[-10%] circle z-3 shadow-black  bg-white"></div>
+      </motion.div>
     </section>
   );
 };
@@ -38,7 +45,7 @@ const Card = ({ card }) => {
   return (
     <div
       key={card.id}
-      className="group relative xl:h-[300px] xl:w-[330px] h-[265px] w-[290px] overflow-hidden bg-[#f0efef] "
+      className="group relative xl:h-[350px] xl:w-[430px] h-[265px] w-[300px] overflow-hidden bg-[#f0efef] "
     >
       <div
         style={{
@@ -46,7 +53,7 @@ const Card = ({ card }) => {
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
-        className=" absolute inset-6 z-0 transition-transform duration-300 group-hover:scale-110"
+        className=" absolute inset-6 z-0 transition-transform duration-300 group-hover:scale-110 "
       ></div>
     </div>
   );

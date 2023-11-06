@@ -34,10 +34,7 @@ export default function Home() {
       />
       <Work />
       <Example />
-      <Footer
-        title="Contact Me"
-        info="I am open for hiring, lets create something awesome together !"
-      />
+      <Footer />
     </Page>
   );
 }

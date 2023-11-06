@@ -51,7 +51,7 @@ const WorkPage = () => {
       <div
         data-scroll
         data-scroll-speed="0.1"
-        className="w-[100%] max-w-[1700px] mt-[11rem]  mx-auto px-28 max-md:px-10  flex flex-col justify-center max-sm:mt-[8rem]  "
+        className="w-[100%] max-w-[1700px] mt-[11rem]  mx-auto px-28 max-md:px-10  flex flex-col justify-center max-sm:mt-[8rem] max-sm:px-4 "
       >
         <motion.h1
           variants={upDesc}
@@ -59,7 +59,7 @@ const WorkPage = () => {
           whileInView="animate"
           exit="exit"
           viewport={{ once: true, amount: 0.2 }}
-          className="text-[4.6rem] w-[44rem] xl:text-[5.5rem] xl:w-[55rem] leading-[4.6rem] font-[500] max-md:text-[4rem] max-sm:w-fit max-sm:leading-[3rem] max-sm:text-[3rem] "
+          className="text-[4.6rem] font-[300] w-[44rem] xl:text-[5.8rem] xl:w-[55rem] leading-[4.6rem] xl:leading-[5.5rem] tracking-tighter max-md:text-[4rem]  max-sm:leading-[3.4rem] max-sm:text-[3.4rem]  max-sm:w-full "
         >
           Some of the things I have built
         </motion.h1>
@@ -69,7 +69,7 @@ const WorkPage = () => {
           whileInView="animate"
           exit="exit"
           viewport={{ once: true, amount: 0.2 }}
-          className="xl:self-center self-end "
+          className="xl:self-center self-end max-sm:mt-4 "
         >
           <BsArrowDownLeft className=" text-[1.8rem]  " />
         </motion.div>
@@ -88,7 +88,7 @@ const WorkPage = () => {
         viewport={{ once: true }}
         className=" w-full h-[10rem]"
       ></motion.div>
-      <motion.div className="flex flex-col gap-[7rem] max-sm:gap-[4rem] mb-40 max-w-[1700px]  mx-auto mt-[10rem] max-sm:mt-[5rem] ">
+      <motion.div className="flex flex-col  gap-[7rem] max-sm:gap-[6rem] mb-40 max-w-[1700px]   mx-auto mt-[10rem] max-sm:mt-[5rem] ">
         <AnimatePresence>
           {filtered.map((project, i) => {
             const tech = project.tech;
@@ -97,8 +97,7 @@ const WorkPage = () => {
               <div
                 data-scroll
                 data-scroll-speed="0.1"
-                className={`flex max-lg:flex-col
-                max-sm:flex-col-reverse  items-center max-sm:px-10 max-md:px-4 px-20 gap-20 justify-center mx-auto ${
+                className={`flex max-lg:flex-col  items-center max-sm:px-4 px-20 gap-20 justify-center mx-auto max-sm:flex-col-reverse  ${
                   i % 2 === 1 ? "flex-row-reverse" : ""
                 }`}
                 key={project.info}
@@ -114,14 +113,14 @@ const WorkPage = () => {
                     key={project.number}
                     className="  flex flex-col justify-center"
                   >
-                    <h1 className="ml-[-2rem] max-sm:ml-[0] mb-10 xl:text-[2.3rem] text-[2rem] font-bold  max-sm:mb-4">
-                      0{i + 1}
+                    <h1 className="ml-[-2rem] max-sm:ml-[0] mb-10 xl:text-[1.8rem] text-[1.7rem] font-bold  max-sm:text-[1.4rem] max-sm:mb-4">
+                      {project.number}
                     </h1>
                     <div className="flex gap-3">
-                      <p className="text-[3.4rem] max-sm:text-[3rem] xl:text-[3.5rem] leading-[3.4rem]">
+                      <p className="text-[3rem] xl:text-[3.2rem]">
                         {project.title}
                       </p>
-                      <div className="flex gap-2 text-[1.6rem] xl:text-[1.9rem] xl:gap-4">
+                      <div className="flex gap-2 text-[1.4rem] xl:text-[1.6rem] xl:gap-4">
                         <Link target={"_blank"} href={project.githubSite}>
                           <BsGithub />
                         </Link>
@@ -130,13 +129,13 @@ const WorkPage = () => {
                         </Link>
                       </div>
                     </div>
-                    <div className="text-[1.4rem] flex gap-2 mt-4 font-bold ">
+                    <div className="text-[1.3rem] flex gap-2 mt-4 font-[500] ">
                       <p className="uppercase ">{project.type} &#x2022;</p>
                       <Link target={"_blank"} href={project.liveSite}>
                         See Live
                       </Link>
                     </div>
-                    <p className="text-[1.2rem] xl:text-[1.6rem] mt-3 text-[#7E7E7E] font-[400]">
+                    <p className="text-[1.3rem] xl:text-[1.5rem] font-[200] mt-3 text-[#7E7E7E] ">
                       {project.info}
                     </p>
                     <div className="flex mt-6 gap-3 text-[1.7rem]">

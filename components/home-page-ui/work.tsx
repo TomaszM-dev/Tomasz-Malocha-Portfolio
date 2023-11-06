@@ -18,7 +18,7 @@ const Work = () => {
   return (
     <div
       ref={gallery}
-      className="flex flex-col gap-[7rem] max-w-[1700px] max-sm:gap-[3rem] xl:mt-[10rem] mx-auto mt-[6rem]"
+      className="flex flex-col gap-[7rem] max-w-[1700px] max-sm:gap-[3rem] xl:mt-[10rem] mx-auto mt-[6rem] max-sm:mt-10"
     >
       {projects.slice(0, 2).map((project, i) => {
         const tech = project.tech;
@@ -27,7 +27,7 @@ const Work = () => {
           <div
             data-scroll
             data-scroll-speed="0.1"
-            className={`flex max-lg:flex-col  items-center max-sm:px-10 px-20 gap-20 justify-center mx-auto ${
+            className={`flex max-lg:flex-col  items-center max-sm:px-4 px-20 gap-20 justify-center mx-auto ${
               i === 1 ? "flex-row-reverse" : ""
             }`}
             key={project.info}
@@ -43,14 +43,14 @@ const Work = () => {
                 key={project.number}
                 className="  flex flex-col justify-center"
               >
-                <h1 className="ml-[-2rem] max-sm:ml-[0] mb-10 xl:text-[2.3rem] text-[2rem] font-bold ">
+                <h1 className="ml-[-2rem] max-sm:ml-[0] mb-10 xl:text-[1.8rem] text-[1.7rem] font-bold  max-sm:text-[1.4rem] max-sm:mb-4">
                   {project.number}
                 </h1>
                 <div className="flex gap-3">
-                  <p className="text-[3.4rem] xl:text-[3.5rem]">
+                  <p className="text-[3rem] xl:text-[3.2rem]">
                     {project.title}
                   </p>
-                  <div className="flex gap-2 text-[1.6rem] xl:text-[1.9rem] xl:gap-4">
+                  <div className="flex gap-2 text-[1.4rem] xl:text-[1.6rem] xl:gap-4">
                     <Link target={"_blank"} href={project.githubSite}>
                       <BsGithub />
                     </Link>
@@ -59,13 +59,13 @@ const Work = () => {
                     </Link>
                   </div>
                 </div>
-                <div className="text-[1.4rem] flex gap-2 mt-4 font-bold ">
+                <div className="text-[1.3rem] flex gap-2 mt-4 font-[500] ">
                   <p className="uppercase ">{project.type} &#x2022;</p>
                   <Link target={"_blank"} href={project.liveSite}>
                     See Live
                   </Link>
                 </div>
-                <p className="text-[1.2rem] xl:text-[1.6rem] mt-3 text-[#7E7E7E] font-[400]">
+                <p className="text-[1.3rem] xl:text-[1.5rem] font-[200] mt-3 text-[#7E7E7E] ">
                   {project.info}
                 </p>
                 <div className="flex mt-6 gap-3 text-[1.7rem]">

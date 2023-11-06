@@ -8,7 +8,7 @@ import Preloader from "@/components/preloader/preloader";
 import SlideUp from "@/components/animations/slide-up";
 import SlideDown from "@/components/animations/slide-down";
 import { usePathname } from "next/navigation";
-import { Abhaya_Libre } from "next/font/google";
+import { DM_Sans } from "next/font/google";
 import { Metadata } from "next";
 import favicon from "public/images/favicon.ico";
 import Head from "next/head";
@@ -18,9 +18,9 @@ export const metadata: Metadata = {
   description: "Portfolio website",
 };
 
-const abhaya = Abhaya_Libre({
+const abhaya = DM_Sans({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["300", "200", "400", "500", "600", "700"],
 });
 const App = ({ Component, pageProps }) => {
   const router = useRouter();
@@ -32,7 +32,7 @@ const App = ({ Component, pageProps }) => {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-    }, 2500);
+    }, 200);
   }, []);
 
   return (

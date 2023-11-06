@@ -5,7 +5,7 @@ import hero from "public/images/hero/hero.png";
 import gsap from "gsap";
 import { useEffect, useRef } from "react";
 
-import { BsArrowDownLeft } from "react-icons/bs";
+import { BsArrowDownLeft, BsArrowDownRight } from "react-icons/bs";
 import { GiDiamonds } from "react-icons/gi";
 
 import { motion } from "framer-motion";
@@ -63,11 +63,11 @@ const Hero = () => {
         whileInView="animate"
         exit="exit"
         viewport={{ once: true }}
-        className="absolute bottom-16    max-md:mb-60    "
+        className="absolute bottom-10    max-md:mb-60    "
       >
         <div
           ref={slider}
-          className="m-0 flex xl:text-[12rem] whitespace-nowrap    text-white text-[11rem] font-[600] relative"
+          className="m-0 flex text-[11rem] xl:text-[13rem] whitespace-nowrap    text-white  font-[400] tracking-tight relative"
         >
           <p className="relative m-0" ref={firstText}>
             Tomasz Malocha -
@@ -83,18 +83,23 @@ const Hero = () => {
         whileInView="animate"
         exit="exit"
         viewport={{ once: true }}
-        className="z-1  whitespace-nowrap mt-[17rem] xl:mt-[17rem] text-white h-full xl:w-[800px]  w-[740px] flex justify-between mx-auto max-md:items-end max-md:mt-0 max-md:px-10   "
+        className="z-1  whitespace-nowrap mt-[17rem] xl:mt-[17rem] text-white h-full xl:w-[800px]  w-[740px] flex justify-between mx-auto max-md:items-end max-md:mt-0 max-md:px-10  max-sm:px-6  "
       >
-        <div data-scroll data-scroll-speed="0.2" className=" flex flex-col">
-          <BsArrowDownLeft className="text-[1.7rem]  self-end mb-7 relative" />
-          <h1 className="text-[1.5rem] max-md:text-[2rem] xl:text-[1.8rem] max-md:mb-20 z-4 relative ">
+        <div
+          data-scroll
+          data-scroll-speed="0.2"
+          className=" flex flex-col text-[1.4rem] xl:text-[1.7rem]"
+        >
+          <BsArrowDownRight className=" md:hidden  self-start mb-7 max-sm:mb-4 relative" />
+          <BsArrowDownLeft className="text[1.4rem] max-md:hidden  self-end mb-7 max-sm:mb-4 relative" />
+          <h1 className="text-[1.6rem] xl:text-[1.7rem] font-[300] max-md:mb-20 z-4 relative max-sm:font-[200] max-sm:mb-10 max-sm:text-[1.9rem] ">
             Next.js Full Stack <br /> Developer
           </h1>
         </div>
         <div
           data-scroll
           data-scroll-speed="0.2"
-          className="mt-5 xl:text-[1.4rem] bg-black/90 flex items-center justify-center rounded-full w-fit h-fit px-8 py-9 xl:px-6 xl:py-7 max-md:hidden "
+          className="max-sm:hidden cursor-pointer bg-black w-fit h-fit text-white font-[200] text-[1.2rem] px-8 py-9 rounded-[50%] mt-8  ml-10 "
         >
           <h2 className="">
             Based In <br /> Poland

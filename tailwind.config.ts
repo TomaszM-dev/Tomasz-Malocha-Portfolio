@@ -9,8 +9,8 @@ const config: Config = {
   screens: {
     md: "750px",
     lg: "1060px",
-    xlg: "1350px",
-    xl: "1500px",
+
+    xl: "1600px",
     xxl: "1700px",
   },
   plugins: [],

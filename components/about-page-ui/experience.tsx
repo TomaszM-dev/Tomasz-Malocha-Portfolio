@@ -14,14 +14,14 @@ const Experience = () => {
   return (
     <div
       ref={container}
-      className="max-w-[1700px] mx-auto w-full mt-28 flex flex-col px-10"
+      className="max-w-[1700px] mx-auto w-full max-sm:my-10 mt-28 flex flex-col px-10 max-sm:px-4 my-60"
     >
-      <h3 className="text-end text-[2rem] max-sm:self-start max-sm:text-start max-sm:w-[100%]  w-[80%]  font-bold  self-end">
+      <h3 className="text-end text-[2rem] max-sm:self-start max-sm:text-start max-sm:w-[100%]  w-[80%]    self-end">
         {phrase.split(" ").map((word, index) => {
           return (
             <motion.span
               key={index}
-              className="text-[2rem]  max-sm:font-[300] max-sm:leading-[1.6rem] relative overflow-hidden inline-flex ml-1"
+              className="text-[2rem] max-lg:text-[1.9rem] font-[500]  max-sm:font-[300] max-sm:leading-[1.6rem] relative overflow-hidden inline-flex ml-1 max-sm:text-[1.8rem]"
             >
               <motion.span
                 variants={descText}
@@ -36,12 +36,49 @@ const Experience = () => {
           );
         })}
       </h3>
-      <div className="flex gap-10  max-sm:mt-20 mt-28 text-[2rem] max-sm:border-b-[1px]">
-        <p> My experience</p>
-        <BsArrowDownRight className="mt-4 max-sm:hidden" />
-      </div>
+
       <div className="flex gap-10 mx-auto max-lg:flex-col">
-        <motion.div
+        <div className="flex gap-28 mt-16 max-lg:flex-col max-lg:gap-14 max-lg:mb-14 ">
+          <motion.div
+            variants={fadeIn("up", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.3 }}
+            className="w-[45%] mt-10   flex flex-col max-lg:w-[90%] max-lg:mx-auto max-lg:h-fit"
+          >
+            <p className="text-[#7C7B7B] text-[1.1rem] mb-1">01</p>
+            <div className="bg-[#dedcdc] w-full h-[1px] mb-7"></div>
+            <h2 className="text-[1.7rem]  mb-7">
+              Tech Internship from School 2019
+            </h2>
+            <p className="text-[1.1rem] font-[200] §text-[#686868]">
+              My school provided us an internship as a students we completed 4
+              months of working for tech company
+            </p>
+          </motion.div>
+          <motion.div
+            variants={fadeIn("up", 0.4)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.3 }}
+            className="w-[55%]  mt-10  flex flex-col  max-lg:w-[90%] max-lg:mx-auto max-lg:h-fit"
+          >
+            <p className="text-[#7C7B7B] text-[1.1rem] mb-1">02</p>
+            <div className="bg-[#dedcdc] w-full h-[1px] mb-7"></div>
+            <h2 className="text-[1.7rem]  mb-7 ">
+              Project Leader in Buma AS 2020-2022
+            </h2>
+            <p className=" font-[200] text-[#686868]">
+              <p className=" text-[1.1rem]  ">
+                Though not coding related as a PR I have menaged to develop
+                skills that are essential for working in a group of people.
+                Skills like: Solving problems, Conflict resolution, Time
+                management Stakeholder management, Adaptability
+              </p>
+            </p>
+          </motion.div>
+        </div>
+        {/* <motion.div
           variants={fadeIn("right", 0.2)}
           initial="hidden"
           whileInView={"show"}
@@ -56,8 +93,6 @@ const Experience = () => {
               months of working for tech company
             </p>
           </div>
-          <div className="w-[60%] h-[60%] border-t-[2px] rounded-tl-3xl  border-l-[2px] absolute top-0 bottom-auto right-auto left-0 "></div>
-          <div className="w-[60%] h-[60%] border-b-[2px] rounded-br-3xl  border-r-[2px] absolute top-auto bottom-0 right-0 left-auto "></div>
         </motion.div>
         <motion.div
           variants={fadeIn("left", 0.2)}
@@ -79,9 +114,7 @@ const Experience = () => {
               management Stakeholder management, Adaptability
             </p>
           </div>
-          <div className="w-[60%] h-[60%] border-b-[2px] rounded-bl-3xl  border-l-[2px] absolute top-auto bottom-0 right-auto left-0 "></div>
-          <div className="w-[60%] h-[60%] border-t-[2px] rounded-tr-3xl  border-r-[2px] absolute top-0 bottom-auto right-0 left-auto "></div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </div>
   );
