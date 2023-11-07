@@ -7,7 +7,7 @@ import { upDesc } from "../animations/animations";
 const AboutMe = () => {
   return (
     <motion.div
-      variants={upDesc}
+      variants={upDesc()}
       initial="initial"
       animate="animate"
       exit="exit"

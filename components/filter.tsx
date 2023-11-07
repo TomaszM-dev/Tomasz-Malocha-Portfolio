@@ -23,7 +23,7 @@ const Filter = ({
 
   return (
     <motion.div
-      variants={upDesc}
+      variants={upDesc()}
       initial="initial"
       whileInView="animate"
       exit="exit"

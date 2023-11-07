@@ -12,7 +12,7 @@ const Landing = () => {
   return (
     <div className="w-[100%] max-w-[1700px] mt-[11rem]  mx-auto px-28 max-md:px-10  flex flex-col justify-center max-sm:mt-[8rem] max-sm:px-4">
       <motion.h1
-        variants={upDesc}
+        variants={upDesc()}
         initial="initial"
         whileInView="animate"
         exit="exit"
@@ -23,7 +23,7 @@ const Landing = () => {
       </motion.h1>
       <motion.div
         viewport={{ once: true }}
-        variants={upDesc}
+        variants={upDesc()}
         initial="initial"
         whileInView="animate"
         exit="exit"

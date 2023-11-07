@@ -24,7 +24,7 @@ const Experience = () => {
               className="transition-all duration-0 backface ml-1 xl:text-[2.3rem] text-[1.9rem] inline-flex tracking-tighter overflow-hidden"
             >
               <motion.span
-                variants={descText}
+                variants={descText()}
                 custom={index}
                 animate={isInView ? "open" : "closed"}
                 key={index}

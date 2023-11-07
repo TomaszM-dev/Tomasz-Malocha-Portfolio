@@ -58,7 +58,7 @@ const Hero = () => {
         className="object-cover max-w-[1700px] mx-auto "
       />
       <motion.div
-        variants={upText}
+        variants={upText()}
         initial="initial"
         whileInView="animate"
         exit="exit"
@@ -70,7 +70,8 @@ const Hero = () => {
           className="m-0 flex text-[11rem] xl:text-[13rem] whitespace-nowrap    text-white  font-[400] tracking-tight relative"
         >
           <p className="relative m-0 flex items-center" ref={firstText}>
-            Tomasz Malocha <span className="text-[5rem] mx-10">●</span>
+            Tomasz Malocha{" "}
+            <span className="text-[5rem]  ml-10 mr-[-0.8rem]">●</span>
           </p>
           <p ref={secondText} className="absolute  left-[100%] ">
             Tomasz Malocha
@@ -78,7 +79,7 @@ const Hero = () => {
         </div>
       </motion.div>
       <motion.div
-        variants={upDesc}
+        variants={upDesc()}
         initial="initial"
         whileInView="animate"
         exit="exit"

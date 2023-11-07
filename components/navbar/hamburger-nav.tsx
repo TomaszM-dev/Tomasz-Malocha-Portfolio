@@ -42,7 +42,7 @@ const HamburgerNav = ({ setIsActive, isActive, navItems }: HamburgerProps) => {
     >
       <motion.div
         onClick={(e) => e.stopPropagation()}
-        variants={menuVars}
+        variants={menuVars()}
         initial="initial"
         exit="exit"
         animate="animate"
@@ -65,7 +65,7 @@ const HamburgerNav = ({ setIsActive, isActive, navItems }: HamburgerProps) => {
               className="w-full  transition-all duration-0 backface mx-auto h-[1px] bg-[#646464] mb-10  mt-4"
             ></motion.p>
             <motion.div
-              variants={containerVars}
+              variants={containerVars()}
               initial="initial"
               animate="open"
               exit="initial"
@@ -73,7 +73,7 @@ const HamburgerNav = ({ setIsActive, isActive, navItems }: HamburgerProps) => {
             >
               {navItems.map((link, index) => (
                 <motion.div
-                  variants={menuLinkVars}
+                  variants={menuLinkVars()}
                   key={index}
                   className="transition-all duration-0 backface group z-40 flex group-hover items-center justify-between "
                 >

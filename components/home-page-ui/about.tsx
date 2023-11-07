@@ -65,7 +65,7 @@ const About = () => {
                 className="inline-flex ml-2 max-sm:leading-[2.3rem] text-[1.8rem] xl:text-[2rem] font-[300] overflow-hidden leading-[2.8rem]"
               >
                 <motion.span
-                  variants={descText}
+                  variants={descText()}
                   custom={index}
                   animate={isInView ? "open" : "closed"}
                   key={index}

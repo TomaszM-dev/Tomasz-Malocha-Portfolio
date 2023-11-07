@@ -59,7 +59,7 @@ const ContactPage = () => {
       <main className="w-[100%] max-w-[1700px] mt-[11rem]  mx-auto px-28 max-md:px-10  flex flex-col justify-center max-sm:mt-[8rem] max-sm:px-4 ">
         <BsArrowDownLeft className="self-end text-[2rem] max-sm:mb-6" />
         <motion.h1
-          variants={upDesc}
+          variants={upDesc()}
           initial="initial"
           whileInView="animate"
           exit="exit"
@@ -70,7 +70,7 @@ const ContactPage = () => {
         </motion.h1>
 
         <motion.div
-          variants={upDesc}
+          variants={upDesc()}
           initial="initial"
           animate="animate"
           exit="exit"

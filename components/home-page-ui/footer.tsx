@@ -15,7 +15,7 @@ import me from "public/images/nav/me-photo.png";
 import { usePathname, useRouter } from "next/navigation";
 import { useNavLink } from "@/nav-store";
 
-const Footer = ({ info, title }: { info: string; title: string }) => {
+const Footer = () => {
   const pathname = usePathname();
   const textSlide = useRef(null);
   const container = useRef(null);

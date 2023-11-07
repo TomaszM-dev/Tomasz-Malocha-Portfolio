@@ -21,7 +21,7 @@ const Skills = () => {
         <motion.h2
           ref={textSlide}
           viewport={{ once: true }}
-          variants={upDesc}
+          variants={upDesc()}
           initial="initial"
           animate="animate"
           exit="exit"
@@ -34,7 +34,7 @@ const Skills = () => {
                 className="transition-all duration-0 backface text-[3.4rem] max-sm:text-[2.4rem] max-sm:font-[400] font-[400] xl:text-[3.5rem] leading-[3.4rem]  relative overflow-hidden inline-flex ml-2"
               >
                 <motion.span
-                  variants={descText}
+                  variants={descText()}
                   custom={index}
                   animate={isInView ? "open" : "closed"}
                   key={index}

@@ -56,7 +56,7 @@ const Headline = ({ title, info }: { title: string; info: string }) => {
               className="leading-[2.8rem]   max-sm:leading-[2rem]  text-[2.1rem]  xl:text-[2.2rem] relative overflow-hidden inline-flex ml-2 max-lg:text-[1.9rem] max-sm:text-[1.7rem]"
             >
               <motion.span
-                variants={descText}
+                variants={descText()}
                 custom={index}
                 animate={isInView ? "open" : "closed"}
                 key={index}

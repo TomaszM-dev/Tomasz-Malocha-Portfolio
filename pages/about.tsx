@@ -32,10 +32,7 @@ const AboutPage = () => {
         <AboutMe />
         <Skills />
         <Experience />
-        <Footer
-          title="Contact Me"
-          info="I am open for hiring, lets create something awesome together !"
-        />
+        <Footer />
       </main>
     </Page>
   );

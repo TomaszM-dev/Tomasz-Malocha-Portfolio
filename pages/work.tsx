@@ -54,7 +54,7 @@ const WorkPage = () => {
         className="w-[100%] max-w-[1700px] mt-[11rem]  mx-auto px-28 max-md:px-10  flex flex-col justify-center max-sm:mt-[8rem] max-sm:px-4 "
       >
         <motion.h1
-          variants={upDesc}
+          variants={upDesc()}
           initial="initial"
           whileInView="animate"
           exit="exit"
@@ -64,7 +64,7 @@ const WorkPage = () => {
           Some of the things I have built
         </motion.h1>
         <motion.div
-          variants={upDesc}
+          variants={upDesc()}
           initial="initial"
           whileInView="animate"
           exit="exit"
@@ -157,10 +157,7 @@ const WorkPage = () => {
           })}
         </AnimatePresence>
       </motion.div>
-      <Footer
-        title="Contact Me"
-        info="I am open for hiring, lets create something awesome together !"
-      />
+      <Footer />
     </Page>
   );
 };
