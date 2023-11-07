@@ -37,7 +37,7 @@ const Preloader = () => {
     >
       <Curve />
       <motion.p
-        className="text-[3rem] font-[300] flex items-center"
+        className="text-[3rem] max-sm:text-[2.4rem] font-[300] flex items-center"
         variants={opacity}
         initial="initial"
         animate="enter"

@@ -56,7 +56,7 @@ const ContactPage = () => {
 
   return (
     <Page>
-      <main className="w-[100%] max-w-[1800px] mt-[11rem]  mx-auto px-28 max-md:px-10  max-sm:px-6 flex flex-col justify-center max-sm:mt-[8rem] ">
+      <main className="w-[100%] max-w-[1800px] mt-[9rem]  mx-auto px-28 max-md:px-10  max-sm:px-6 flex flex-col justify-center max-sm:mt-[8rem] ">
         <BsArrowDownLeft className="self-end text-[2rem] max-sm:mb-6" />
         <motion.h1
           variants={upDesc}
