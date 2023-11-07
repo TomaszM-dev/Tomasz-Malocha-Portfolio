@@ -11,7 +11,7 @@ import gsap from "gsap";
 import { AnimatePresence } from "framer-motion";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import me from "public/images/nav/me-photo.png";
-
+import { AiOutlineClose } from "react-icons/ai";
 // comp
 import HamburgerNav from "./hamburger-nav";
 
@@ -165,12 +165,12 @@ const Navbar = () => {
           flex cursor-pointer items-center justify-center "
         >
           {/* burger */}
-          <div
-            className={`w-[45%] bg-white h-[2px]  relative z-40 after:content-[""]  after:block after:h-[2px] after:w-[100%] after:mx-auto after:bg-white after:relative after:top-[-10px]  before:content-[""] before:block before:h-[2px] before:w-[100%] before:m-auto before:bg-white before:relative before:top-[9px]  after:transition-all before:transition-all duration-300${
-              isActive &&
-              "after:transform after:rotate-45 after:top-[-1px]  before:transform before:rotate-[-45deg] before:top-[2px] h-[0px]"
-            }`}
-          ></div>
+          {!isActive && (
+            <div
+              className={`w-[45%] bg-white h-[2px]  relative z-40 after:content-[""]  after:block after:h-[2px] after:w-[100%] after:mx-auto after:bg-white after:relative after:top-[-10px]  before:content-[""] before:block before:h-[2px] before:w-[100%] before:m-auto before:bg-white before:relative before:top-[9px]  after:transition-all before:transition-all duration-300  `}
+            ></div>
+          )}
+          {isActive && <AiOutlineClose className="text-white text-[2rem]" />}
         </div>
       </div>
 
