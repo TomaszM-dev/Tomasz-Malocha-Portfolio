@@ -17,7 +17,7 @@ const Landing = () => {
         whileInView="animate"
         exit="exit"
         viewport={{ once: true, amount: 0.2 }}
-        className="text-[4.6rem] font-[300] w-[44rem] xl:text-[5.6rem] xl:w-[55rem] leading-[4.6rem] xl:leading-[5.5rem] tracking-tighter max-md:text-[4rem]  max-sm:leading-[3.4rem] max-sm:text-[3.2rem]  max-sm:w-full"
+        className="transition-all duration-0 backface text-[4.6rem] font-[300] w-[44rem] xl:text-[5.6rem] xl:w-[55rem] leading-[4.6rem] xl:leading-[5.5rem] tracking-tighter max-md:text-[4rem]  max-sm:leading-[3.4rem] max-sm:text-[3.2rem]  max-sm:w-full"
       >
         I want to give you a glimpse into my world
       </motion.h1>
@@ -27,7 +27,7 @@ const Landing = () => {
         initial="initial"
         whileInView="animate"
         exit="exit"
-        className=" mt-20  flex flex-col max-sm:mt-10"
+        className="transition-all duration-0 backface mt-20  flex flex-col max-sm:mt-10"
       >
         <div className="flex flex-col mt-10  max-sm:mt-14 w-[100%] h-[1px] bg-[#cbcbcb]"></div>
         <Link
