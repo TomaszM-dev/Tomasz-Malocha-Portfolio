@@ -25,6 +25,7 @@ const ContactPage = () => {
       .sendForm(
         "service_z9t8klm",
         "template_z4xlitc",
+        // @ts-ignore
         form.current,
         "zE7tbk7fYOIPB1uI5"
       )
@@ -74,7 +75,7 @@ const ContactPage = () => {
           animate="animate"
           exit="exit"
           viewport={{ once: true }}
-          className="px-0 flex mt-36 justify-center max-md:flex-col-reverse max-md:px-4  gap-20 max-sm:mt-20"
+          className="px-0 flex mt-36 justify-center max-md:flex-col-reverse max-md:px-0  gap-20 max-sm:mt-20"
         >
           <form
             ref={form}
@@ -125,7 +126,7 @@ const ContactPage = () => {
             <button
               type="submit"
               value="Send"
-              className="max-sm:px-4 max-sm:py-6 max-sm:w-[50%]  px-10 mt-10 text-[1.3rem] text-white w-fit py-12  bg-black rounded-full max-lg:w-full"
+              className="max-sm:px-7 max-sm:py-9 max-sm:w-fit px-10 mt-10 text-[1.3rem] max-sm:text-[1.1rem]  text-white w-fit py-12  bg-black rounded-full max-lg:w-full"
             >
               Send
             </button>
@@ -168,9 +169,12 @@ const ContactPage = () => {
           </div>
         </motion.div>
       </main>
-      <div className="bg-black text-[#7d7d7d]  text-[1rem] px-10 py-8 items-center mt-28 flex justify-between">
+      <div className="bg-black text-[#7d7d7d]  text-[1rem] px-10 py-8 items-center mt-28 flex max-sm:px-4 justify-between">
         <p className="">
-          Code by TomaszM-dev ● Inspiration: dennissnellenberg.com
+          Code by TomaszM-dev{" "}
+          <span className="max-sm:hidden">
+            ● Inspiration: dennissnellenberg.com
+          </span>
         </p>
         <div className=" flex gap-4 text-[1.4rem]">
           <Link target={"_blank"} href="https://www.instagram.com/tommek.23/">

@@ -68,9 +68,12 @@ const Footer = ({ info, title }: { info: string; title: string }) => {
           </p>
         </div>
       </div>
-      <div className=" text-[#7d7d7d] text-[1rem] px-10 py-8 items-center mt-28 flex justify-between">
+      <div className=" max-sm:px-4 text-[#7d7d7d] text-[1rem]  px-10 py-8 items-center mt-28 flex justify-between">
         <p className="">
-          Code by TomaszM-dev ● Inspiration: dennissnellenberg.com{" "}
+          Code by TomaszM-dev{" "}
+          <span className="max-sm:hidden">
+            ● Inspiration: dennissnellenberg.com
+          </span>
         </p>
         <div className="flex gap-4 text-[1.4rem]">
           <Link target={"_blank"} href="https://www.instagram.com/tommek.23/">

@@ -14,7 +14,7 @@ export const slideUp = {
   },
 };
 
-const words = ["Hello", "I am", "Tomasz", "Welcome", "to", "my", "World"];
+const words = ["Hello", "I am", "Tomasz", "Welcome", "to", "my", "Portfolio"];
 
 const Preloader = () => {
   const [index, setIndex] = useState(0);

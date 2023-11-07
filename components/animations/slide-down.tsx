@@ -3,8 +3,9 @@ import { motion } from "framer-motion";
 import { useNavLink } from "@/nav-store";
 import Curve from "../curves/curve";
 import CurveDown from "../curves/curve-up";
+import { opacity } from "./animations";
 
-const SlideDown = ({ pathname }) => {
+const SlideDown = () => {
   const active = useNavLink();
   console.log(active.activeLink);
   return (
@@ -18,12 +19,12 @@ const SlideDown = ({ pathname }) => {
       transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1], delay: 0.2 }}
     >
       <Curve />
-      <h1
+      <motion.h1
         className="text-[3rem] font-[200] flex items-center relative"
         suppressHydrationWarning
       >
         <span className="text-[1.4rem] mr-3">●</span> {active.activeLink}
-      </h1>
+      </motion.h1>
     </motion.div>
   );
 };

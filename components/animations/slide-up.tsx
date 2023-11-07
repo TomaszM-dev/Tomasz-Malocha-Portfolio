@@ -5,8 +5,9 @@ import { useNavLink } from "@/nav-store";
 import Curve from "../curves/curve";
 
 import CurveUp from "../curves/curve-up";
+import { opacity } from "./animations";
 
-const SlideUp = ({ pathname }) => {
+const SlideUp = () => {
   const active = useNavLink();
   console.log(active.activeLink);
   return (
@@ -21,6 +22,9 @@ const SlideUp = ({ pathname }) => {
     >
       <CurveUp />
       <motion.h1
+        variants={opacity}
+        initial="initial"
+        animate="enter"
         className="text-[3rem] font-[200] flex items-center relative"
         suppressHydrationWarning
       >
