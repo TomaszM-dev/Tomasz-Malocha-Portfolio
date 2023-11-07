@@ -98,7 +98,7 @@ const About = () => {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.3 }}
-          className="border-[1px] flex gap-5 max-sm:gap-4 p-5 rounded-lg max-sm:px-4"
+          className="border-[1px] flex gap-5 max-sm:gap-4 p-5 rounded-lg max-sm:px-4 transition-all"
         >
           <p className="text-[1rem] text-[#7e7e7e] max-sm:hidden">01</p>
           <div className="flex flex-col gap-2 ">
@@ -116,7 +116,7 @@ const About = () => {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.3 }}
-          className="border-[1px] flex gap-5 p-5 rounded-lg"
+          className="border-[1px] flex gap-5 p-5 rounded-lg transition-all"
         >
           <p className="text-[1rem] text-[#7e7e7e] max-sm:hidden">02</p>
           <div className="flex flex-col gap-2 ">
@@ -132,7 +132,7 @@ const About = () => {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.3 }}
-          className="border-[1px] flex gap-5 p-5 rounded-lg"
+          className="border-[1px] flex gap-5 p-5 rounded-lg transition-all"
         >
           <p className="text-[1rem] text-[#7e7e7e] max-sm:hidden">03</p>
           <div className="flex flex-col gap-2 ">
