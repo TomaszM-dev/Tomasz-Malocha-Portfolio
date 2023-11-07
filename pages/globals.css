@@ -9,6 +9,11 @@ body {
   margin: 0;
 }
 
+.backface {
+  backface-visibility: hidden;
+  -webkit-perspective: 1000;
+}
+
 .svg {
   animation: fill 2s ease forwards 2.5s;
 }

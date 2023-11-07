@@ -33,7 +33,7 @@ const Work = () => {
             key={project.info}
           >
             <motion.div
-              className=" w-[50%] max-lg:w-[80%] max-sm:w-[100%] transition-all"
+              className=" w-[50%] max-lg:w-[80%] max-sm:w-[100%] transition-all duration-0 backface"
               variants={fadeIn("right", 0.1)}
               initial="hidden"
               whileInView={"show"}
@@ -78,7 +78,7 @@ const Work = () => {
               initial="hidden"
               whileInView={"show"}
               exit="hidden"
-              className="w-[50%] transition-all max-lg:w-[80%] max-sm:w-[100%]   xl:w-[40%] xxl:w-[48%] flex xl:justify-center  "
+              className="w-[50%] transition-all max-lg:w-[80%] max-sm:w-[100%] duration-0  xl:w-[40%] xxl:w-[48%] flex xl:justify-center  backface "
             >
               <Image className=" " alt="" src={project.picture}></Image>
             </motion.div>

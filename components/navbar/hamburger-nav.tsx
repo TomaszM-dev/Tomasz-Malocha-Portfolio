@@ -46,7 +46,7 @@ const HamburgerNav = ({ setIsActive, isActive, navItems }: HamburgerProps) => {
         initial="initial"
         exit="exit"
         animate="animate"
-        className="h-screen origin-top-right max-md:w-full w-[28rem] xl:w-[33rem] fixed right-0 top-0 text-white z-60  bg-[#010101]  "
+        className="h-screen transition-all duration-0 backface origin-top-right max-md:w-full w-[28rem] xl:w-[33rem] fixed right-0 top-0 text-white z-60  bg-[#010101]  "
       >
         <div className="w-full justify-between max-sm:mt-[8rem] mt-48 px-20 max-sm:px-6 shadow-2xl shadow-black  gap-20 box-border flex flex-col    ">
           <div className="z-40">
@@ -54,7 +54,7 @@ const HamburgerNav = ({ setIsActive, isActive, navItems }: HamburgerProps) => {
               variants={fadeIn("up", 0)}
               initial="hidden"
               whileInView={"show"}
-              className="uppercase text-[#999] textxs "
+              className="uppercase transition-all duration-0 backface text-[#999] textxs "
             >
               navigation
             </motion.p>
@@ -62,20 +62,20 @@ const HamburgerNav = ({ setIsActive, isActive, navItems }: HamburgerProps) => {
               variants={fadeIn("up", 0)}
               initial="hidden"
               whileInView={"show"}
-              className="w-full  mx-auto h-[1px] bg-[#646464] mb-10  mt-4"
+              className="w-full  transition-all duration-0 backface mx-auto h-[1px] bg-[#646464] mb-10  mt-4"
             ></motion.p>
             <motion.div
               variants={containerVars}
               initial="initial"
               animate="open"
               exit="initial"
-              className="flex flex-col "
+              className="flex flex-col transition-all duration-0 backface "
             >
               {navItems.map((link, index) => (
                 <motion.div
                   variants={menuLinkVars}
                   key={index}
-                  className=" group z-40 flex group-hover items-center justify-between "
+                  className="transition-all duration-0 backface group z-40 flex group-hover items-center justify-between "
                 >
                   <p
                     className="textxl  xl:text-[3.3rem] xl:leading-[4.3rem] leading-[4.1rem] cursor-pointer max-sm:text-[3.1rem] max-sm:leading-[4.1rem]"

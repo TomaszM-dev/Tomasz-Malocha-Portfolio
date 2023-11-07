@@ -21,7 +21,7 @@ const Experience = () => {
           return (
             <motion.span
               key={index}
-              className="ml-1 xl:text-[2.3rem] text-[1.9rem] inline-flex tracking-tighter overflow-hidden"
+              className="transition-all duration-0 backface ml-1 xl:text-[2.3rem] text-[1.9rem] inline-flex tracking-tighter overflow-hidden"
             >
               <motion.span
                 variants={descText}
@@ -44,7 +44,7 @@ const Experience = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="w-[45%] mt-10   flex flex-col max-lg:w-[90%] max-lg:mx-auto max-lg:h-fit"
+            className="transition-all duration-0 backface w-[45%] mt-10   flex flex-col max-lg:w-[90%] max-lg:mx-auto max-lg:h-fit"
           >
             <p className="text-[#7C7B7B] text-[1.1rem] mb-1">01</p>
             <div className="bg-[#dedcdc] w-full h-[1px] mb-7"></div>
@@ -61,7 +61,7 @@ const Experience = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="w-[55%]  mt-10  flex flex-col  max-lg:w-[90%] max-lg:mx-auto max-lg:h-fit"
+            className="transition-all duration-0 backface w-[55%]  mt-10  flex flex-col  max-lg:w-[90%] max-lg:mx-auto max-lg:h-fit"
           >
             <p className="text-[#7C7B7B] text-[1.1rem] mb-1">02</p>
             <div className="bg-[#dedcdc] w-full h-[1px] mb-7"></div>
@@ -78,43 +78,6 @@ const Experience = () => {
             </p>
           </motion.div>
         </div>
-        {/* <motion.div
-          variants={fadeIn("right", 0.2)}
-          initial="hidden"
-          whileInView={"show"}
-          className="relative w-[30rem] h-[16rem]  mt-20 overflow-hidden flex items-center justify-center px-8 max-lg:w-[80%] max-lg:mx-auto max-sm:w-[100%] max-sm:mt-18 "
-        >
-          <div className="flex flex-col  text-[1.6rem]  ">
-            <h4 className=" ">
-              01 <span className="ml-4 "></span>Tech Internship from School 2019
-            </h4>
-            <p className="text-[#7e7e7e] px-10 text-[1.3rem] mt-5">
-              My school provided us an internship as a students we completed 4
-              months of working for tech company
-            </p>
-          </div>
-        </motion.div>
-        <motion.div
-          variants={fadeIn("left", 0.2)}
-          initial="hidden"
-          whileInView={"show"}
-          className="relative w-[60%]   mt-20 overflow-hidden flex items-center justify-center px-8 max-lg:w-[80%] max-lg:mx-auto max-lg:py-8 max-lg:mt-4 max-sm:w-[100%]  "
-        >
-          <div className=" flex flex-col  text-[1.6rem]  ">
-            <h4 className=" ">
-              02 <span className="ml-4 "></span>Project Leader in Buma AS
-              2020-2022
-            </h4>
-            <p className="text-[#7e7e7e] px-10 text-[1.3rem] mt-5 ">
-              Though not coding related as a PR I have menaged to develop skills
-              that are essential for working in a group of people.
-            </p>
-            <p className="text-[#7e7e7e] px-10 text-[1.3rem] mt-5 ">
-              Skills like: Solving problems, Conflict resolution, Time
-              management Stakeholder management, Adaptability
-            </p>
-          </div>
-        </motion.div> */}
       </div>
     </div>
   );

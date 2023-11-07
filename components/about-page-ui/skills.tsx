@@ -31,7 +31,7 @@ const Skills = () => {
             return (
               <motion.span
                 key={index}
-                className="text-[3.4rem] max-sm:text-[2.4rem] max-sm:font-[400] font-[400] xl:text-[3.5rem] leading-[3.4rem]  relative overflow-hidden inline-flex ml-2"
+                className="transition-all duration-0 backface text-[3.4rem] max-sm:text-[2.4rem] max-sm:font-[400] font-[400] xl:text-[3.5rem] leading-[3.4rem]  relative overflow-hidden inline-flex ml-2"
               >
                 <motion.span
                   variants={descText}
@@ -52,7 +52,7 @@ const Skills = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="w-[33%] h-96  flex flex-col max-lg:w-[90%] max-lg:mx-auto max-lg:h-fit"
+            className="transition-all duration-0 backface w-[33%] h-96  flex flex-col max-lg:w-[90%] max-lg:mx-auto max-lg:h-fit"
           >
             <p className="text-[#7C7B7B] text-[1.1rem] mb-1">01</p>
             <div className="bg-[#dedcdc] w-full h-[1px] mb-7"></div>
@@ -69,7 +69,7 @@ const Skills = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="w-[33%] h-96  flex flex-col  max-lg:w-[90%] max-lg:mx-auto max-lg:h-fit"
+            className="transition-all duration-0 backface w-[33%] h-96  flex flex-col  max-lg:w-[90%] max-lg:mx-auto max-lg:h-fit"
           >
             <p className="text-[#7C7B7B] text-[1.1rem] mb-1">02</p>
             <div className="bg-[#dedcdc] w-full h-[1px] mb-7"></div>
@@ -84,7 +84,7 @@ const Skills = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="w-[33%] h-96  flex flex-col  max-lg:w-[90%] max-lg:mx-auto max-lg:h-fit"
+            className="transition-all duration-0 backface w-[33%] h-96  flex flex-col  max-lg:w-[90%] max-lg:mx-auto max-lg:h-fit"
           >
             <p className="text-[#7C7B7B] text-[1.1rem] mb-1">03</p>
             <div className="bg-[#dedcdc] w-full h-[1px] mb-7"></div>

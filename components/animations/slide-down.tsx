@@ -10,7 +10,7 @@ const SlideDown = () => {
   console.log(active.activeLink);
   return (
     <motion.div
-      className="fixed text-white bottom-0 z-[100] left-0 w-full flex items-center justify-center h-full bg-black origin-top"
+      className="transition-all duration-0 backface fixed text-white bottom-0 z-[100] left-0 w-full flex items-center justify-center h-full bg-black origin-top"
       initial={{ scaleY: 1 }}
       animate={{ scaleY: 0 }}
       exit={{

@@ -12,7 +12,7 @@ const SlideUp = () => {
   console.log(active.activeLink);
   return (
     <motion.div
-      className="fixed top-0 z-[100] flex justify-center items-center left-0 w-full h-full bg-black origin-bottom text-white  "
+      className="transition-all duration-0 backface fixed top-0 z-[100] flex justify-center items-center left-0 w-full h-full bg-black origin-bottom text-white  "
       initial={{ scaleY: 0 }}
       animate={{ scaleY: 0 }}
       exit={{

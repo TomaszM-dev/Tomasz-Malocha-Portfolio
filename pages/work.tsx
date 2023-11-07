@@ -59,7 +59,7 @@ const WorkPage = () => {
           whileInView="animate"
           exit="exit"
           viewport={{ once: true, amount: 0.2 }}
-          className="text-[4.6rem] font-[300] w-[44rem] xl:text-[5.8rem] xl:w-[55rem] leading-[4.6rem] xl:leading-[5.5rem] tracking-tighter max-md:text-[4rem]  max-sm:leading-[3.4rem] max-sm:text-[3.4rem]  max-sm:w-full "
+          className="transition-all duration-0 backface text-[4.6rem] font-[300] w-[44rem] xl:text-[5.8rem] xl:w-[55rem] leading-[4.6rem] xl:leading-[5.5rem] tracking-tighter max-md:text-[4rem]  max-sm:leading-[3.4rem] max-sm:text-[3.4rem]  max-sm:w-full "
         >
           Some of the things I have built
         </motion.h1>
@@ -69,7 +69,7 @@ const WorkPage = () => {
           whileInView="animate"
           exit="exit"
           viewport={{ once: true, amount: 0.2 }}
-          className="xl:self-center self-end max-sm:mt-4 "
+          className="transition-all duration-0 backface xl:self-center self-end max-sm:mt-4 "
         >
           <BsArrowDownLeft className=" text-[1.8rem]  " />
         </motion.div>
@@ -86,7 +86,7 @@ const WorkPage = () => {
         whileInView="animate"
         exit="exit"
         viewport={{ once: true }}
-        className=" w-full h-[10rem]"
+        className="transition-all duration-0 backface w-full h-[10rem]"
       ></motion.div>
       <motion.div className="flex flex-col  gap-[8rem] max-sm:gap-[6rem] mb-40 max-w-[1700px]   mx-auto mt-[10rem] max-sm:mt-[5rem] ">
         <AnimatePresence>
@@ -103,7 +103,7 @@ const WorkPage = () => {
                 key={project.info}
               >
                 <motion.div
-                  className=" w-[50%] max-lg:w-[80%] max-sm:w-[100%]"
+                  className="transition-all duration-0 backface w-[50%] max-lg:w-[80%] max-sm:w-[100%]"
                   variants={fadeIn("right", 0.1)}
                   initial="hidden"
                   whileInView={"show"}
@@ -148,7 +148,7 @@ const WorkPage = () => {
                   initial="hidden"
                   whileInView={"show"}
                   exit="hidden"
-                  className="w-[50%] max-lg:w-[80%] max-sm:w-[100%]   xl:w-[40%] xxl:w-[48%] flex xl:justify-center  "
+                  className="transition-all duration-0 backface  w-[50%] max-lg:w-[80%] max-sm:w-[100%]   xl:w-[40%] xxl:w-[48%] flex xl:justify-center  "
                 >
                   <Image className=" " alt="" src={project.picture}></Image>
                 </motion.div>

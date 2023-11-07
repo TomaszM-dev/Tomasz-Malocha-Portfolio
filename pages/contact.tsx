@@ -64,7 +64,7 @@ const ContactPage = () => {
           whileInView="animate"
           exit="exit"
           viewport={{ once: true }}
-          className="text-[4.6rem] font-[300] w-[44rem] xl:text-[5.8rem] xl:w-[55rem] leading-[4.6rem] xl:leading-[5.5rem] tracking-tighter max-md:text-[4rem]  max-sm:leading-[3.4rem] max-sm:text-[3.4rem]  max-sm:w-full"
+          className="transition-all duration-0 backface text-[4.6rem] font-[300] w-[44rem] xl:text-[5.8rem] xl:w-[55rem] leading-[4.6rem] xl:leading-[5.5rem] tracking-tighter max-md:text-[4rem]  max-sm:leading-[3.4rem] max-sm:text-[3.4rem]  max-sm:w-full"
         >
           Lets start working <br /> together
         </motion.h1>
@@ -75,7 +75,7 @@ const ContactPage = () => {
           animate="animate"
           exit="exit"
           viewport={{ once: true }}
-          className="px-0 flex mt-36 justify-center max-md:flex-col-reverse max-md:px-0  gap-20 max-sm:mt-20"
+          className="transition-all duration-0 backface px-0 flex mt-36 justify-center max-md:flex-col-reverse max-md:px-0  gap-20 max-sm:mt-20"
         >
           <form
             ref={form}

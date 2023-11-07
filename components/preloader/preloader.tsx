@@ -33,7 +33,7 @@ const Preloader = () => {
       variants={slideUp}
       initial="initial"
       exit="exit"
-      className="h-screen w-screen fixed z-[110] flex items-center justify-center text-white bg-black "
+      className="transition-all duration-0 backface h-screen w-screen fixed z-[110] flex items-center justify-center text-white bg-black "
     >
       <Curve />
       <motion.p
