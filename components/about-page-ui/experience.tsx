@@ -16,12 +16,12 @@ const Experience = () => {
       ref={container}
       className="max-w-[1700px] mx-auto w-full max-sm:my-10 mt-28 flex flex-col px-10 max-sm:px-4 my-60"
     >
-      <h3 className="text-end text-[2rem] max-sm:self-start max-sm:text-start max-sm:w-[100%]  w-[80%]    self-end">
+      <h3 className="text-end  max-sm:leading-[2.3rem] max-sm:self-start max-sm:text-start max-sm:w-[100%]  w-[80%]    self-end">
         {phrase.split(" ").map((word, index) => {
           return (
             <motion.span
               key={index}
-              className="text-[2rem] max-lg:text-[1.9rem] font-[500]  max-sm:font-[300] max-sm:leading-[1.6rem] relative overflow-hidden inline-flex ml-1 max-sm:text-[1.8rem]"
+              className="ml-1 xl:text-[2.3rem] text-[1.9rem] inline-flex tracking-tighter overflow-hidden"
             >
               <motion.span
                 variants={descText}

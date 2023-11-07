@@ -93,7 +93,7 @@ const Work = () => {
               scroll: false,
             });
           }}
-          className="cursor-pointer w-full px-7 py-4 rounded-3xl  text-[1.4rem] border-[1px] mb-24  mx-auto "
+          className="cursor-pointer w-full px-9 py-6 rounded-full font-[200] text-[1.2rem] border-[1px] mb-24  mx-auto "
         >
           See More work
         </p>

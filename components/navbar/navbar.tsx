@@ -17,6 +17,7 @@ import HamburgerNav from "./hamburger-nav";
 
 // zustand state
 import { useNavLink } from "@/nav-store";
+import { link } from "fs";
 
 // nav links data
 type navProps = {
@@ -116,7 +117,7 @@ const Navbar = () => {
           onClick={() => setIsActive(!isActive)}
           className="md:hidden textsm font-[100]"
         >
-          <span className="text-[1rem] font-[200] mr-1">●</span> Menu
+          <span className={`text-[1rem] font-[200] mr-1 `}>●</span> Menu
         </div>
 
         <div
@@ -125,7 +126,7 @@ const Navbar = () => {
           className="flex text-[1.2rem] xl:text-[1.25rem] gap-7 font-[200]  ml-10 max-md:hidden"
         >
           {navItems.slice(1).map((link) => (
-            <>
+            <div key={link.href} className="flex flex-col mt-2 items-center">
               <Link
                 suppressHydrationWarning
                 onClick={() => active.setActiveLink(link.title)}
@@ -133,7 +134,14 @@ const Navbar = () => {
               >
                 {link.title}
               </Link>
-            </>
+              <p
+                className={`text-[1rem]  transition-all delay-1000 ${
+                  pathname === link.href ? "text-black " : "text-transparent"
+                }`}
+              >
+                ●
+              </p>
+            </div>
           ))}
         </div>
         <Link
@@ -153,14 +161,14 @@ const Navbar = () => {
           onClick={() => {
             setIsActive(!isActive);
           }}
-          className="relative m-[2rem] max-sm:m-[1rem]  w-[5rem] h-[5rem] rounded-full bg-[#000]
+          className="relative m-[2rem] max-sm:m-[1rem]  w-[5rem] h-[5rem] rounded-full bg-[#0b0b0b]
           flex cursor-pointer items-center justify-center "
         >
           {/* burger */}
           <div
             className={`w-[45%] bg-white h-[2px]  relative z-40 after:content-[""]  after:block after:h-[2px] after:w-[100%] after:mx-auto after:bg-white after:relative after:top-[-10px]  before:content-[""] before:block before:h-[2px] before:w-[100%] before:m-auto before:bg-white before:relative before:top-[9px]  after:transition-all before:transition-all duration-300${
               isActive &&
-              "after:transform after:rotate-45 after:top-[-1px]  before:transform before:rotate-[-45deg] before:top-[1px] h-0"
+              "after:transform after:rotate-45 after:top-[-1px]  before:transform before:rotate-[-45deg] before:top-[2px] h-[0px]"
             }`}
           ></div>
         </div>

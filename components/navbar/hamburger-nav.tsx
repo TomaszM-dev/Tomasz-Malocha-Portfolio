@@ -78,7 +78,7 @@ const HamburgerNav = ({ setIsActive, isActive, navItems }: HamburgerProps) => {
                   className=" group z-40 flex group-hover items-center justify-between "
                 >
                   <p
-                    className="textxl  xl:text-[3.3rem] xl:leading-[4.7rem] leading-[4.1rem] cursor-pointer max-sm:text-[3.1rem] max-sm:leading-[4.1rem]"
+                    className="textxl  xl:text-[3.3rem] xl:leading-[4.3rem] leading-[4.1rem] cursor-pointer max-sm:text-[3.1rem] max-sm:leading-[4.1rem]"
                     suppressHydrationWarning
                     onClick={() => handleClick(link)}
                   >

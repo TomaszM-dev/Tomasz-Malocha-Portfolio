@@ -20,9 +20,12 @@ const SlideUp = ({ pathname }) => {
       transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1], delay: 0.2 }}
     >
       <CurveUp />
-      <h1 className="text-[3rem] relative" suppressHydrationWarning>
-        {active.activeLink}
-      </h1>
+      <motion.h1
+        className="text-[3rem] font-[200] flex items-center relative"
+        suppressHydrationWarning
+      >
+        <span className="text-[1.4rem] mr-3">●</span> {active.activeLink}
+      </motion.h1>
     </motion.div>
   );
 };

@@ -6,6 +6,7 @@ import { BsGithub, BsLinkedin, BsInstagram } from "react-icons/bs";
 import me from "public/images/hero/me.png";
 import { motion } from "framer-motion";
 import { upDesc } from "../animations/animations";
+import Link from "next/link";
 
 const Landing = () => {
   return (
@@ -29,13 +30,15 @@ const Landing = () => {
         className=" mt-20  flex flex-col max-sm:mt-10"
       >
         <div className="flex flex-col mt-10  max-sm:mt-14 w-[100%] h-[1px] bg-[#cbcbcb]"></div>
-        <div
+        <Link
+          target="_blank"
+          href="https://www.instagram.com/tommek.23/"
           data-scroll
           data-scroll-speed="0.1"
           className="  cursor-pointer bg-black w-fit h-fit text-white font-[200] text-[2.5rem]  max-sm:text-[2rem] max-sm:px-12 max-sm:py-12 max-sm:mt-[-4rem] px-14 py-14 rounded-[50%] mt-[-5rem] self-end  mr-10 "
         >
           <BsInstagram />
-        </div>
+        </Link>
       </motion.div>
       <div />
     </div>

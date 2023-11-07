@@ -32,7 +32,7 @@ const App = ({ Component, pageProps }) => {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-    }, 200);
+    }, 2500);
   }, []);
 
   return (

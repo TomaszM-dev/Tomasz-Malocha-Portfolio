@@ -12,13 +12,16 @@ import { descText, fadeIn } from "../animations/animations";
 import Link from "next/link";
 import Image from "next/image";
 import me from "public/images/nav/me-photo.png";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
+import { useNavLink } from "@/nav-store";
 
 const Footer = ({ info, title }: { info: string; title: string }) => {
   const pathname = usePathname();
   const textSlide = useRef(null);
   const container = useRef(null);
   const isInView = useInView(textSlide);
+  const router = useRouter();
+  const active = useNavLink();
 
   return (
     <div
@@ -44,12 +47,12 @@ const Footer = ({ info, title }: { info: string; title: string }) => {
         </div>
         <div className="w-full h-[1px] mt-28 max-sm:mx-auto  max-sm:w-[95%] bg-[#313131] max-sm:mt-36"></div>
         <div
-          // onClick={() => {
-          //   active.setActiveLink("About");
-          //   router.push("/about", {
-          //     scroll: false,
-          //   });
-          // }}
+          onClick={() => {
+            active.setActiveLink("Contact");
+            router.push("/contact", {
+              scroll: false,
+            });
+          }}
           data-scroll
           data-scroll-speed="0.1"
           className="  cursor-pointer bg-[#0a0a0a] w-fit h-fit text-white font-[200] text-[1.2rem] px-[3rem] py-[5rem] max-sm:py-[3.5rem] max-sm:px-[1.5rem] rounded-[50%] mt-[-6rem] max-sm:mt-[-4rem]   self-end mx-10  "
@@ -70,9 +73,18 @@ const Footer = ({ info, title }: { info: string; title: string }) => {
           Code by TomaszM-dev ● Inspiration: dennissnellenberg.com{" "}
         </p>
         <div className="flex gap-4 text-[1.4rem]">
-          <BsGithub />
-          <BsLinkedin />
-          <BsInstagram />
+          <Link target={"_blank"} href="https://www.instagram.com/tommek.23/">
+            <BsInstagram />
+          </Link>
+          <Link target={"_blank"} href="https://github.com/TomaszM-dev">
+            <BsGithub />
+          </Link>
+          <Link
+            target={"_blank"}
+            href="https://www.linkedin.com/in/tomaszmalocha/"
+          >
+            <BsLinkedin />
+          </Link>
         </div>
       </div>
     </div>

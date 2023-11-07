@@ -48,12 +48,12 @@ const Headline = ({ title, info }: { title: string; info: string }) => {
       >
         {title}
       </h2>
-      <motion.p className="text-center mx-auto max-sm:text-start  z-7     max-sm:w-[100%] text-[2.1rem] leading-[3rem] max-sm:px-2 w-[65%] xl:w-[60%] max-sm:mt-10  ">
+      <motion.p className="text-center mx-auto max-sm:text-start  z-7     max-sm:w-[100%] text-[2.1rem] leading-[2.5rem] max-sm:px-2 w-[65%] xl:w-[60%] max-sm:mt-10  ">
         {info.split(" ").map((word, index) => {
           return (
             <motion.span
               key={index}
-              className="leading-[2.8rem] max-sm:leading-[2rem]  text-[2.1rem]  xl:text-[2.2rem] relative overflow-hidden inline-flex ml-2 max-lg:text-[1.9rem] max-sm:text-[1.7rem]"
+              className="leading-[2.8rem]   max-sm:leading-[2rem]  text-[2.1rem]  xl:text-[2.2rem] relative overflow-hidden inline-flex ml-2 max-lg:text-[1.9rem] max-sm:text-[1.7rem]"
             >
               <motion.span
                 variants={descText}

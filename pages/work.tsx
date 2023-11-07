@@ -88,7 +88,7 @@ const WorkPage = () => {
         viewport={{ once: true }}
         className=" w-full h-[10rem]"
       ></motion.div>
-      <motion.div className="flex flex-col  gap-[7rem] max-sm:gap-[6rem] mb-40 max-w-[1700px]   mx-auto mt-[10rem] max-sm:mt-[5rem] ">
+      <motion.div className="flex flex-col  gap-[8rem] max-sm:gap-[6rem] mb-40 max-w-[1700px]   mx-auto mt-[10rem] max-sm:mt-[5rem] ">
         <AnimatePresence>
           {filtered.map((project, i) => {
             const tech = project.tech;
