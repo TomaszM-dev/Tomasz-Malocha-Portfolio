@@ -10,7 +10,7 @@ import Link from "next/link";
 
 const Landing = () => {
   return (
-    <div className="w-[100%]  max-w-[1900px] mt-[11rem]  mx-auto px-28 max-md:px-10  flex flex-col justify-center max-sm:mt-[8rem] my-[6rem] max-sm:my-0 max-sm:px-6 ">
+    <div className="w-[100%] max-w-[1700px] mt-[11rem]  mx-auto px-28 max-md:px-10  flex flex-col justify-center max-sm:mt-[8rem] max-sm:px-4">
       <motion.h1
         variants={upDesc}
         initial="initial"

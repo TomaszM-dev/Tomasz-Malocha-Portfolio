@@ -48,10 +48,10 @@ const Hero = () => {
   };
 
   return (
-    <div className="w-full h-[92vh] max-sm:h-[85vh] bg-[#C8C6C9] relative flex overflow-hidden">
+    <div className="w-full h-[92vh] max-sm:h-[80vh] bg-[#C8C6C9] relative flex overflow-hidden">
       <Image
-        src={hero}
         fill
+        src={hero}
         quality={100}
         priority={true}
         alt=""
@@ -69,8 +69,8 @@ const Hero = () => {
           ref={slider}
           className="m-0 flex text-[11rem] xl:text-[13rem] whitespace-nowrap    text-white  font-[400] tracking-tight relative"
         >
-          <p className="relative m-0" ref={firstText}>
-            Tomasz Malocha -
+          <p className="relative m-0 flex items-center" ref={firstText}>
+            Tomasz Malocha <span className="text-[5rem] mx-10">●</span>
           </p>
           <p ref={secondText} className="absolute  left-[100%] ">
             Tomasz Malocha

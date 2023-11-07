@@ -66,14 +66,14 @@ const Experience = () => {
             <p className="text-[#7C7B7B] text-[1.1rem] mb-1">02</p>
             <div className="bg-[#dedcdc] w-full h-[1px] mb-7"></div>
             <h2 className="text-[1.7rem]  mb-7 ">
-              Project Leader in Buma AS 2020-2022
+              Project Menager in Buma AS 2020-2022
             </h2>
             <p className=" font-[200] text-[#686868]">
               <p className=" text-[1.1rem]  ">
-                Though not coding related as a PR I have menaged to develop
-                skills that are essential for working in a group of people.
-                Skills like: Solving problems, Conflict resolution, Time
-                management Stakeholder management, Adaptability
+                Though not coding related as a Project Menager I have menaged to
+                develop skills that are essential for working in a group of
+                people. Skills like: Solving problems, conflict resolution, Time
+                management, stakeholder management, adaptability
               </p>
             </p>
           </motion.div>
