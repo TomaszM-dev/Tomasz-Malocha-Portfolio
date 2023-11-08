@@ -22,7 +22,6 @@ const SlideUp = () => {
     >
       <CurveUp />
       <motion.h1
-        variants={opacity}
         initial="initial"
         animate="enter"
         className="text-[3rem] font-[200] flex items-center relative"
