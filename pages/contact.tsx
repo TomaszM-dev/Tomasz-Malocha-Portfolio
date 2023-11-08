@@ -64,7 +64,7 @@ const ContactPage = () => {
           whileInView="animate"
           exit="exit"
           viewport={{ once: true }}
-          className="transition-all duration-0 backface text-[4.6rem] font-[300] w-[44rem] xl:text-[5.8rem] xl:w-[55rem] leading-[4.6rem] xl:leading-[5.5rem] tracking-tighter max-md:text-[4rem]  max-sm:leading-[3.4rem] max-sm:text-[3.2rem]  max-sm:w-full"
+          className="transition-all duration-0 backface text-[4.6rem] font-[300] w-[44rem] xl:text-[5.8rem] xl:w-[55rem] leading-[4.6rem] xl:leading-[5.5rem] tracking-tighter max-md:text-[4rem]  max-sm:leading-[3.4rem] max-sm:text-[2.9rem]  max-sm:w-full"
         >
           Lets start working <br /> together
         </motion.h1>
