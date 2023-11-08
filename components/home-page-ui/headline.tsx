@@ -43,7 +43,7 @@ const Headline = ({ title, info }: { title: string; info: string }) => {
   return (
     <>
       {isMobile && (
-        <div className="w-full mt-28 font-[500]  tracking-tighter text-[2.7rem] px-4 ">
+        <div className="w-full my-14 font-[500]  tracking-tighter text-[2.7rem] px-4 ">
           My best Projects ...
         </div>
       )}
