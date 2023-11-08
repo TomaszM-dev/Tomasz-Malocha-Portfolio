@@ -48,10 +48,10 @@ const Experience = () => {
           >
             <p className="text-[#7C7B7B] text-[1.1rem] mb-1">01</p>
             <div className="bg-[#dedcdc] w-full h-[1px] mb-7"></div>
-            <h2 className="text-[1.7rem]  mb-7">
+            <h2 className="text-[1.8rem] xl:text-[1.9rem]  mb-7">
               Tech Internship from School 2019
             </h2>
-            <p className="text-[1.1rem] font-[200] §text-[#686868]">
+            <p className="text-[1.2rem] xl:text-[1.3rem] font-[200] §text-[#686868]">
               My school provided us an internship as a students we completed 4
               months of working for tech company
             </p>
@@ -65,11 +65,11 @@ const Experience = () => {
           >
             <p className="text-[#7C7B7B] text-[1.1rem] mb-1">02</p>
             <div className="bg-[#dedcdc] w-full h-[1px] mb-7"></div>
-            <h2 className="text-[1.7rem]  mb-7 ">
+            <h2 className="text-[1.8rem] xl:text-[1.9rem] mb-7 ">
               Project Menager in Buma AS 2020-2022
             </h2>
             <p className=" font-[200] text-[#686868]">
-              <p className=" text-[1.1rem]  ">
+              <p className=" text-[1.2rem] xl:text-[1.3rem] ">
                 Though not coding related as a Project Menager I have menaged to
                 develop skills that are essential for working in a group of
                 people. Skills like: Solving problems, conflict resolution, Time

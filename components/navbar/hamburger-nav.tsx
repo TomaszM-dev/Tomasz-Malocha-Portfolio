@@ -48,7 +48,7 @@ const HamburgerNav = ({ setIsActive, isActive, navItems }: HamburgerProps) => {
         animate="animate"
         className="h-screen transition-all duration-0 backface origin-top-right max-md:w-full w-[28rem] xl:w-[33rem] fixed right-0 top-0 text-white z-60  bg-[#010101]  "
       >
-        <div className="w-full justify-between max-sm:mt-[8rem] mt-48 px-20 max-sm:px-6 shadow-2xl shadow-black  gap-20 box-border flex flex-col    ">
+        <div className="w-full justify-between max-sm:mt-[8rem] mt-48 px-20 max-sm:px-6 shadow-2xl shadow-black  max-sm:gap-8 gap-20 box-border flex flex-col    ">
           <div className="z-40">
             <motion.p
               variants={fadeIn("up", 0)}
@@ -105,7 +105,7 @@ const HamburgerNav = ({ setIsActive, isActive, navItems }: HamburgerProps) => {
               variants={fadeIn("down", 0)}
               initial="hidden"
               whileInView={"show"}
-              className="flex gap-6  max-sm:gap-10 text-[0.8rem] xl:text-[1rem] "
+              className="flex gap-6  max-sm:gap-10 text-[0.9rem] xl:text-[1rem] "
             >
               <Link
                 target={"_blank"}

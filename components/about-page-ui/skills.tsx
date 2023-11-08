@@ -56,10 +56,10 @@ const Skills = () => {
           >
             <p className="text-[#7C7B7B] text-[1.1rem] mb-1">01</p>
             <div className="bg-[#dedcdc] w-full h-[1px] mb-7"></div>
-            <h2 className="xl:text-[1.8rem] text-[1.7rem]  mb-7">
+            <h2 className="xl:text-[1.9rem] text-[1.8rem]  mb-7">
               Front-end tools
             </h2>
-            <p className="xl:text-[1.2rem] text-[1.1rem] font-[200] text-[#686868]">
+            <p className="xl:text-[1.3rem] text-[1.2rem] font-[200] text-[#686868]">
               {" "}
               {phrase}
             </p>
@@ -73,8 +73,8 @@ const Skills = () => {
           >
             <p className="text-[#7C7B7B] text-[1.1rem] mb-1">02</p>
             <div className="bg-[#dedcdc] w-full h-[1px] mb-7"></div>
-            <h2 className="xl:text-[1.8rem] text-[1.7rem] mb-7">Frameworks</h2>
-            <p className="xl:text-[1.2rem] text-[1.1rem] font-[200] text-[#686868]">
+            <h2 className="xl:text-[1.9rem] text-[1.8rem] mb-7">Frameworks</h2>
+            <p className="xl:text-[1.3rem] text-[1.2rem] font-[200] text-[#686868]">
               {" "}
               {phrase3}
             </p>
@@ -88,8 +88,8 @@ const Skills = () => {
           >
             <p className="text-[#7C7B7B] text-[1.1rem] mb-1">03</p>
             <div className="bg-[#dedcdc] w-full h-[1px] mb-7"></div>
-            <h2 className="xl:text-[1.8rem] text-[1.7rem] mb-7">Libraries</h2>
-            <p className="xl:text-[1.2rem] text-[1.1rem] font-[200] text-[#686868]">
+            <h2 className="xl:text-[1.9rem] text-[1.8rem] mb-7">Libraries</h2>
+            <p className="xl:text-[1.3rem] text-[1.2rem] font-[200] text-[#686868]">
               {" "}
               {phrase2}
             </p>

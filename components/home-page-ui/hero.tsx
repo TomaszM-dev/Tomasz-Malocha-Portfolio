@@ -63,7 +63,7 @@ const Hero = () => {
         whileInView="animate"
         exit="exit"
         viewport={{ once: true }}
-        className="absolute bottom-10 transition-all duration-0 backface   max-md:mb-60    "
+        className="absolute bottom-10 transition-all duration-0 backface   max-md:mb-48    "
       >
         <div
           ref={slider}
