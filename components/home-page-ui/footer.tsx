@@ -43,12 +43,12 @@ const Footer = () => {
             className="w-[6rem] h-[6rem] max-md:w-[5rem] max-md:h-[5rem] mb-2"
           />
           <h2 className="ml-[1rem] max-sm:ml-[0.3rem] text-[3rem] max-md:text-[2.1rem]   w-[60%] max-sm:w-[100%] max-sm:text-[2rem] leading-10">
-            I am open for hiring lets work
+            I am open for
           </h2>
           <BsArrowDownLeft className="text-[1.8rem] ml-10 mt-10 max-md:hidden" />
         </div>
-        <h3 className=" text-[3rem] max-md:text-[2.1rem]   w-[60%] max-sm:w-[100%] max-sm:text-[2rem] leading-10">
-          together !
+        <h3 className=" text-[3rem] max-md:text-[2.1rem]   w-[60%] max-sm:w-[100%] max-sm:text-[2rem] ">
+          hiring lets work together !
         </h3>
         <div className="w-full h-[1px] mt-28 max-sm:mx-auto  max-sm:w-[95%] bg-[#313131] max-sm:mt-36"></div>
         <div
