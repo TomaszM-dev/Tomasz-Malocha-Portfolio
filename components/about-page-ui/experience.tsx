@@ -18,7 +18,7 @@ const Experience = () => {
       className="max-w-[1700px] mx-auto w-full max-sm:my-10 mt-28  flex flex-col px-10 max-sm:px-4 my-60"
     >
       {isMobile && (
-        <h3 className="text-[2.6rem] tracking-tighter mt-4 px-4">
+        <h3 className="text-[2.4rem] tracking-tighter mt-4 px-4">
           My experience...
         </h3>
       )}
@@ -59,7 +59,7 @@ const Experience = () => {
             <h2 className="text-[1.8rem] xl:text-[1.9rem]  mb-7">
               Tech Internship from School 2019
             </h2>
-            <p className="text-[1.2rem] xl:text-[1.3rem] font-[200] §text-[#686868]">
+            <p className="text-[1.2rem] xl:text-[1.3rem] font-[200] text-[#686868]">
               My school provided us an internship as a students we completed 4
               months of working for tech company
             </p>

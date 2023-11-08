@@ -117,7 +117,7 @@ const WorkPage = () => {
                       {project.number}
                     </h1>
                     <div className="flex gap-3">
-                      <p className="text-[3rem] xl:text-[3.2rem]">
+                      <p className="text-[3rem] xl:text-[3.2rem] max-sm:text-[2.8rem]">
                         {project.title}
                       </p>
                       <div className="flex gap-2 text-[1.4rem] xl:text-[1.6rem] xl:gap-4">
@@ -129,13 +129,13 @@ const WorkPage = () => {
                         </Link>
                       </div>
                     </div>
-                    <div className="text-[1.3rem] flex gap-2 mt-4 font-[500] ">
+                    <div className="text-[1.3rem] max-sm:text-[1.1rem] flex gap-2 mt-4 font-[500] ">
                       <p className="uppercase ">{project.type} &#x2022;</p>
                       <Link target={"_blank"} href={project.liveSite}>
                         See Live
                       </Link>
                     </div>
-                    <p className="text-[1.3rem] xl:text-[1.5rem] font-[200] mt-3 text-[#7E7E7E] ">
+                    <p className="text-[1.3rem] max-sm:text-[1.2rem] xl:text-[1.5rem] font-[200] mt-3 text-[#7E7E7E] ">
                       {project.info}
                     </p>
                     <div className="flex mt-6 gap-3 text-[1.7rem]">
