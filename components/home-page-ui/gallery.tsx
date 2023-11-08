@@ -16,7 +16,7 @@ const HorizontalScrollCarousel = () => {
     offset: ["start end", "end start"],
   });
 
-  const x = useTransform(scrollYProgress, [0, 0.8], ["-50%", "0%"]);
+  const x = useTransform(scrollYProgress, [0, 0.9], ["-20%", "0%"]);
   const height = useTransform(scrollYProgress, [0, 0.8], [50, 0]);
 
   return (

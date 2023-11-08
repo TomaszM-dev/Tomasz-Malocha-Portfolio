@@ -63,11 +63,11 @@ const Hero = () => {
         whileInView="animate"
         exit="exit"
         viewport={{ once: true }}
-        className="absolute bottom-10 transition-all duration-0 backface   max-md:mb-48    "
+        className="absolute bottom-10 transition-all duration-0 backface   max-md:mb-40    "
       >
         <div
           ref={slider}
-          className="m-0 flex text-[11rem] xl:text-[13rem] whitespace-nowrap    text-white  font-[400] tracking-tight relative"
+          className="m-0 flex max-sm:text-[9rem] text-[11rem] xl:text-[13rem] whitespace-nowrap    text-white  font-[400] tracking-tight relative"
         >
           <p className="relative m-0 flex items-center" ref={firstText}>
             Tomasz Malocha{" "}

@@ -7,6 +7,7 @@ import { descText, fadeIn } from "../animations/animations";
 const Experience = () => {
   const container = useRef(null);
   const isInView = useInView(container);
+  const isMobile = window.innerWidth < 500;
 
   const phrase =
     "The will to win, the desire to succeed, the urge to reach your full potential… these are the keys that will unlock the door to personal excellence.” - Confucius";
@@ -14,28 +15,35 @@ const Experience = () => {
   return (
     <div
       ref={container}
-      className="max-w-[1700px] mx-auto w-full max-sm:my-10 mt-28 flex flex-col px-10 max-sm:px-4 my-60"
+      className="max-w-[1700px] mx-auto w-full max-sm:my-10 mt-28  flex flex-col px-10 max-sm:px-4 my-60"
     >
-      <h3 className="text-end  max-sm:leading-[2.3rem] max-sm:self-start max-sm:text-start max-sm:w-[100%]  w-[80%]    self-end">
-        {phrase.split(" ").map((word, index) => {
-          return (
-            <motion.span
-              key={index}
-              className="transition-all duration-0 backface ml-1 xl:text-[2.3rem] text-[1.9rem] inline-flex tracking-tighter overflow-hidden"
-            >
+      {isMobile && (
+        <h3 className="text-[2.6rem] tracking-tighter mt-4 px-4">
+          My experience...
+        </h3>
+      )}
+      {!isMobile && (
+        <h3 className="text-end  max-sm:leading-[2.3rem] max-sm:self-start max-sm:text-start max-sm:w-[100%]  w-[80%]    self-end">
+          {phrase.split(" ").map((word, index) => {
+            return (
               <motion.span
-                variants={descText()}
-                custom={index}
-                animate={isInView ? "open" : "closed"}
                 key={index}
-                className=""
+                className="transition-all duration-0 backface ml-1 xl:text-[2.3rem] text-[1.9rem] inline-flex tracking-tighter overflow-hidden"
               >
-                {word}
+                <motion.span
+                  variants={descText()}
+                  custom={index}
+                  animate={isInView ? "open" : "closed"}
+                  key={index}
+                  className=""
+                >
+                  {word}
+                </motion.span>
               </motion.span>
-            </motion.span>
-          );
-        })}
-      </h3>
+            );
+          })}
+        </h3>
+      )}
 
       <div className="flex gap-10 mx-auto max-lg:flex-col">
         <div className="flex gap-28 mt-16 max-lg:flex-col max-lg:gap-14 max-lg:mb-14 ">

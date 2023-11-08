@@ -23,10 +23,12 @@ const Footer = () => {
   const router = useRouter();
   const active = useNavLink();
 
+  const isMobile = window.innerWidth < 500;
+
   return (
     <div
       className={` w-full  text-white bg-[#030303] flex flex-col relative ${
-        pathname === "/"
+        pathname === "/" && !isMobile
           ? "mt-[-24rem]   max-md:mt-[-27rem] pt-60 max-sm:pt-40"
           : " pt-36"
       }`}

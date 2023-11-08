@@ -48,7 +48,7 @@ const HamburgerNav = ({ setIsActive, isActive, navItems }: HamburgerProps) => {
         animate="animate"
         className="h-screen transition-all duration-0 backface origin-top-right max-md:w-full w-[28rem] xl:w-[33rem] fixed right-0 top-0 text-white z-60  bg-[#010101]  "
       >
-        <div className="w-full justify-between max-sm:mt-[8rem] mt-48 px-20 max-sm:px-6 shadow-2xl shadow-black  max-sm:gap-8 gap-20 box-border flex flex-col    ">
+        <div className="w-full justify-between max-sm:mt-[6rem] mt-48 px-20 max-sm:px-6 shadow-2xl shadow-black  max-sm:gap-8 gap-20 box-border flex flex-col    ">
           <div className="z-40">
             <motion.p
               variants={fadeIn("up", 0)}
@@ -78,7 +78,7 @@ const HamburgerNav = ({ setIsActive, isActive, navItems }: HamburgerProps) => {
                   className="transition-all duration-0 backface group z-40 flex group-hover items-center justify-between "
                 >
                   <p
-                    className="textxl  xl:text-[3.3rem] xl:leading-[4.3rem] leading-[4.1rem] cursor-pointer max-sm:text-[3.1rem] max-sm:leading-[4.1rem]"
+                    className="textxl  xl:text-[3.3rem] xl:leading-[4.3rem] leading-[4.1rem] cursor-pointer max-sm:text-[2.9rem] max-sm:leading-[4.1rem]"
                     suppressHydrationWarning
                     onClick={() => handleClick(link)}
                   >

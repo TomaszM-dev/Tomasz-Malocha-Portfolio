@@ -10,7 +10,7 @@ import Link from "next/link";
 
 const Landing = () => {
   return (
-    <div className="w-[100%] max-w-[1700px] mt-[11rem]  mx-auto px-28 max-md:px-10  flex flex-col justify-center max-sm:mt-[8rem] max-sm:px-4">
+    <div className="w-[100%] max-w-[1700px] mt-[11rem]  mx-auto px-28 max-md:px-10  flex flex-col justify-center max-sm:mt-[6rem] max-sm:px-4">
       <motion.h1
         variants={upDesc()}
         initial="initial"
@@ -29,13 +29,13 @@ const Landing = () => {
         exit="exit"
         className="transition-all duration-0 backface mt-20  flex flex-col max-sm:mt-10"
       >
-        <div className="flex flex-col mt-10  max-sm:mt-14 w-[100%] h-[1px] bg-[#cbcbcb]"></div>
+        <div className="flex flex-col mt-10  max-sm:mt-8 w-[100%] h-[1px] bg-[#cbcbcb]"></div>
         <Link
           target="_blank"
           href="https://www.instagram.com/tommek.23/"
           data-scroll
           data-scroll-speed="0.1"
-          className="  cursor-pointer bg-black w-fit h-fit text-white font-[200] text-[2.5rem]  max-sm:text-[2rem] max-sm:px-12 max-sm:py-12 max-sm:mt-[-4rem] px-14 py-14 rounded-[50%] mt-[-5rem] self-end  mr-10 "
+          className="  cursor-pointer bg-black w-fit h-fit text-white font-[200] text-[2.5rem]  max-sm:text-[2rem] max-sm:px-10 max-sm:py-10 max-sm:mt-[-4rem] px-14 py-14 rounded-[50%] mt-[-5rem] self-end  mr-10 "
         >
           <BsInstagram />
         </Link>

@@ -28,11 +28,11 @@ const Filter = ({
       whileInView="animate"
       exit="exit"
       viewport={{ once: true }}
-      className={`flex gap-2 items-center max-sm:flex-wrap max-sm:gap-y-5 text-[1.2rem] mt-20 font-[200] max-sm:mt-10 max-sm:justify-start`}
+      className={`flex gap-2 items-center max-sm:flex-wrap max-sm:gap-y-5 text-[1.2rem] mt-20 font-[200] max-sm:mt-6 max-sm:justify-start`}
     >
       <button
         onClick={() => setActiveGenre("all")}
-        className={`max-sm:px-8 max-sm:text-[1.2rem] max-sm:py-3 px-10 py-6 border-[1px] border-[#dddddd] rounded-[4rem] ${
+        className={`max-sm:px-8 max-sm:text-[1.2rem] max-sm:py-5 px-10 py-6 border-[1px] border-[#dddddd] rounded-[4rem] ${
           activeGenre === "all" ? "bg-black border-none text-white " : ""
         }`}
       >
@@ -40,7 +40,7 @@ const Filter = ({
       </button>
       <button
         onClick={() => setActiveGenre("landing")}
-        className={`max-sm:px-8 max-sm:text-[1.2rem] max-sm:py-3 px-10 py-5 border-[1px] border-[#dddddd] rounded-[4rem] ${
+        className={`max-sm:px-8 max-sm:text-[1.2rem] max-sm:py-5 px-10 py-5 border-[1px] border-[#dddddd] rounded-[4rem] ${
           activeGenre === "landing" ? "bg-black border-none text-white " : ""
         }`}
       >
@@ -48,7 +48,7 @@ const Filter = ({
       </button>
       <button
         onClick={() => setActiveGenre("application")}
-        className={`max-sm:px-8 max-sm:text-[1.2rem] max-sm:py-3 px-10 py-5 border-[1px] border-[#dddddd] rounded-[4rem] ${
+        className={`max-sm:px-8 max-sm:text-[1.2rem] max-sm:py-5 px-10 py-5 border-[1px] border-[#dddddd] rounded-[4rem] ${
           activeGenre === "application"
             ? "bg-black border-none text-white "
             : ""

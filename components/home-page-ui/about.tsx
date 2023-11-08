@@ -102,8 +102,10 @@ const About = () => {
         >
           <p className="text-[1rem] text-[#7e7e7e] max-sm:hidden">01</p>
           <div className="flex flex-col gap-2 ">
-            <h4 className="text-[1.2rem] uppercase">Skill set</h4>
-            <p className="text-[#7E7E7E] font-[200]  text-[1.1rem] xl:text-[1.2rem]">
+            <h4 className="xl:text-[1.4rem] text-[1.3rem] uppercase">
+              Skill set
+            </h4>
+            <p className="text-[#7E7E7E] font-[200]  text-[1.2rem] xl:text-[1.3rem]">
               My favorite technologies to use are: Next.js, React.js as web
               applications, Tailwind for ui design, Prisma (ORM) for access and
               data menagment, TypeScript for type safety and PlanetScale for
@@ -120,8 +122,10 @@ const About = () => {
         >
           <p className="text-[1rem] text-[#7e7e7e] max-sm:hidden">02</p>
           <div className="flex flex-col gap-2 ">
-            <h4 className="text-[1.3rem] uppercase  ">Background</h4>
-            <p className="text-[#7E7E7E] font-[200]  text-[1.1rem] xl:text-[1.2rem]">
+            <h4 className="xl:text-[1.4rem] text-[1.3rem] uppercase  ">
+              Background
+            </h4>
+            <p className="text-[#7E7E7E] font-[200]  text-[1.2rem] xl:text-[1.3rem]">
               I have finished IT tech school in 2019, Menage to get a few
               certificates and get a qualifications e12,e13,e14
             </p>
@@ -136,10 +140,10 @@ const About = () => {
         >
           <p className="text-[1rem] text-[#7e7e7e] max-sm:hidden">03</p>
           <div className="flex flex-col gap-2 ">
-            <h4 className="text-[1.3rem] uppercase xl:text-[1.3rem] ">
+            <h4 className="xl:text-[1.4rem] text-[1.3rem] uppercase  ">
               Portfolio
             </h4>
-            <p className="text-[#7E7E7E] text-[1.1rem] font-[200] xl:text-[1.2rem]">
+            <p className="text-[#7E7E7E] text-[1.2rem] font-[200] xl:text-[1.3rem]">
               In my portfolio there are 8 unique projects, 4 of them are full
               stack web applications
             </p>

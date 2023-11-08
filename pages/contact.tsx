@@ -56,7 +56,7 @@ const ContactPage = () => {
 
   return (
     <Page>
-      <main className="w-[100%] max-w-[1700px] mt-[11rem]  mx-auto px-28 max-md:px-10  flex flex-col justify-center max-sm:mt-[8rem] max-sm:px-4 ">
+      <main className="w-[100%] max-w-[1700px] mt-[11rem]  mx-auto px-28 max-md:px-10  flex flex-col justify-center max-sm:mt-[5rem] max-sm:px-4 ">
         <BsArrowDownLeft className="self-end text-[2rem] max-sm:mb-6" />
         <motion.h1
           variants={upDesc()}
@@ -64,7 +64,7 @@ const ContactPage = () => {
           whileInView="animate"
           exit="exit"
           viewport={{ once: true }}
-          className="transition-all duration-0 backface text-[4.6rem] font-[300] w-[44rem] xl:text-[5.8rem] xl:w-[55rem] leading-[4.6rem] xl:leading-[5.5rem] tracking-tighter max-md:text-[4rem]  max-sm:leading-[3.4rem] max-sm:text-[3.4rem]  max-sm:w-full"
+          className="transition-all duration-0 backface text-[4.6rem] font-[300] w-[44rem] xl:text-[5.8rem] xl:w-[55rem] leading-[4.6rem] xl:leading-[5.5rem] tracking-tighter max-md:text-[4rem]  max-sm:leading-[3.4rem] max-sm:text-[3.2rem]  max-sm:w-full"
         >
           Lets start working <br /> together
         </motion.h1>

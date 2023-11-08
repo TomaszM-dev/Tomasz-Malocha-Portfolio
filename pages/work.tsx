@@ -51,7 +51,7 @@ const WorkPage = () => {
       <div
         data-scroll
         data-scroll-speed="0.1"
-        className="w-[100%] max-w-[1700px] mt-[11rem]  mx-auto px-28 max-md:px-10  flex flex-col justify-center max-sm:mt-[8rem] max-sm:px-4 "
+        className="w-[100%] max-w-[1700px] mt-[11rem]  mx-auto px-28 max-md:px-10  flex flex-col justify-center max-sm:mt-[6rem] max-sm:px-4 "
       >
         <motion.h1
           variants={upDesc()}
@@ -88,7 +88,7 @@ const WorkPage = () => {
         viewport={{ once: true }}
         className="transition-all duration-0 backface w-full h-[10rem]"
       ></motion.div>
-      <motion.div className="flex flex-col  gap-[8rem] max-sm:gap-[6rem] mb-40 max-w-[1700px]   mx-auto mt-[10rem] max-sm:mt-[5rem] ">
+      <motion.div className="flex flex-col  gap-[8rem] max-sm:gap-[9rem] mb-40 max-w-[1700px]   mx-auto mt-[10rem] max-sm:mt-[5rem] ">
         <AnimatePresence>
           {filtered.map((project, i) => {
             const tech = project.tech;
@@ -97,7 +97,7 @@ const WorkPage = () => {
               <div
                 data-scroll
                 data-scroll-speed="0.1"
-                className={`flex max-lg:flex-col  items-center max-sm:px-4 px-20 gap-20 justify-center mx-auto max-sm:flex-col-reverse  ${
+                className={`flex max-lg:flex-col  items-center max-sm:px-4 px-20 gap-20 justify-center mx-auto max-sm:flex-col-reverse max-sm:gap-10  ${
                   i % 2 === 1 ? "flex-row-reverse" : ""
                 }`}
                 key={project.info}
@@ -150,7 +150,11 @@ const WorkPage = () => {
                   exit="hidden"
                   className="transition-all duration-0 backface  w-[50%] max-lg:w-[80%] max-sm:w-[100%]   xl:w-[40%] xxl:w-[48%] flex xl:justify-center  "
                 >
-                  <Image className=" " alt="" src={project.picture}></Image>
+                  <Image
+                    className=" object-cover"
+                    alt=""
+                    src={project.picture}
+                  ></Image>
                 </motion.div>
               </div>
             );

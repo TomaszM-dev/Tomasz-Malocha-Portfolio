@@ -10,6 +10,7 @@ import Example from "@/components/home-page-ui/gallery";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
+  const isMobile = window.innerWidth < 500;
 
   useEffect(() => {
     (async () => {
@@ -24,6 +25,7 @@ export default function Home() {
       }, 2000);
     })();
   }, []);
+
   return (
     <Page>
       <Hero />
@@ -33,7 +35,7 @@ export default function Home() {
         info="I am developer who cares deeply about user experience and functionality "
       />
       <Work />
-      <Example />
+      {!isMobile && <Example />}
       <Footer />
     </Page>
   );
