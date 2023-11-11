@@ -48,7 +48,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="w-full h-[92vh] max-sm:h-[80vh] bg-[#C8C6C9] relative flex overflow-hidden">
+    <div className="w-full h-[92vh] max-sm:h-[80vh] bg-[#C8C6C9] relative flex overflow-hidden items-center justify-center">
       <Image
         fill
         src={hero}
@@ -84,7 +84,7 @@ const Hero = () => {
         whileInView="animate"
         exit="exit"
         viewport={{ once: true }}
-        className="z-1 transition-all duration-0 backface  whitespace-nowrap mt-[17rem] xl:mt-[17rem] text-white h-full xl:w-[800px]  w-[740px] flex justify-between mx-auto max-md:items-end max-md:mt-0 max-md:px-10  max-sm:px-6  "
+        className="z-1 transition-all duration-0 backface   whitespace-nowrap  self-center mb-48 text-white  xl:w-[800px]  w-[740px] flex justify-between mx-auto max-md:items-end max-md:mt-0 max-md:px-10  max-sm:px-6  "
       >
         <div
           data-scroll
@@ -100,7 +100,7 @@ const Hero = () => {
         <div
           data-scroll
           data-scroll-speed="0.2"
-          className="max-sm:hidden cursor-pointer bg-black w-fit h-fit text-white font-[200] text-[1.2rem] px-8 py-9 rounded-[50%] mt-8  ml-10 "
+          className="max-sm:hidden cursor-pointer bg-black w-fit h-fit text-white font-[200] text-[1.2rem] px-8 py-9 rounded-[50%] "
         >
           <h2 className="">
             Based In <br /> Poland

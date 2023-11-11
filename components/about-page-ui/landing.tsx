@@ -25,7 +25,7 @@ const Landing = () => {
         viewport={{ once: true }}
         variants={upDesc()}
         initial="initial"
-        whileInView="animate"
+        animate="animate"
         exit="exit"
         className="transition-all duration-0 backface mt-20  flex flex-col max-sm:mt-10"
       >

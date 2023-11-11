@@ -25,7 +25,7 @@ const Filter = ({
     <motion.div
       variants={upDesc()}
       initial="initial"
-      whileInView="animate"
+      animate="animate"
       exit="exit"
       viewport={{ once: true }}
       className={`flex gap-2 items-center max-sm:flex-wrap max-sm:gap-y-5 text-[1.2rem] mt-20 font-[200] max-sm:mt-6 max-sm:justify-start`}

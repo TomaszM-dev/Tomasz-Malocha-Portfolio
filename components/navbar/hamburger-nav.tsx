@@ -38,7 +38,7 @@ const HamburgerNav = ({ setIsActive, isActive, navItems }: HamburgerProps) => {
   return (
     <motion.div
       onClick={() => setIsActive(!isActive)}
-      className="fixed w-full h-full  z-[40] top-0 left-0"
+      className="fixed w-full h-screen  z-[40] top-0 left-0"
     >
       <motion.div
         onClick={(e) => e.stopPropagation()}
@@ -48,8 +48,8 @@ const HamburgerNav = ({ setIsActive, isActive, navItems }: HamburgerProps) => {
         animate="animate"
         className="h-screen transition-all duration-0 backface origin-top-right max-md:w-full w-[28rem] xl:w-[33rem] fixed right-0 top-0 text-white z-60  bg-[#010101]  "
       >
-        <div className="w-full justify-between max-sm:mt-[6rem] mt-48 px-20 max-sm:px-6 shadow-2xl shadow-black  max-sm:gap-8 gap-20 box-border flex flex-col    ">
-          <div className="z-40">
+        <div className="w-full  h-screen  max-sm:mt-[5rem]  px-20 max-sm:px-6 shadow-2xl shadow-black  justify-between py-20 max-sm:gap-8 gap-20 box-border flex flex-col   max-sm:justify-normal ">
+          <div className="z-40 mt-16 max-sm:mt-0">
             <motion.p
               variants={fadeIn("up", 0)}
               initial="hidden"
@@ -97,7 +97,7 @@ const HamburgerNav = ({ setIsActive, isActive, navItems }: HamburgerProps) => {
           </div>
 
           <div className="z-40">
-            <motion.p className="uppercase text-[#999] text-end textxs mt-40">
+            <motion.p className="uppercase text-[#999] text-end textxs max-sm:mt-40">
               Socials & Resume
             </motion.p>
             <motion.p className="w-full mx-auto h-[1px] bg-[#646464] mb-10 mt-4 "></motion.p>
