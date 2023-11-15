@@ -16,7 +16,7 @@ const About = () => {
   const seeMore = useRef(null);
   const active = useNavLink();
   const phrase =
-    "I am Tomasz Malocha, 23 year old guy, passionate about creating beautifull and functional websites";
+    "Hey, I'm Tomasz Malocha, a 23-year-old dude who's all about making websites that are as pretty as a Norwegian polar lights and work like a Chat GPT premium version";
   const isInView = useInView(description);
 
   useEffect(() => {
@@ -50,9 +50,9 @@ const About = () => {
   return (
     <div
       ref={description}
-      className="max-w-[1700px] mx-auto flex max-lg:p-10 p-20 mt-10 max-sm:mt-20 gap-40 max-lg:gap-14 relative max-lg:flex-col overflow-hidden max-sm:p-2"
+      className="max-w-[1700px] mx-auto flex max-lg:p-10 p-20 mt-10 max-sm:mt-20 gap-20 max-lg:gap-14 relative max-lg:flex-col overflow-hidden max-sm:p-2"
     >
-      <div className="flex-[45%] relative flex flex-col gap-1">
+      <div className="flex-[55%] relative flex flex-col gap-1">
         <p className="uppercase text-[#AAA5A5] text-sm mb-2 max-sm:ml-2 ">
           About me
         </p>
@@ -62,7 +62,7 @@ const About = () => {
             return (
               <motion.span
                 key={index}
-                className="inline-flex ml-2 max-sm:leading-[2.3rem] text-[1.8rem] xl:text-[2rem] font-[300] overflow-hidden leading-[2.8rem]"
+                className="inline-flex ml-2 max-sm:leading-[2.3rem] text-[1.7rem] xl:text-[1.9rem] font-[300] overflow-hidden leading-[2.8rem]"
               >
                 <motion.span
                   variants={descText()}
@@ -102,14 +102,15 @@ const About = () => {
         >
           <p className="text-[1rem] text-[#7e7e7e] max-sm:hidden">01</p>
           <div className="flex flex-col gap-2 ">
-            <h4 className="xl:text-[1.4rem] text-[1.3rem] uppercase">
+            <h4 className="xl:text-[1.3rem] text-[1.2rem] uppercase">
               Skill set
             </h4>
-            <p className="text-[#7E7E7E] font-[200]  text-[1.2rem] xl:text-[1.3rem]">
-              My favorite technologies to use are: Next.js, React.js as web
-              applications, Tailwind for ui design, Prisma (ORM) for access and
-              data menagment, TypeScript for type safety and PlanetScale for
-              data storage
+            <p className="text-[#7E7E7E] font-[200]  text-[1.1rem] xl:text-[1.2rem]">
+              I love using cool tools like Next.js and React.js for building
+              websites, Tailwind for making them look awesome, Prisma for
+              handling data, TypeScript to keep things safe, and PlanetScale to
+              store all that important info. It is like having a superhero
+              toolkit imo 🤓.
             </p>
           </div>
         </motion.div>
@@ -122,12 +123,15 @@ const About = () => {
         >
           <p className="text-[1rem] text-[#7e7e7e] max-sm:hidden">02</p>
           <div className="flex flex-col gap-2 ">
-            <h4 className="xl:text-[1.4rem] text-[1.3rem] uppercase  ">
+            <h4 className="xl:text-[1.3rem] text-[1.2rem] uppercase  ">
               Background
             </h4>
-            <p className="text-[#7E7E7E] font-[200]  text-[1.2rem] xl:text-[1.3rem]">
-              I have finished IT tech school in 2019, Menage to get a few
-              certificates and get a qualifications e12,e13,e14
+            <p className="text-[#7E7E7E] font-[200]  text-[1.1rem] xl:text-[1.2rem]">
+              Finished my IT tech school in 2019, earned various certificates
+              and a degree, and transitioned to Project Management for almost 3
+              years, even though it is not in the tech industry. The cool thing
+              is, management skills are pretty universal — they work seamlessly
+              across different fields! 💼
             </p>
           </div>
         </motion.div>
@@ -140,12 +144,12 @@ const About = () => {
         >
           <p className="text-[1rem] text-[#7e7e7e] max-sm:hidden">03</p>
           <div className="flex flex-col gap-2 ">
-            <h4 className="xl:text-[1.4rem] text-[1.3rem] uppercase  ">
+            <h4 className="xl:text-[1.3rem] text-[1.2rem] uppercase  ">
               Portfolio
             </h4>
-            <p className="text-[#7E7E7E] text-[1.2rem] font-[200] xl:text-[1.3rem]">
-              In my portfolio there are 8 unique projects, 4 of them are full
-              stack web applications
+            <p className="text-[#7E7E7E] text-[1.1rem] font-[200] xl:text-[1.2rem]">
+              Before you close my portfolio Dear someone 🥲 I highly suggest you
+              to check out my projects they are cool I PROMISE
             </p>
           </div>
         </motion.div>

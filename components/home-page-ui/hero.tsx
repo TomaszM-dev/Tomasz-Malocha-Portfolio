@@ -67,7 +67,7 @@ const Hero = () => {
       >
         <div
           ref={slider}
-          className="m-0 flex max-sm:text-[9rem] text-[11rem] xl:text-[13rem] whitespace-nowrap    text-white  font-[400] tracking-tight relative"
+          className="m-0 flex max-sm:text-[10rem] text-[11rem] xl:text-[13rem] whitespace-nowrap    text-white  font-[400] tracking-tight relative"
         >
           <p className="relative m-0 flex items-center" ref={firstText}>
             Tomasz Malocha{" "}
@@ -84,7 +84,7 @@ const Hero = () => {
         whileInView="animate"
         exit="exit"
         viewport={{ once: true }}
-        className="z-1 transition-all duration-0 backface   whitespace-nowrap  self-center mb-48 text-white  xl:w-[800px]  w-[740px] flex justify-between mx-auto max-md:items-end max-md:mt-0 max-md:px-10  max-sm:px-6  "
+        className="z-1 transition-all duration-0 backface max-sm:h-full   whitespace-nowrap  self-center mb-48 text-white  xl:w-[800px]  w-[740px] flex justify-between mx-auto max-md:items-end max-md:mt-0 max-md:px-10  max-sm:px-6 max-sm:mb-0  "
       >
         <div
           data-scroll
@@ -94,7 +94,9 @@ const Hero = () => {
           <BsArrowDownRight className=" md:hidden  self-start mb-7 max-sm:mb-4 relative" />
           <BsArrowDownLeft className="text[1.4rem] max-md:hidden  self-end mb-7 max-sm:mb-4 relative" />
           <h1 className="text-[1.6rem] xl:text-[1.7rem] font-[300] max-md:mb-20 z-4 relative max-sm:font-[200] max-sm:mb-10 max-sm:text-[1.9rem] ">
-            Next.js Full Stack <br /> Developer
+            Project Menager &
+            <br />
+            Developer
           </h1>
         </div>
         <div

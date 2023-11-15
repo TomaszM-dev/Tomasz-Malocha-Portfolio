@@ -25,12 +25,15 @@ const AboutMe = () => {
       </div>
       <div className="w-[30%] max-lg:w-[100%] flex flex-col   gap-4   h-full max-sm:w-[100%] ">
         <p className="text-[1.2rem] font-[200] max-sm:mt-8 max-sm:mb-4 max-sm:leading-[1.7rem] max-sm:text-[1.1rem]">
-          Coding serves as my creative canvas, a medium to unravel challenges,
-          and a conduit to contribute to the world s betterment through
-          technological progress . Beyond coding, I m passionate about
-          mindfulness, self-care, self improvement, and weight lifting. I
-          believe in the importance of a healthy body to complement a healthy
-          mind.
+          Coding is like solving puzzles for me. It is creative and lets me
+          build cool things from scratch. It is like being a wizard and making
+          magic happen on the computer via numbers and strings (I am a fan of
+          Harry Potter) 🧙🏻‍♂️ Beyond coding, I am passionate about, philosophy,
+          psychology, mindfullnes, reading, and weight lifting. I belive that
+          healthy mind needs to be complemented with healthy body. &quot;To keep
+          the body in good health is a duty... otherwise, we shall not be able
+          to keep our mind strong and clear.&quot; - Thich Nhat Hanh. Oh wait Do
+          I mentioned that I love philosophy? 🤔
         </p>
       </div>
     </motion.div>

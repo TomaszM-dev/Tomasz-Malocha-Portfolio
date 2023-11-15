@@ -34,7 +34,7 @@ const WorkData = () => [
     type: "Web App store",
     liveSite: "https://speed-rent-store.vercel.app/",
     githubSite: "https://github.com/TomaszM-dev/speedRent-store",
-    info: "Introducing SpeedRent – Your Ultimate Vehicle Rental Solution! Rent a vehicle on your terms, whether its for a day or a month, and experience the convenience of secure payments via Stripe",
+    info: "My coolest project yet is a website where you can rent cars, just like in real life. All the info on the site comes from the SpeedRental admin dashboard. You can pick a vehicle that's ready to roll, choose how long you want it, and pay for that time. Plus, I added lots of fun animations to make it cool! 🚗✨ ",
 
     tech: [
       <SiFigma key="1" />,
@@ -54,7 +54,7 @@ const WorkData = () => [
     liveSite: "https://degusto-ts.vercel.app/",
     githubSite: "https://github.com/TomaszM-dev/degustoTs",
     type: "Web App store",
-    info: "DegustoVR is online store fully compatible with stripe payments, you can create your own account add items to cart, place an order.",
+    info: "My one of the best projects. DegustoVR is a website that gets products straight from Stripe, so everything you see is what's available. I added a way for you to sign up using your details or Google Account. Once you're logged in, you can place orders. But even if you're not logged in, you can still explore all the cool stuff I made. With Stripe Elements, you can pay for everything on the site without going anywhere else. The cart system is handy too – you can add and remove stuff while you shop. 🛒💳",
     tech: [
       <SiFigma key="1" />,
       <SiTypescript key="2" />,
@@ -74,7 +74,7 @@ const WorkData = () => [
     liveSite: "https://speed-rent-admin-panel.vercel.app/",
     githubSite: "https://github.com/TomaszM-dev/speedRent-admin-panel",
     type: "Web App store",
-    info: "In this admin panel , you have the tools to create and customize stores effortlessly, manage product catalogs, add new products, update existing ones, and organize them into categories and types and track revenue.",
+    info: "With Antonio's help from 'Code with Antonio' I made a tool for SpeedRent: admin dashboard. You can add categories, products, types, brands, pick horsepower for vehicles. It's super simple to add new stuff, and see your added products on the SpeedRent store. They pop up because they are fetched from the dashboard's API. Antonio's videos were my guide; without them, I couldn't have done it. Thanks ",
     tech: [
       <SiFigma key="1" />,
       <SiTailwindcss key="2" />,
@@ -93,7 +93,7 @@ const WorkData = () => [
     liveSite: "https://b-designed.vercel.app/",
     githubSite: "https://github.com/TomaszM-dev/b-designed",
     type: "Web App store",
-    info: " B-Designed is online store and also website where you can post something, you can create your own account add items to cart, place an order, write a blog post.",
+    info: "The project that provided the most growth for me is B Designed. It is a website where you can create a user account using Google or your own details. Once signed in, you can buy our products, write blog posts, and manage your posts. You can also add or remove items from the cart, pay for them, and track your posts and orders in your user dashboard. The website boasts a sleek design. I used MongoDB, Next.js, Tailwind CSS, and TypeScript to make it happen. 🌐🛍️",
     tech: [
       <SiFigma key="1" />,
       <SiTailwindcss key="2" />,
@@ -112,7 +112,7 @@ const WorkData = () => [
     liveSite: "https://buma-as-website.vercel.app/",
     githubSite: "https://github.com/TomaszM-dev/BumaAs-website",
     type: "Landing Page",
-    info: " This landing page was made for my client company based in norway, we are waiting still for images and content of the website but it is nearly ready",
+    info: "I initially created it to contribute to my ex-boss's firm, but back then, my skills weren't as polished as they are now (I've improved a lot in those 7 months). I couldn't fully complete the project, so I left it, focusing mainly on the design side. Despite my limited experience, I believe the functionality of the site was quite good, even though I had just started using React.js. I keep it in my portfolio because it reminds me that the journey is what matters most. It's not just about where you end up but all the things you learn and how you grow along the way.  ",
     tech: [
       <SiFigma key="1" />,
       <BiLogoReact key="2" />,
@@ -128,7 +128,7 @@ const WorkData = () => [
     liveSite: "https://crypto-banking-fin.vercel.app/",
     githubSite: "https://github.com/TomaszM-dev/CryptoBanking-",
     type: "Web application",
-    info: "CryptoBank is website where you can create your own account, manage your expenses check latest prices of pair of currencies that you are interersted about, play game",
+    info: "Unfortunately, the API I used got too expensive. Even though it's my second project, I'm sentimental about it 🥲. I might update it soon. I'm keeping it in my portfolio because it shows my journey as a developer. You can see how I've improved from this project to my latest ones just by looking at the first page 👀🤪. CryptoBank was a website where you could make your own account, handled your expenses, checked the latest prices of currency pairs you're interested in, and even play a gamble game. 🌐💸",
     tech: [
       <SiSass key="1" />,
       <BiLineChart key="1" />,
@@ -145,7 +145,7 @@ const WorkData = () => [
     liveSite: "https://vikbro.vercel.app/",
     githubSite: "https://github.com/TomaszM-dev/Vikbro-client-website",
     type: "Landing Page",
-    info: "This website presents their work as a carpenters, you can see their latest project and also get to know their company better",
+    info: "My very first big project! I designed a landing page for my friend's company, and I'm pretty proud of it, especially considering it's my first baby 🤪 I used HTML, CSS, and JS to craft a design.",
     tech: [
       <SiSass key="1" />,
       <BiLogoJavascript key="1" />,

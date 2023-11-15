@@ -40,14 +40,14 @@ const Footer = () => {
             width={500}
             height={500}
             src={me}
-            className="w-[6rem] h-[6rem] max-md:w-[5rem] max-md:h-[5rem] mb-2"
+            className="w-[5rem] h-[5rem] max-md:w-[3.5rem] max-md:h-[3.5rem] mb-2"
           />
-          <h2 className="ml-[1rem] max-sm:ml-[0.3rem] text-[3rem] max-md:text-[2.1rem]   w-[60%] max-sm:w-[100%] max-sm:text-[2rem] leading-10">
+          <h2 className="ml-[1rem] max-sm:ml-[0.3rem] text-[3.1rem] max-md:text-[2.1rem]   w-[60%] max-sm:w-[100%] max-sm:text-[2rem] leading-10">
             I am open for
           </h2>
           <BsArrowDownLeft className="text-[1.8rem] ml-10 mt-10 max-md:hidden" />
         </div>
-        <h3 className=" text-[3rem] max-md:text-[2.1rem]   w-[60%] max-sm:w-[100%] max-sm:text-[2rem] ">
+        <h3 className=" text-[3.1rem] max-md:text-[2.1rem]   w-[60%] max-sm:w-[100%] max-sm:text-[2rem] leading-10">
           hiring lets work together !
         </h3>
         <div className="w-full h-[1px] mt-28 max-sm:mx-auto  max-sm:w-[95%] bg-[#313131] max-sm:mt-36"></div>

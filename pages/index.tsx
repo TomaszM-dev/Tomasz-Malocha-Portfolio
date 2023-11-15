@@ -32,7 +32,7 @@ export default function Home() {
       <About />
       <Headline
         title="My Projects"
-        info="I am developer who cares deeply about user experience and functionality "
+        info="I'm developer who really cares about making things functional and enjoyable 🚀✨ "
       />
       <Work />
       {!isMobile && <Example />}

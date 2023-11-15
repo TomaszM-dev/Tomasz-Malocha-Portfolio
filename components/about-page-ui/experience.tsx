@@ -10,7 +10,7 @@ const Experience = () => {
   const isMobile = window.innerWidth < 500;
 
   const phrase =
-    "The will to win, the desire to succeed, the urge to reach your full potential… these are the keys that will unlock the door to personal excellence.” - Confucius";
+    ' "Skills make you valuable. Experience makes you exceptional. Together, they make you unstoppable. - cliché Instagram caption" ';
 
   return (
     <div
@@ -60,8 +60,11 @@ const Experience = () => {
               Tech Internship from School 2019
             </h2>
             <p className="text-[1.2rem] xl:text-[1.3rem] font-[200] text-[#686868]">
-              My school provided us an internship as a students we completed 4
-              months of working for tech company
+              My school arranged a program to give us real-world experience. The
+              school tutor connected us with the tech company for the
+              internship. During the four months, our main focus was on learning
+              and getting involved in the basic tasks of software developers,
+              giving us practical knowledge about the field.
             </p>
           </motion.div>
           <motion.div
@@ -78,10 +81,16 @@ const Experience = () => {
             </h2>
             <p className=" font-[200] text-[#686868]">
               <p className=" text-[1.2rem] xl:text-[1.3rem] ">
-                Though not coding related as a Project Menager I have menaged to
-                develop skills that are essential for working in a group of
-                people. Skills like: Solving problems, conflict resolution, Time
-                management, stakeholder management, adaptability
+                In my nearly three years as a project manager, I have figured
+                out a smart way of doing things. I focus a lot on making sure
+                the people on my team work well together.I want to highlight how
+                important it is to have good relationships at work. I am lucky
+                to have a reference from my old boss, vouching for my hard work
+                and problem-solving skills. I do not just talk to my team; I
+                also communicate directly with everyone interested in the
+                project. This way, everyone is on the same page. In summary, I
+                bring practical experience, adaptability, and a focus on
+                teamwork.
               </p>
             </p>
           </motion.div>

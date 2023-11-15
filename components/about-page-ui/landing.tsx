@@ -19,7 +19,7 @@ const Landing = () => {
         viewport={{ once: true, amount: 0.2 }}
         className="transition-all duration-0 backface text-[4.6rem] font-[300] w-[44rem] xl:text-[5.6rem] xl:w-[55rem] leading-[4.6rem] xl:leading-[5.5rem] tracking-tighter max-md:text-[4rem]  max-sm:leading-[3.4rem] max-sm:text-[3rem]  max-sm:w-full"
       >
-        I want to give you a glimpse into my world
+        Let me give you a sneak peek into my world
       </motion.h1>
       <motion.div
         viewport={{ once: true }}
