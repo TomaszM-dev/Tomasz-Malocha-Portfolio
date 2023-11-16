@@ -135,7 +135,7 @@ const WorkPage = () => {
                         See Live
                       </Link>
                     </div>
-                    <p className="text-[1.3rem] max-sm:text-[1.2rem] xl:text-[1.5rem] font-[200] mt-3 text-[#7E7E7E] ">
+                    <p className="text-[1.2rem] max-sm:text-[1.2rem] xl:text-[1.3rem] font-[200] mt-3 text-[#7E7E7E] ">
                       {project.info}
                     </p>
                     <div className="flex mt-6 gap-3 text-[1.7rem]">

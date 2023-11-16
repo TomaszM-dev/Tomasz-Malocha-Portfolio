@@ -173,7 +173,7 @@ const ContactPage = () => {
         <p className="">
           Code by TomaszM-dev{" "}
           <span className="max-sm:hidden">
-            ● Inspiration: dennissnellenberg.com
+            ● Design Inspiration: dennissnellenberg.com
           </span>
         </p>
         <div className=" flex gap-4 text-[1.4rem]">
