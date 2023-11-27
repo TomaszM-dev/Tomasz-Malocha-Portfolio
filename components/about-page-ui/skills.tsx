@@ -9,7 +9,7 @@ const Skills = () => {
   const isInView = useInView(textSlide);
   const headline = "My skills that I possess ...";
   const phrase =
-    "Next.js, React.js, JavaScript, TypeScript, Java, Git, HTML, Tailwind CSS,  CSS / Sass / Styled-Components, Bootstrap,  Babel, RESTful API, GraphQL, Prisma,ORM, Responsive Design, AJAX, Browser Developer Tools, Redux, Zustand, Lighhouse, CORS, JWT, Docker, GSAP, Framer Motion, Paralax Design, CMS Integration,  PWAs, Clerk, Zod, Figma, LightRoom, Photoshop, ";
+    "Next.js, React.js, JavaScript, TypeScript, Java, Maven, JUnit, Spring MVC, Docker, Git, HTML, Tailwind CSS,  CSS / Sass / Styled-Components, Bootstrap,  Babel, RESTful API, GraphQL, Prisma, AJAX, Redux, Zustand, Lighhouse, CORS, JWT, Docker, GSAP, Framer Motion, Paralax Design, CMS Integration, PWAs, Clerk, Zod, Figma, LightRoom, Photoshop, ";
   const phrase2 =
     "OOP, Functional Programming, Data Structures and Algorithms, State Menagment, Asynchronous Programming, Web Security Practises, Semantic HTML, Progressive Enhancement, Testing Debugging, CMS, Command Line, Graphic design tools,SSG, SSR,CSR, Containerization, Google Analytics ";
   const phrase3 =

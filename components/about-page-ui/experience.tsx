@@ -57,14 +57,21 @@ const Experience = () => {
             <p className="text-[#7C7B7B] text-[1.1rem] mb-1">01</p>
             <div className="bg-[#dedcdc] w-full h-[1px] mb-7"></div>
             <h2 className="text-[1.8rem] xl:text-[1.9rem]  mb-7">
-              Tech Internship from School 2019
+              Freelance Software Developer 2022-Present
             </h2>
             <p className="text-[1.2rem] xl:text-[1.3rem] font-[200] text-[#686868]">
-              My school arranged a program to give us real-world experience. The
-              school tutor connected us with the tech company for the
-              internship. During the four months, our main focus was on learning
-              and getting involved in the basic tasks of software developers,
-              giving us practical knowledge about the field.
+              • Successfully delivered 8+ projects using cutting-edge
+              technologies,ensuring performance and security following industry
+              guidelines <br /> • Designed and implemented UIs with JavaScript,
+              React.js, and Next.js to ensure better user experience and
+              cross-browser compatibility <br /> • Built server-side
+              architectures, performing integrations with databases, REST APIs,
+              Web Services, and caching mechanisms <br /> • Monitored and
+              analyzed web analytics and performance insights, proposing
+              improvements that were adopted and put into practice <br /> •
+              Documented code and processes, providing knowledge-sharing
+              sessions to customers and their employees to improve internal
+              flows
             </p>
           </motion.div>
           <motion.div
@@ -81,16 +88,17 @@ const Experience = () => {
             </h2>
             <p className=" font-[200] text-[#686868]">
               <p className=" text-[1.2rem] xl:text-[1.3rem] ">
-                In my nearly three years as a project manager, I have figured
-                out a smart way of doing things. I focus a lot on making sure
-                the people on my team work well together.I want to highlight how
-                important it is to have good relationships at work. I am lucky
-                to have a reference from my old boss, vouching for my hard work
-                and problem-solving skills. I do not just talk to my team; I
-                also communicate directly with everyone interested in the
-                project. This way, everyone is on the same page. In summary, I
-                bring practical experience, adaptability, and a focus on
-                teamwork.
+                • Managed project deliverables within the approved timelines and
+                budget guidelines that helped in delivering high-performant
+                solutions <br /> • Effectively guided stakeholders and team
+                members throughout the project lifecycle, providing leadership,
+                motivation, and technical expertise that handled risk
+                management, automated existing processes, and solve internal and
+                external requests <br /> • Proposed and implemented SCRUM and
+                Agile methodologies that improved the productivity and overall
+                efficiency of our projects All my skills have received
+                validation from my former CEO, who generously provided me a
+                recommendation.
               </p>
             </p>
           </motion.div>

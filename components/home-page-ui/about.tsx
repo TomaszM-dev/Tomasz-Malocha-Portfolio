@@ -108,9 +108,9 @@ const About = () => {
             <p className="text-[#7E7E7E] font-[200]  text-[1.1rem] xl:text-[1.2rem]">
               I love using cool tools like Next.js and React.js for building
               websites, Tailwind for making them look awesome, Prisma for
-              handling data, TypeScript to keep things safe, and PlanetScale to
-              store all that important info. It is like having a superhero
-              toolkit imo 🤓.
+              handling data, TypeScript to keep things safe and Java as a king
+              of backend langugage. It is like having a superhero toolkit imo
+              🤓.
             </p>
           </div>
         </motion.div>
@@ -129,9 +129,8 @@ const About = () => {
             <p className="text-[#7E7E7E] font-[200]  text-[1.1rem] xl:text-[1.2rem]">
               Finished my IT tech school in 2019, earned various certificates
               and a degree, and transitioned to Project Management for almost 3
-              years, even though it is not in the tech industry. The cool thing
-              is, management skills are pretty universal — they work seamlessly
-              across different fields! 💼
+              years, then became freelance Software Developer, creating my own
+              projects and helping other developers on their job 💼
             </p>
           </div>
         </motion.div>

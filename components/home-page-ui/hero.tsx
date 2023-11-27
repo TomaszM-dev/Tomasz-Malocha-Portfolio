@@ -94,9 +94,8 @@ const Hero = () => {
           <BsArrowDownRight className=" md:hidden  self-start mb-7 max-sm:mb-4 relative" />
           <BsArrowDownLeft className="text[1.4rem] max-md:hidden  self-end mb-7 max-sm:mb-4 relative" />
           <h1 className="text-[1.6rem] xl:text-[1.7rem] font-[300] max-md:mb-20 z-4 relative max-sm:font-[200] max-sm:mb-10 max-sm:text-[1.9rem] ">
-            Project Menager &
+            Software Developer
             <br />
-            Developer
           </h1>
         </div>
         <div
