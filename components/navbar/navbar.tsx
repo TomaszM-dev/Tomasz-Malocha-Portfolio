@@ -42,10 +42,6 @@ const navItems: navProps[] = [
     title: "Contact",
     href: "/contact",
   },
-  {
-    title: "Blog",
-    href: "/blog",
-  },
 ];
 
 const Navbar = () => {
