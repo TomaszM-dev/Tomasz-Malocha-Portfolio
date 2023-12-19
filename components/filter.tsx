@@ -16,7 +16,6 @@ const Filter = ({
     const filtered = projects.filter((item: any) =>
       item.filter.includes(activeGenre)
     );
-
     setFiltered(filtered);
     console.log(filtered);
   }, [activeGenre]);

@@ -42,6 +42,10 @@ const navItems: navProps[] = [
     title: "Contact",
     href: "/contact",
   },
+  {
+    title: "Blog",
+    href: "/blog",
+  },
 ];
 
 const Navbar = () => {
@@ -54,8 +58,6 @@ const Navbar = () => {
 
   // closing on path change
   useEffect(() => {
-    let cur = "/";
-
     if (isActive) setIsActive(false);
   }, [pathname]);
 
@@ -136,7 +138,9 @@ const Navbar = () => {
               </Link>
               <p
                 className={`text-[1rem]  transition-all delay-1000 ${
-                  pathname === link.href ? "text-black " : "text-transparent"
+                  pathname.split("/")[1] === link.href.split("/")[1]
+                    ? "text-black "
+                    : "text-transparent"
                 }`}
               >
                 ●

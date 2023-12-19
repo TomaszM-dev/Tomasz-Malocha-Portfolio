@@ -9,7 +9,7 @@ import Page from "@/components/page";
 import { fadeIn, upDesc } from "@/components/animations/animations";
 import Filter from "@/components/filter";
 import Footer from "@/components/home-page-ui/footer";
-import WorkData from "@/components/work-data/workData";
+import WorkData from "@/components/data/workData";
 import Link from "next/link";
 
 export const up = {

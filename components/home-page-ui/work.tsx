@@ -7,7 +7,7 @@ import { fadeIn } from "../animations/animations";
 import Link from "next/link";
 import { useNavLink } from "@/nav-store";
 import { useRouter } from "next/navigation";
-import WorkData from "../work-data/workData";
+import WorkData from "../data/workData";
 
 const Work = () => {
   const projects = WorkData();

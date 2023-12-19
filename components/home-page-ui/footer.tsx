@@ -25,6 +25,13 @@ const Footer = () => {
 
   const isMobile = window.innerWidth < 500;
 
+  let arr = [
+    [1, 3],
+    [2, 5],
+    [4, 6, 3, [4, 6], 6],
+    [4, 6, 7],
+  ];
+
   return (
     <div
       className={` w-full  text-white bg-[#030303] flex flex-col relative ${
